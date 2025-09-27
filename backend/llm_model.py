@@ -5,8 +5,6 @@ from google import genai
 
 load_dotenv()
 
-#ideally, we dont want to use remove_gendered_language
-
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY is None:
     raise ValueError("Gemini API key is not set in environment variables.")
@@ -16,26 +14,31 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 
 
 # give gemini the title and description of the product and ask it to exract the volume of the product
-def extract_volume(title: str, description: str) -> float | None:
-    prompt = f"Extract the volume from the following product details:\n\nTitle: {title}\nDescription: {description}. If no volume is found, return '0'. The volume could be in milliliters (ml) or liters (L) or ounces (oz) for liquids, grams (g) or kilograms (kg) for solids. Once you've found the volume value with its unit, convert to mL. For example, if the volume is 1L, convert it to 1000mL. If the volume is 8oz, convert it to approximately 237mL. If the volume is 500g, convert it to 500mL. If the volume is 1kg, convert it to 1000mL. Only return the numeric value in mL without any units or additional text."
+def extract_volume_and_fragrance(title: str, description: str) -> tuple[float | None, list[str] | None]:
+    prompt = f"Extract the volume from the following product details:\n\nTitle: {title}\nDescription: {description}. If no volume is found, return '0'. The volume could be in milliliters (ml) or liters (L) or ounces (oz) for liquids, grams (g) or kilograms (kg) for solids. Once you've found the volume value with its unit, convert to mL. For example, if the volume is 1L, convert it to 1000mL. If the volume is 8oz, convert it to approximately 237mL. If the volume is 500g, convert it to 500mL. If the volume is 1kg, convert it to 1000mL. Additionally, extract the fragrances of the product from the description if available. Example of fragrances include jasmine, lemon, vanilla, cinnamon, sandalwood, amber. There may be more than 1 fragrance in the product. Return the results in the following format: \"volume fragrance1 fragrance2 ...\", where volume is the numeric value of volume in mL without any units or additional text, and fragrance1, fragrance2, etc are the extracted fragrance strings. If you cannot find a fragrance, return 'None' for fragrance."
 
     try:
         response = client.models.generate_content(
             model="gemini-2.5-flash", contents=prompt
         )
-        
-        volume = float(response.text.strip())
+        response_text = response.text.strip()
+        volume, fragrances = response_text.split(" ", 1)
+        volume = float(volume)
         print("Extracted volume:", volume)
-        if volume <= 0:
-            return None
-        return volume
+        if fragrances.lower() == 'none':
+            fragrances = None
+        else:
+            fragrances = [fragrance.strip() for fragrance in fragrances.split(" ")]
+        if volume <= 0 :
+            volume = None
+        return volume, fragrances
     except Exception as e:
         print(f"Error extracting volume (Gemini API issue): {e}")
         print("Skipping volume extraction for now...")
-        return None
+        return None, None
 
 def create_alternative_query(title: str, description: str) -> str:
-    prompt = f"Create a search query to find products similar to the following product. The query should be concise and focus on the main features of the product, avoiding specific brand names or unique identifiers.\n\nTitle: {title}\nDescription: {description}\n\nSearch Query:"
+    prompt = f"Create a search query to find products similar to the following product. The query should be concise and focus on the main features of the product, avoiding specific brand names or unique identifiers.\n\nTitle: {title}\nDescription: {description}\n\nQuery should only be a simple string. Search Query:"
     response = client.models.generate_content(
         model="gemini-2.5-flash", contents=prompt
     )

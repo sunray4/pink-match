@@ -12,7 +12,7 @@ async def root():
 @app.get("/search")
 async def search(query: str):
     # right now, the query should be a link
-    max_results = 7
+    max_results = 3
     products = scraper(query, max_results)
     if products is None:
         return {"error": "No products found or an error occurred."}
@@ -31,7 +31,7 @@ async def search(query: str):
             f.write(f"Ingredients: {', '.join(product.ingredients)}\n")
             f.write(f"Volume (mL): {product.volume_ml}\n")
             f.write(f"Unit Price (per 100mL): {product.unit_price}\n")
-            f.write(f"Fragrance: {product.fragrance}\n")
+            f.write(f"Fragrance: {product.fragrances}\n")
             f.write(f"Similarity Score: {product.similarity_score}\n")
             f.write("-" * 50 + "\n")
 

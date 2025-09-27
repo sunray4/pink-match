@@ -13,7 +13,7 @@ from datetime import datetime
 
 load_dotenv()
 
-from llm_model import create_alternative_query, extract_volume, clean_ingredients
+from llm_model import create_alternative_query, extract_volume_and_fragrance, clean_ingredients
 from models import Product
 
 OXYLABS_USERNAME = os.getenv("OXYLABS_USERNAME")
@@ -102,7 +102,7 @@ def scrape_product(asin: str) -> Product | None:
     description = response_json["results"][0]["content"]["bullet_points"]
     rating: float = response_json["results"][0]["content"]["rating"]
     price: float = response_json["results"][0]["content"]["price"]
-    volume: float | None = extract_volume(title, description)
+    volume, fragrance = extract_volume_and_fragrance(title, description)
     unit_price: float | None = price / volume * 100 if volume else None
 
     print("Title:", title)
@@ -124,6 +124,7 @@ def scrape_product(asin: str) -> Product | None:
         f.write(f"Unit Price: ${unit_price:.2f}/100mL\n" if unit_price else "Unit Price: Not calculated\n")
         f.write(f"Ingredients: {', '.join(ingredients_list)}\n")
         f.write(f"Description: {description}\n")
+        f.write(f"Fragrance: {fragrance}\n" if fragrance else "Fragrance: Not specified\n")
         f.write("-" * 30 + "\n\n")
     
     print(f"Products saved to {filename}")
@@ -137,6 +138,7 @@ def scrape_product(asin: str) -> Product | None:
         ingredients=ingredients_list,
         volume_ml=volume,
         unit_price=unit_price,
+        fragrances=fragrance,
     )
 
 def scrape_original(query: str) -> Product | None:
