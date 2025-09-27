@@ -8,6 +8,9 @@ from pydantic import BaseModel
 import requests
 from dotenv import load_dotenv
 
+import json
+from datetime import datetime
+
 load_dotenv()
 
 from llm_model import create_alternative_query, extract_volume, clean_ingredients
@@ -27,6 +30,14 @@ class Product(BaseModel):
 
 def scraper(query: str):
     products: list[Product] = []
+
+    # Write products to txt file
+    filename = f"products.txt"
+    
+    with open(filename, 'w', encoding='utf-8') as f:
+        f.write(f"Scraping products - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write("=" * 50 + "\n\n")
+
     original_product = scrape_original(query)
     if original_product is None:
         return None
@@ -37,6 +48,8 @@ def scraper(query: str):
     if alternative_products:
         products.extend(alternative_products)
     print(f"Found {len(products)-1} alternative products")
+    
+    
     return products
 
 def scrape_product(asin: str) -> Product | None:
@@ -88,10 +101,10 @@ def scrape_product(asin: str) -> Product | None:
         print("No ingredients found")
         return None
 
-    # clean up ingredients list with gemini prompt - split into a list, lowercase, remove special characters, and change to most common reference name
-    cleaned_ingredients = clean_ingredients(ingredients)
+    # clean up ingredients list
+    ingredients_list = clean_ingredients(ingredients)
 
-    print("Ingredients list:", cleaned_ingredients)
+    print("Ingredients list:", ingredients_list)
 
     # get title and description
     title = response_json["results"][0]["content"]["title"]
@@ -104,13 +117,33 @@ def scrape_product(asin: str) -> Product | None:
     print("Title:", title)
     print("Description:", description)
 
+    # Write products to txt file
+    filename = f"products.txt"
+    
+    with open(filename, 'a', encoding='utf-8') as f:
+        f.write(f"Scraped Products - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write("=" * 50 + "\n\n")
+        
+        f.write(f"Product {asin}:\n")
+        f.write(f"ASIN: {asin}\n")
+        f.write(f"Title: {title}\n")
+        f.write(f"Price: ${price:.2f}\n")
+        f.write(f"Rating: {rating}\n")
+        f.write(f"Volume: {volume} mL\n" if volume else "Volume: Not specified\n")
+        f.write(f"Unit Price: ${unit_price:.2f}/100mL\n" if unit_price else "Unit Price: Not calculated\n")
+        f.write(f"Ingredients: {', '.join(ingredients_list)}\n")
+        f.write(f"Description: {description}\n")
+        f.write("-" * 30 + "\n\n")
+    
+    print(f"Products saved to {filename}")
+
     return Product(
         asin=asin,
         title=title,
         description=description,
         rating=rating,
         price=price,
-        ingredients=cleaned_ingredients,
+        ingredients=ingredients_list,
         volume_ml=volume,
         unit_price=unit_price,
     )
@@ -152,6 +185,15 @@ def scrape_alternative_list(original_product: Product) -> list[Product]:
 
     response_json = response.json()
 
+    filename = f"alternatives_list.txt"
+    
+    with open(filename, 'w', encoding='utf-8') as f:
+        f.write(f"Scraped alternatives list - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write("=" * 50 + "\n\n")
+        f.write(json.dumps(response_json, indent=4))
+        
+        f.write("-" * 30 + "\n\n")
+
     for item in response_json["results"][0]["content"]["results"]["organic"]:
         asin = item["asin"]
         alternative_product = scrape_product(asin)
@@ -166,18 +208,4 @@ def scrape_alternative_list(original_product: Product) -> list[Product]:
 
     return alternative_products
 
-## scraping for ingredients
-# ingredients list should be in the following location if available:
-# for section in response["results"][0]["content"]["important_information"]:
-#     if section["title"] == "Ingredients":
-#         ingredients = section["description"]
-#         break
-
-# take the ingredients list and split by commas into list - remove leading/trailing whitespace
-# ingredients_list = [ingredient.strip() for ingredient in ingredients.split(",")]
-# make all ingredients lowercase
-# ingredients_list = [ingredient.lower() for ingredient in ingredients_list]
-# clean up ingredients list with gemini prompt
-#parse this list of ingredients into a python list.  change the name of the ingredient into its most common reference name. do not include any of the following symbols within each ingredient string "()/<>"
-
-scraper("https://www.amazon.ca/LOreal-Paris-Lengths-Shampoo-Keratin/dp/B088KMMXRG/ref=sr_1_7?crid=V8Z9WSWIHZGS&dib=eyJ2IjoiMSJ9.WDz0zMsaWreVsbkOjQdqUB-mcpSIf26aizBqMfX6ZzDPGkD-bSME-cBI22Zx5BM1OT04yQUDY_tNJ2A0JsrNK2h9D1zwY0SoAttorOtPP55k_1p0KtH25q4-UpjIqSFkE0xxk9sHJ13Yf_Ku7q_Rz_qnb-MBbxrhgTR7LHSbqyPuWgHzOk9Ub6D_OFI7GiT3hu14qS_DlC8MWyolQhjyaZRTWem6Qw_cEk1AsfAy1E37eYkN_AHF0sXOx4KKPw10XDHAOic9UgLArrfewxnXnXH4ypgVUNWfYvwzmSHjimQ.ucZ704ZRWdS2eTX18O_vEJgzFtI83XcQB8SvGxtYaH0&dib_tag=se&keywords=womens+shampoo&qid=1758999688&sprefix=womens+shampoo,aps,105&sr=8-7")
+scraper("https://www.amazon.ca/Herbal-Essences-Nourishes-Certified-Especially/dp/B0CP6CX9RB/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24:amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2NB5RKHDY6IE9&cv_ct_cx=women's+shampoo&keywords=women's+shampoo&pd_rd_i=B0CP6CX9RB&pd_rd_r=5cbc5adb-adf6-4145-b1a1-62558f7aa2a5&pd_rd_w=zdkBG&pd_rd_wg=3fDtA&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=230VZ98RTWGGHZYY7D6Z&qid=1759001440&sbo=RZvfv//HxDF+O5021pAnSA%3D%3D&sprefix=women's+shampo,aps,147&sr=1-2-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1")

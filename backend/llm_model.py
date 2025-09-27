@@ -5,6 +5,8 @@ from google import genai
 
 load_dotenv()
 
+#ideally, we dont want to use remove_gendered_language
+
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY is None:
     raise ValueError("Gemini API key is not set in environment variables.")
@@ -13,23 +15,23 @@ if GEMINI_API_KEY is None:
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 
-
 # give gemini the title and description of the product and ask it to exract the volume of the product
 def extract_volume(title: str, description: str) -> float | None:
     prompt = f"Extract the volume from the following product details:\n\nTitle: {title}\nDescription: {description}. If no volume is found, return '0'. The volume could be in milliliters (ml) or liters (L) or ounces (oz) for liquids, grams (g) or kilograms (kg) for solids. Once you've found the volume value with its unit, convert to mL. For example, if the volume is 1L, convert it to 1000mL. If the volume is 8oz, convert it to approximately 237mL. If the volume is 500g, convert it to 500mL. If the volume is 1kg, convert it to 1000mL. Only return the numeric value in mL without any units or additional text."
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash", contents=prompt
-    )
-    
     try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash", contents=prompt
+        )
+        
         volume = float(response.text.strip())
         print("Extracted volume:", volume)
         if volume <= 0:
             return None
         return volume
-    except ValueError:
-        print(f"Could not parse volume from response: {response.text}")
+    except Exception as e:
+        print(f"Error extracting volume (Gemini API issue): {e}")
+        print("Skipping volume extraction for now...")
         return None
 
 def create_alternative_query(title: str, description: str) -> str:
@@ -40,10 +42,23 @@ def create_alternative_query(title: str, description: str) -> str:
     print("Alternative search query:", response.text)
     return response.text.strip()
 
+# this should go into product match file
+# cleans up ingredients list - remove / and everything after it, lowercase, remove () 
 def clean_ingredients(ingredients: str) -> list[str]:
     ingredients_list = [ingredient.strip().lower() for ingredient in ingredients.split(",")]
     ingredients_list = [ingredient for ingredient in ingredients_list if ingredient]
-    prompt = f"Parse this list of ingredients into a python list. Change the name of each ingredient into its most common reference name. Each ingredient should be a string in the list, and should only contain lowercase letters. Do not include any of the following symbols within each ingredient string '()/<>'. Return ONLY the Python list, no markdown formatting or additional text.\n\nIngredients: {ingredients}\n\nParsed Ingredients List:"
+    ingredients_list = [ingredient.split('/')[0].strip() for ingredient in ingredients_list]
+    cleaned_ingredients_list = []
+    for ingredient in ingredients_list:
+        if ("(" in ingredient) and (")" in ingredient):
+            index_of_open = ingredient.index('(')
+            index_of_close = ingredient.index(')')
+            new_ingredient = (ingredient[:index_of_open] + ingredient[index_of_open + 1:index_of_close - 1] + ingredient[index_of_close+1:]).strip()
+            if new_ingredient:
+                cleaned_ingredients_list.append(new_ingredient)
+        else:
+            cleaned_ingredients_list.append(ingredient)
+    prompt = f"Parse this list of ingredients into a python list. Change the name of each ingredient into its most common reference name. Each ingredient should be a string in the list, and should only contain lowercase letters. Do not include any of the following symbols within each ingredient string '()/<>'. Return ONLY the Python list, no markdown formatting or additional text.\n\nIngredients: {cleaned_ingredients_list}\n\nParsed Ingredients List:"
     response = client.models.generate_content(
         model="gemini-2.5-flash", contents=prompt
     )
