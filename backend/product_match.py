@@ -1,22 +1,26 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-from database import database, new_product
+
+from models import Product
+# from database import database, new_product
 
 # -----------------------------
 # TF-IDF + Cosine Similarity
 # -----------------------------
 
-def compute_similarity(new_product, database):
+def compute_similarity(new_product: Product, database: list[Product]):
+    database_dicts = [product.model_dump() for product in database]
+    new_product_dict = new_product.model_dump()
     # Combine text fields into lists for TF-IDF
-    db_titles = [p["title"] for p in database]
-    db_descriptions = [p["description"] for p in database]
-    db_ingredients = [p["ingredients"] for p in database]
+    db_titles = [p["title"] for p in database_dicts]
+    db_descriptions = [p["description"] for p in database_dicts]
+    db_ingredients = [p["ingredients"] for p in database_dicts]
 
     # Append new product’s text for vectorization
-    titles_all = db_titles + [new_product["title"]]
-    descriptions_all = db_descriptions + [new_product["description"]]
-    ingredients_all = db_ingredients + [new_product["ingredients"]]
+    titles_all = db_titles + [new_product_dict["title"]]
+    descriptions_all = db_descriptions + [new_product_dict["description"]]
+    ingredients_all = db_ingredients + [new_product_dict["ingredients"]]
 
     vectorizer_title = TfidfVectorizer(ngram_range=(1, 2))
     tfidf_title = vectorizer_title.fit_transform(titles_all)
@@ -34,13 +38,18 @@ def compute_similarity(new_product, database):
 
     # Weighted similarity (prioritize ingredients more than title)
     text_similarity = 0.7 * sim_ing + 0.15 * sim_title + 0.15 * sim_desc
+    for i, score in enumerate(text_similarity):
+        database_dicts[i]["similarity_score"] = score
+    
+    # Sort database by similarity score in descending order
+    database_sorted = sorted(database_dicts, key=lambda x: x["similarity_score"], reverse=True)
 
-    return text_similarity
+    product_list = [Product(**product_dict) for product_dict in database_sorted]
+
+    return product_list
 
 # Run similarity check
-similarities = compute_similarity(new_product, database)
-# Rank results
-ranked_indices = np.argsort(similarities)[::-1]  # descending order
-print("Top matches for:", new_product["title"])
-for idx in ranked_indices:
-    print(f"- {database[idx]['title']} (Score: {similarities[idx]:.3f})")
+# ranked_database = compute_similarity(new_product, database)
+# print("Top matches for:", new_product["title"])
+# for item in ranked_database:
+#     print(f"- {item['title']} (Score: {item['similarity_score']:.3f})")

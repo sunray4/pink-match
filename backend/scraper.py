@@ -14,21 +14,12 @@ from datetime import datetime
 load_dotenv()
 
 from llm_model import create_alternative_query, extract_volume, clean_ingredients
+from models import Product
 
 OXYLABS_USERNAME = os.getenv("OXYLABS_USERNAME")
 OXYLABS_PASSWORD = os.getenv("OXYLABS_PASSWORD")
 
-class Product(BaseModel):
-    asin: str
-    title: str
-    description: str
-    rating: float
-    price: float
-    ingredients: list[str]
-    volume_ml: float | None = None
-    unit_price: float | None = None  # price per 100mL
-
-def scraper(query: str):
+def scraper(query: str, max_results: int) -> list[Product] | None:
     products: list[Product] = []
 
     # Write products to txt file
@@ -44,7 +35,7 @@ def scraper(query: str):
 
     products.append(original_product)
 
-    alternative_products = scrape_alternative_list(original_product)
+    alternative_products = scrape_alternative_list(original_product, max_results)
     if alternative_products:
         products.extend(alternative_products)
     print(f"Found {len(products)-1} alternative products")
@@ -156,7 +147,7 @@ def scrape_original(query: str) -> Product | None:
     return product
 
 ## scrape list of alternatives
-def scrape_alternative_list(original_product: Product) -> list[Product]:
+def scrape_alternative_list(original_product: Product, max_results: int) -> list[Product]:
     alternative_products: list[Product] = []
 
     # Create prompt with gemini
@@ -194,7 +185,10 @@ def scrape_alternative_list(original_product: Product) -> list[Product]:
         
         f.write("-" * 30 + "\n\n")
 
+    results_count = 0
     for item in response_json["results"][0]["content"]["results"]["organic"]:
+        if results_count >= max_results:
+            break
         asin = item["asin"]
         alternative_product = scrape_product(asin)
         if (
@@ -205,7 +199,8 @@ def scrape_alternative_list(original_product: Product) -> list[Product]:
             and alternative_product.unit_price < original_product.unit_price
         ):
             alternative_products.append(alternative_product)
+            results_count += 1
 
     return alternative_products
 
-scraper("https://www.amazon.ca/Herbal-Essences-Nourishes-Certified-Especially/dp/B0CP6CX9RB/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24:amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2NB5RKHDY6IE9&cv_ct_cx=women's+shampoo&keywords=women's+shampoo&pd_rd_i=B0CP6CX9RB&pd_rd_r=5cbc5adb-adf6-4145-b1a1-62558f7aa2a5&pd_rd_w=zdkBG&pd_rd_wg=3fDtA&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=230VZ98RTWGGHZYY7D6Z&qid=1759001440&sbo=RZvfv//HxDF+O5021pAnSA%3D%3D&sprefix=women's+shampo,aps,147&sr=1-2-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1")
+# scraper("https://www.amazon.ca/Herbal-Essences-Nourishes-Certified-Especially/dp/B0CP6CX9RB/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24:amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2NB5RKHDY6IE9&cv_ct_cx=women's+shampoo&keywords=women's+shampoo&pd_rd_i=B0CP6CX9RB&pd_rd_r=5cbc5adb-adf6-4145-b1a1-62558f7aa2a5&pd_rd_w=zdkBG&pd_rd_wg=3fDtA&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=230VZ98RTWGGHZYY7D6Z&qid=1759001440&sbo=RZvfv//HxDF+O5021pAnSA%3D%3D&sprefix=women's+shampo,aps,147&sr=1-2-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1")

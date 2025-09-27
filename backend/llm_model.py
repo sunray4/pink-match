@@ -58,7 +58,7 @@ def clean_ingredients(ingredients: str) -> list[str]:
                 cleaned_ingredients_list.append(new_ingredient)
         else:
             cleaned_ingredients_list.append(ingredient)
-    prompt = f"Parse this list of ingredients into a python list. Change the name of each ingredient into its most common reference name. Each ingredient should be a string in the list, and should only contain lowercase letters. Do not include any of the following symbols within each ingredient string '()/<>'. Return ONLY the Python list, no markdown formatting or additional text.\n\nIngredients: {cleaned_ingredients_list}\n\nParsed Ingredients List:"
+    prompt = f"Parse this list of ingredients into a python list. If something is very obviously not an ingredient, remove it. Change the name of each ingredient into its most common reference name. Each ingredient should be a string in the list, and should only contain lowercase letters. Do not include any of the following symbols within each ingredient string '()/<>'. Return ONLY the Python list in your response, no markdown formatting or additional text. Also do not print out any of your own thoughts or explanations.\n\nIngredients: {cleaned_ingredients_list}\n\nParsed Ingredients List:"
     response = client.models.generate_content(
         model="gemini-2.5-flash", contents=prompt
     )
