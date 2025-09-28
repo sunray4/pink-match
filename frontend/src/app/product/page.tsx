@@ -27,7 +27,7 @@ interface Product {
   fragrances?: string[];
   volume_ml?: number;
   volume?: number;
-  unitPrice?: number;
+  unit_price?: number;
   similarity_score?: number;
 }
 
@@ -213,7 +213,7 @@ interface ProductCardProps {
 }
 
 function ProductCard({ originalProduct, product, onCompareClick }: ProductCardProps) {
-  const discount = originalProduct?.unitPrice && product?.unitPrice ? ((originalProduct.unitPrice - product.unitPrice) / originalProduct.unitPrice * 100).toFixed(0) : null;
+  const discount = originalProduct?.unit_price != null && product?.unit_price != null && Number(originalProduct?.unit_price) > 0 && Number(product?.unit_price) > 0 ? ((Number(originalProduct.unit_price) - Number(product.unit_price)) / Number(originalProduct.unit_price) * 100).toFixed(0) : null;
   return (
     <div className="bg-white h-[447px] relative rounded-[40px] shrink-0 w-[342px]" data-node-id="55:23">
       <div aria-hidden="true" className="absolute border border-[#83667e] border-solid inset-0 pointer-events-none rounded-[40px] shadow-[0px_5px_9px_0px_rgba(0,0,0,0.25)]" />
