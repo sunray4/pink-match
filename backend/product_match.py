@@ -2,12 +2,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from database import database, new_product
+from fragrance_match import compare_fragrance_lists
 
 # -----------------------------
 # TF-IDF + Cosine Similarity
 # -----------------------------
 
-def compute_similarity(new_product, database):
+def compute_text_similarity(new_product, database):
     # Combine text fields into lists for TF-IDF
     db_titles = [p["title"] for p in database]
     db_descriptions = [p["description"] for p in database]
@@ -37,10 +38,31 @@ def compute_similarity(new_product, database):
 
     return text_similarity
 
+def compute_fragrance_similarity(new_product, database):
+    scores= []
+    for p in database: 
+        score = compare_fragrance_lists(
+            new_product.get("fragrance", []),
+            p.get("fragrance", [])
+        )
+        scores.append(score)
+    return np.array(scores)
+
+
+def compute_final_similarity(new_product, database):
+    text_sim = compute_text_similarity(new_product, database)
+    fragrance_sim= compute_fragrance_similarity(new_product, database)
+
+    final_sim = 0.5 * text_sim + 0.5 * fragrance_sim
+    
+    return final_sim
+
+
 # Run similarity check
-similarities = compute_similarity(new_product, database)
+final_sim = compute_final_similarity(new_product, database)
 # Rank results
-ranked_indices = np.argsort(similarities)[::-1]  # descending order
+ranked_indices = np.argsort(final_sim)[::-1]
 print("Top matches for:", new_product["title"])
 for idx in ranked_indices:
-    print(f"- {database[idx]['title']} (Score: {similarities[idx]:.3f})")
+    p = database[idx]
+    print(f"- {p['title']} | Price: ${p['price']:.2f} | Fragrance: {p['fragrance']} | Score: {final_sim[idx]:.3f}")

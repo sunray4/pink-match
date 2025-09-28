@@ -66,6 +66,7 @@ new_product = {
     "title": "Luxury Women’s Rose Razor",
     "description": "5-blade razor with aloe strip for sensitive skin",
     "ingredients": "stainless steel blades, aloe strip, plastic handle",
+    "fragrance": ["lavender", "floral"],
     "price": 15.99,
     "volume_ml": 1
 }
