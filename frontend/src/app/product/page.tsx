@@ -33,6 +33,7 @@ interface Product {
 
 export default function ProductPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [newProductInModal, setNewProductInModal] = useState<Product | null>(null);
   const [searchResults, setSearchResults] = useState<Product[]>([]);
   const [originalProduct, setOriginalProduct] = useState<Product | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -61,7 +62,8 @@ export default function ProductPage() {
     setIsLoading(false);
   }, []);
 
-  const handleCompareClick = () => {
+  const handleCompareClick = (product: Product) => {
+    setNewProductInModal(product);
     setIsModalOpen(true);
   };
 
@@ -112,10 +114,13 @@ export default function ProductPage() {
       </div>
 
       {/* Main Product Image */}
-      <div className="absolute h-[395px] left-[244px] top-[493px] w-[791px]" data-scroll data-scroll-speed="0.3" data-name="image 3" data-node-id="21:274">
+      <div className="absolute left-1/2 top-[213px] w-[604px] h-[280px] transform -translate-x-1/2 p-4" data-scroll data-scroll-speed="0.3" data-name="image 3" data-node-id="21:274">
         {originalProduct?.image_url && (
-          <Image alt="Product showcase" className="absolute inset-0 max-w-none object-center object-cover pointer-events-none size-full" src={originalProduct?.image_url} width={791} height={395} />
+          <Image alt="Product showcase" className="w-full h-full object-center object-contain pointer-events-none" src={originalProduct?.image_url} width={593} height={280} />
         )}
+      </div>
+      <div className="absolute left-[244px] top-[493px] w-[791px] h-[395px]" data-scroll data-scroll-speed="0.3" data-name="image 3" data-node-id="21:274">
+        <Image alt="" className="absolute inset-0 max-w-none object-center object-cover pointer-events-none size-full" src="/podium.webp" width={791} height={395} />
       </div>
 
       {/* Search Bar */}
@@ -149,7 +154,7 @@ export default function ProductPage() {
                   key={product.asin || index} 
                   originalProduct={originalProduct}
                   product={product} 
-                  onCompareClick={handleCompareClick} 
+                  onCompareClick={() => handleCompareClick(product)} 
                 />
               ))}
             </div>
@@ -170,7 +175,9 @@ export default function ProductPage() {
       </div>
       
       {/* Compare Modal - Outside scroll container */}
-      <CompareModal isOpen={isModalOpen} onClose={handleCloseModal} />
+      {originalProduct && newProductInModal && (
+        <CompareModal originalProduct={originalProduct} newProduct={newProductInModal} isOpen={isModalOpen} onClose={handleCloseModal} />
+      )}
     </>
   );
 }
@@ -212,15 +219,15 @@ function ProductCard({ originalProduct, product, onCompareClick }: ProductCardPr
       <div aria-hidden="true" className="absolute border border-[#83667e] border-solid inset-0 pointer-events-none rounded-[40px] shadow-[0px_5px_9px_0px_rgba(0,0,0,0.25)]" />
       
       {/* Compare Button */}
-      <div className="absolute bg-white box-border content-stretch flex flex-col gap-[10px] h-[40px] items-end justify-center left-[163px] px-0 py-[26px] rounded-[30px] top-[382px] w-[154px]" data-node-id="55:24">
+      <div className="absolute bg-white box-border content-stretch flex flex-col gap-[10px] h-[40px] items-end justify-center left-[163px] px-0 py-[26px] rounded-[30px] top-[382px] w-[154px] z-10 hover:bg-[#f0f0f0] " data-node-id="55:24">
         <div aria-hidden="true" className="absolute border-2 border-[#83667e] border-solid inset-0 pointer-events-none rounded-[30px]" />
         <button 
-          onClick={onCompareClick}
-          className="box-border content-stretch flex gap-[5px] items-center justify-end px-[10px] py-0 relative shrink-0 w-[140px] bg-transparent border-none cursor-pointer hover:bg-[#f0f0f0] transition-colors rounded" 
+          onClick={() => onCompareClick()}
+          className="box-border content-stretch flex gap-[5px] items-center justify-center px-[10px] py-2 relative shrink-0 w-[140px] bg-transparent border-none cursor-pointer transition-colors rounded z-20" 
           data-node-id="55:25"
         >
           <div className="font-[var(--font-instrument-sans)] font-normal leading-[0] relative shrink-0 text-[#83667e] text-[18px] text-nowrap" data-node-id="55:26">
-            <p className="leading-[normal] whitespace-pre">COMPARE</p>
+            <span className="leading-[normal] whitespace-pre">COMPARE</span>
           </div>
           <div className="content-stretch flex gap-[10px] items-center justify-center relative shrink-0" data-node-id="55:27">
             <div className="relative shrink-0 size-[24px]" data-name="arrow_forward" data-node-id="55:28">
@@ -234,8 +241,18 @@ function ProductCard({ originalProduct, product, onCompareClick }: ProductCardPr
       <div className="absolute font-[var(--font-instrument-sans)] font-semibold leading-[normal] left-[18px] text-[#83667e] text-[24px] top-[265px] w-[324px]" data-node-id="55:31">
         {product ? (
           <>
-            <p className="mb-0">{product.title?.slice(0, 70)}</p>
-            {product.description && <p className="text-sm opacity-80">{product.description.slice(0, 100)}...</p>}
+            <p className="mb-0">
+              {product.title && product.title.length > 74
+                ? `${product.title.slice(0, 74)}...`
+                : product.title}
+            </p>
+            {/* {product.description && (
+              <p className="text-sm opacity-80">
+                {product.description.length > 100 
+                  ? `${product.description.slice(0, 100)}...` 
+                  : product.description}
+              </p>
+            )} */}
             {product.similarity_score && (
               <p className="text-xs text-[#fca4c0] font-bold mt-1">
                 {Math.round(product.similarity_score * 100)}% match
@@ -258,13 +275,13 @@ function ProductCard({ originalProduct, product, onCompareClick }: ProductCardPr
       </div>
       
       {/* Product Image */}
-      <div className="absolute h-[241px] left-0 pointer-events-none rounded-tl-[40px] rounded-tr-[40px] top-0 w-[342px]" data-node-id="55:33">
+      <div className="absolute h-[241px] left-0 pointer-events-none rounded-tl-[40px] rounded-tr-[40px] top-0 w-[342px] p-3" data-node-id="55:33">
         {product?.image_url && (
-          <Image alt="" className="absolute inset-0 max-w-none object-center object-cover rounded-tl-[40px] rounded-tr-[40px] size-full" src={product?.image_url} width={342} height={241} />
+          <Image alt="" className="w-full h-full object-center object-contain rounded-tl-[37px] rounded-tr-[37px]" src={product?.image_url} width={342} height={241} />
         )}
         <div aria-hidden="true" className="absolute border border-[#83667e] border-solid inset-0 rounded-tl-[40px] rounded-tr-[40px]" />
       </div>
-      
+
       {/* Discount Badge */}
       {discount &&
       <div className="absolute bg-[#fca4c0] box-border content-stretch flex flex-col gap-[10px] items-center justify-center left-[272px] px-[11px] py-[38px] rounded-[44.708px] size-[89.417px] top-[-10px]" data-node-id="55:34">

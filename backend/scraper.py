@@ -1,8 +1,3 @@
-# currently working on products that have ingredients list (e.g. shampoos, conditioners, body washes, skincare, etc.)
-# later, work on products with materials list (e.g. clothes, shoes, razors, etc.)
-
-# scrape_product('B0C9V8BVZ7')
-
 import os
 from pydantic import BaseModel
 import httpx
