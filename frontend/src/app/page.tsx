@@ -16,10 +16,19 @@ const imgLine3 = "/Line 3.png";
 export default function Home() {
   return (
     <div className="bg-white relative w-full" style={{ minHeight: '2610px' }} data-scroll-section data-name="Home" data-node-id="1:2">
-      {/* pink hero image */}
-      <div className="absolute blur-[2px] filter h-[400px] sm:h-[500px] md:h-[600px] lg:h-[756px] left-1/2 transform translate-x-[-50%] w-[600px] sm:w-[800px] md:w-[1000px] lg:w-[1155px] top-[100px] sm:top-[110px] md:top-[120px] lg:top-[130px]" data-name="image 2" data-node-id="21:257">
-        <Image alt="" className="absolute inset-0 max-w-none object-center object-cover opacity-[0.59] pointer-events-none size-full" src="/pink-hero.webp" width={1155} height={756} />
-      </div>
+      <div 
+  className="absolute blur-[2px] filter h-[400px] sm:h-[500px] md:h-[600px] lg:h-[756px] left-1/2 transform -translate-x-1/2 w-full max-w-[1400px] top-[100px] sm:top-[110px] md:top-[120px] lg:top-[130px] overflow-hidden" 
+  data-name="image 2" 
+  data-node-id="21:257"
+>
+  <Image 
+    alt="Pink hero" 
+    src="/pink-hero.webp" 
+    fill 
+    className="object-cover object-center opacity-[0.59] pointer-events-none" 
+  />
+</div>
+
 
       {/* Pink background section below hero */}
       <div id="how-it-works" className="absolute bg-[#ffe8f0] h-[500px] sm:h-[600px] md:h-[650px] lg:h-[700px] xl:h-[724px] left-[-2px] right-[-2px] top-[800px] sm:top-[850px] md:top-[920px] lg:top-[960px] xl:top-[981px] w-[calc(100%+4px)] overflow-hidden" data-node-id="37:592" />
@@ -65,13 +74,17 @@ export default function Home() {
         </div>
       </div>
       
-      {/* Main title "With PinkMatch" */}
-      <div className="[text-shadow:rgba(255,255,255,0.5)_0px_0px_0.745px,rgba(255,255,255,0.5)_0px_0px_1.49px,rgba(255,255,255,0.5)_0px_0px_5.216px,rgba(255,255,255,0.5)_0px_0px_10.433px,rgba(255,255,255,0.5)_0px_0px_17.885px,rgba(255,255,255,0.5)_0px_0px_31.298px] absolute font-cormorant leading-[0] left-[40px] sm:left-[60px] md:left-[100px] lg:left-[140px] xl:left-[180px] text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-white top-[380px] sm:top-[420px] md:top-[446px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-3.84px]" data-scroll data-scroll-speed="1" data-node-id="2:2">
-        <p className="leading-[normal] whitespace-pre">
-          <span>With </span>
-          <span className="text-[#fca4c0]">PinkMatch</span>
-        </p>
-      </div>
+      <div 
+  data-scroll-ignore
+  className="[text-shadow:...] absolute font-cormorant leading-[0] left-[40px] sm:left-[60px] md:left-[100px] lg:left-[140px] xl:left-[180px] text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-white top-[380px] sm:top-[420px] md:top-[446px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-3.84px]"
+>
+  <p className="leading-[normal] whitespace-pre">
+    <span>With </span>
+    <span className="text-[#fca4c0]">PinkMatch</span>
+  </p>
+</div>
+
+
       
       {/* "No Pink Tax" title */}
       <div className="[text-shadow:#ffffff_0px_0px_46.042px] absolute font-[var(--font-instrument-sans)] font-bold leading-[0] left-[20px] sm:left-[60px] md:left-[100px] lg:left-[140px] xl:left-[180px] text-[#83667e] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[100px] top-[290px] sm:top-[315px] md:top-[335px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-4px]" data-node-id="2:3">
