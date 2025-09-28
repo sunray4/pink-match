@@ -17,7 +17,7 @@ interface Product {
   fragrances?: string[];
   volume_ml?: number;
   volume?: number;
-  unitPrice?: number;
+  unit_price?: number;
   similarity_score?: number;
 }
 
@@ -110,8 +110,9 @@ export default function CompareModal({ originalProduct, newProduct, isOpen, onCl
                   <div className="content-stretch flex items-center justify-between leading-[0] relative shrink-0 text-[40px] text-nowrap text-right tracking-[-1.6px] w-full" data-node-id="37:563">
                     <div className="font-[var(--font-instrument-sans)] font-bold relative shrink-0 text-[#fca4c0]" data-node-id="34:511">
                       <p className="leading-[normal] text-nowrap whitespace-pre">${originalProduct?.price}</p>
-
-                      <p className="leading-[normal] text-nowrap whitespace-pre font-normal text-[16px]">${originalProduct?.unitPrice} per 100mL</p>
+                      {originalProduct?.unit_price != null && Number(originalProduct?.unit_price) > 0 && (
+                        <p className="leading-[normal] text-nowrap whitespace-pre font-normal text-[16px] mt-2 tracking-wide">${Number(originalProduct?.unit_price).toFixed(2)} per 100mL</p>
+                      )}
                     </div>
                     <div className="font-[var(--font-instrument-sans)] font-semibold relative shrink-0 text-[#83667e]" data-node-id="37:523">
                       <a className="[text-underline-position:from-font] decoration-solid leading-[normal] text-nowrap underline whitespace-pre cursor-pointer hover:text-[#fca4c0] transition-colors" href={`https://www.amazon.ca/dp/${originalProduct?.asin}`}>Purchase Here</a>
@@ -172,8 +173,8 @@ export default function CompareModal({ originalProduct, newProduct, isOpen, onCl
                   <div className="content-stretch flex items-center justify-between leading-[0] relative shrink-0 text-[40px] text-nowrap text-right tracking-[-1.6px] w-full" data-node-id="37:580">
                     <div className="font-[var(--font-instrument-sans)] font-bold relative shrink-0 text-[#fca4c0]" data-node-id="37:581">
                       <p className="leading-[normal] text-nowrap whitespace-pre">${newProduct?.price}</p>
-                      {newProduct?.unitPrice && (
-                        <p className="leading-[normal] text-nowrap whitespace-pre font-normal text-[16px]">${newProduct?.unitPrice} per 100mL</p>
+                      {newProduct?.unit_price != null && Number(newProduct?.unit_price) > 0 && (
+                        <p className="leading-[normal] text-nowrap whitespace-pre font-normal text-[16px] mt-2 tracking-wide text-left">${Number(newProduct?.unit_price).toFixed(2)} per 100mL</p>
                       )}
                     </div>
                     <div className="font-[var(--font-instrument-sans)] font-semibold relative shrink-0 text-[#83667e]" data-node-id="37:582">
