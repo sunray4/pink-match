@@ -14,7 +14,7 @@ from datetime import datetime
 
 load_dotenv()
 
-from llm_model import create_alternative_query, batch_clean_ingredients, batch_extract_volumes
+from llm_model import create_alternative_query, batch_clean_ingredients, batch_extract_volumes, batch_extract_fragrances
 from models import Product
 
 OXYLABS_USERNAME = os.getenv("OXYLABS_USERNAME")
@@ -28,45 +28,69 @@ async def scraper(query: str, max_results: int) -> list[Product] | None:
     if original_product is None:
         return None
 
-    products.append(original_product)
-
     alternative_products = await scrape_alternative_list(original_product, max_results)
     if alternative_products:
         products.extend(alternative_products)
-    print(f"Found {len(products)-1} alternative products")
     
-    # Batch process all ingredients with Gemini for efficiency
-    print("Batch processing ingredients with Gemini...")
-    raw_ingredients_2d = [product.ingredients for product in products]
-    cleaned_ingredients_2d = batch_clean_ingredients(raw_ingredients_2d)
-    
-    # Assign cleaned ingredients back to products
-    for i, product in enumerate(products):
-        if i < len(cleaned_ingredients_2d):
-            product.ingredients = cleaned_ingredients_2d[i]
-            print(f"Updated ingredients for {product.asin}: {product.ingredients}")
 
     # Batch process all volumes with Gemini for efficiency
     print("Batch processing volumes with Gemini...")
-    product_titles = [product.title for product in products]
+    product_titles = [original_product.title] + [product.title for product in products]
     extracted_volumes = batch_extract_volumes(product_titles)
-    
+
     # Assign volumes and calculate unit prices
+    original_product.volume_ml = extracted_volumes[0]
+    if original_product.volume_ml and original_product.volume_ml > 0:
+        original_product.unit_price = original_product.price / original_product.volume_ml * 100
+    print(f"Updated volume for original product {original_product.asin}: {original_product.volume_ml} mL")
+    
     for i, product in enumerate(products):
-        if i < len(extracted_volumes):
-            product.volume_ml = extracted_volumes[i]
+        if i and extracted_volumes and i < len(extracted_volumes) - 1:
+            product.volume_ml = extracted_volumes[i + 1]
             # Calculate unit price if volume is available
             if product.volume_ml and product.volume_ml > 0:
                 product.unit_price = product.price / product.volume_ml * 100
-            print(f"Updated volume for {product.asin}: {product.volume_ml} mL")
-        if (i > 0):
-            if product.volume_ml and product.volume_ml > 0:
-                product.unit_price = product.price / product.volume_ml * 100
-                if product.unit_price < working_products[0].unit_price:
+                if original_product.unit_price and product.unit_price < original_product.unit_price:
                     working_products.append(product)
-        else:
-            working_products.append(product)
+            else:
+                working_products.append(product)
+            print(f"Updated volume for {product.asin}: {product.volume_ml} mL")
 
+    # Batch process all ingredients with Gemini
+    print("Batch processing ingredients with Gemini...")
+    raw_ingredients_2d = [original_product.ingredients] + [product.ingredients for product in working_products]
+    cleaned_ingredients_2d = batch_clean_ingredients(raw_ingredients_2d)
+    
+    # Assign cleaned ingredients back to products
+    original_product.ingredients = cleaned_ingredients_2d[0] if cleaned_ingredients_2d else original_product.ingredients
+    print(f"Updated ingredients for original product {original_product.asin}: {original_product.ingredients}")
+
+    for i, product in enumerate(working_products):
+        if i and cleaned_ingredients_2d and i < len(cleaned_ingredients_2d) - 1:
+            working_products[i].ingredients = cleaned_ingredients_2d[i + 1]
+            print(f"Updated ingredients for {product.asin}: {product.ingredients}")
+
+    # Batch process all fragrances with Gemini for efficiency
+    print("Batch processing fragrances with Gemini...")
+    product_descriptions = [f"{original_product.title} {original_product.description}" ] + [f"{product.title} {product.description}" for product in working_products]
+    extracted_fragrances = batch_extract_fragrances(product_descriptions)
+    
+    if not isinstance(extracted_fragrances, list):
+        print(f"Warning: batch_extract_fragrances returned {type(extracted_fragrances)}, expected list")
+        extracted_fragrances = [None] * len(product_descriptions)
+    
+    # Assign fragrances back to products
+    original_product.fragrances = extracted_fragrances[0] if extracted_fragrances and len(extracted_fragrances) > 0 else None
+    
+    for i, product in enumerate(working_products):
+        if i and extracted_fragrances and i < len(extracted_fragrances) - 1:
+            working_products[i].fragrances = extracted_fragrances[i + 1]
+            print(f"Updated fragrances for {product.asin}: {product.fragrances}")
+        else:
+            working_products[i].fragrances = None
+
+
+    print(f"Found {len(working_products)-1} alternative products")
 
     filename = f"products.txt"
         
@@ -86,11 +110,12 @@ async def scraper(query: str, max_results: int) -> list[Product] | None:
             f.write(f"Ingredients: {product.ingredients}\n")
             f.write(f"Description: {product.description}\n")
             f.write(f"Fragrance: {product.fragrances}\n" if product.fragrances else "Fragrance: Not specified\n")
+            f.write(f"Image URL: {product.image_url}\n" if product.image_url else "Image URL: Not available\n")
             f.write("-" * 30 + "\n\n")
     
             print(f"Products saved to {filename}")
     
-    return products
+    return working_products
 
 async def scrape_product(asin: str, client: httpx.AsyncClient) -> Product | None:
     # Structure payload.
