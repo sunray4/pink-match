@@ -6,12 +6,29 @@ import Image from "next/image";
 // Asset URLs from Figma
 const imgLine5 = "/Line 3.svg";
 
+interface Product {
+  asin?: string;
+  title?: string;
+  description?: string;
+  rating?: number;
+  price?: string;
+  image_url?: string;
+  ingredients?: string[];
+  fragrances?: string[];
+  volume_ml?: number;
+  volume?: number;
+  unitPrice?: number;
+  similarity_score?: number;
+}
+
 interface CompareModalProps {
+  originalProduct: Product;
+  newProduct: Product;
   isOpen: boolean;
   onClose: () => void;
 }
 
-export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
+export default function CompareModal({ originalProduct, newProduct, isOpen, onClose }: CompareModalProps) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -68,13 +85,22 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
           <div className="absolute content-stretch flex gap-[80px] items-center leading-[0] left-1/2 top-[85px] translate-x-[-50%]" data-node-id="37:591">
             {/* Product 1 */}
             <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="37:573">
-              <div className="[grid-area:1_/_1] bg-[#fff3f6] h-[420px] ml-px mt-0 relative rounded-[40px] w-[512px]" data-node-id="34:507">
+              <div className="[grid-area:1_/_1] bg-[#fff3f6] h-[420px] ml-px mt-0 relative rounded-[40px] w-[512px] p-6" data-node-id="34:507">
                 <div aria-hidden="true" className="absolute border-2 border-[#83667e] border-solid inset-0 pointer-events-none rounded-[40px]" />
+                {originalProduct?.image_url && (
+                  <Image 
+                    alt={originalProduct.title || "Original product"} 
+                    className="w-full h-full object-contain rounded-[34px]" 
+                    src={originalProduct.image_url} 
+                    width={500} 
+                    height={408} 
+                  />
+                )}
               </div>
               <div className="[grid-area:1_/_1] box-border content-stretch flex flex-col gap-[50px] items-start ml-0 mt-[489px] relative w-[511px]" data-node-id="37:571">
                 <div className="box-border content-stretch flex flex-col gap-[18px] items-center justify-center px-0 py-[12px] relative shrink-0 w-full" data-node-id="37:572">
                   <div className="absolute font-cormorant italic leading-[0] min-w-full relative shrink-0 text-[#83667e] text-[75px] tracking-[-4.5px]" data-node-id="37:560" style={{ width: "min-content" }}>
-                    <p className="leading-[normal]">Product 1</p>
+                    <p className="leading-[normal]">{originalProduct?.title}</p>
                   </div>
                   <div className="h-0 relative shrink-0 w-[511px]" data-node-id="37:564">
                     <div className="absolute bottom-0 left-0 right-0 top-[-1px]">
@@ -83,10 +109,12 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
                   </div>
                   <div className="content-stretch flex items-center justify-between leading-[0] relative shrink-0 text-[40px] text-nowrap text-right tracking-[-1.6px] w-full" data-node-id="37:563">
                     <div className="font-[var(--font-instrument-sans)] font-bold relative shrink-0 text-[#fca4c0]" data-node-id="34:511">
-                      <p className="leading-[normal] text-nowrap whitespace-pre">$10.99</p>
+                      <p className="leading-[normal] text-nowrap whitespace-pre">${originalProduct?.price}</p>
+
+                      <p className="leading-[normal] text-nowrap whitespace-pre font-normal text-[16px]">${originalProduct?.unitPrice} per 100mL</p>
                     </div>
                     <div className="font-[var(--font-instrument-sans)] font-semibold relative shrink-0 text-[#83667e]" data-node-id="37:523">
-                      <p className="[text-underline-position:from-font] decoration-solid leading-[normal] text-nowrap underline whitespace-pre cursor-pointer hover:text-[#fca4c0] transition-colors">Purchase Here</p>
+                      <a className="[text-underline-position:from-font] decoration-solid leading-[normal] text-nowrap underline whitespace-pre cursor-pointer hover:text-[#fca4c0] transition-colors" href={`https://www.amazon.ca/dp/${originalProduct?.asin}`}>Purchase Here</a>
                     </div>
                   </div>
                 </div>
@@ -96,7 +124,7 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
                       <p className="leading-[normal]">Product Description</p>
                     </div>
                     <div className="font-[var(--font-instrument-sans)] font-normal relative shrink-0 text-[18px] tracking-[-0.72px] w-full" data-node-id="37:565">
-                      <p className="leading-[normal]">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      <p className="leading-[normal]">{originalProduct?.description}</p>
                     </div>
                   </div>
                   <div className="content-stretch flex flex-col gap-[12px] items-start leading-[0] relative shrink-0 text-[#83667e] w-full" data-node-id="37:569">
@@ -104,7 +132,11 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
                       <p className="leading-[normal]">Key Ingredients</p>
                     </div>
                     <div className="font-[var(--font-instrument-sans)] font-normal relative shrink-0 text-[18px] tracking-[-0.72px] w-full" data-node-id="37:566">
-                      <p className="leading-[normal]">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      {originalProduct?.ingredients && originalProduct.ingredients.length > 0 ? (
+                        <p className="leading-[normal]">{originalProduct.ingredients.join(", ")}</p>
+                      ) : (
+                        <p className="leading-[normal]">N/A</p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -113,13 +145,24 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
 
             {/* Product 2 */}
             <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="37:574">
-              <div className="[grid-area:1_/_1] bg-[#fff3f6] h-[420px] ml-px mt-0 relative rounded-[40px] w-[512px]" data-node-id="37:575">
+              <div className="[grid-area:1_/_1] bg-[#fff3f6] h-[420px] ml-px mt-0 relative rounded-[40px] w-[512px] p-6" data-node-id="37:575">
                 <div aria-hidden="true" className="absolute border-2 border-[#83667e] border-solid inset-0 pointer-events-none rounded-[40px]" />
+                {newProduct?.image_url && (
+                  <Image 
+                    alt={newProduct.title || "Comparison product"} 
+                    className="w-full h-full object-contain rounded-[34px]" 
+                    src={newProduct.image_url} 
+                    width={500} 
+                    height={408} 
+                  />
+                )}
               </div>
               <div className="[grid-area:1_/_1] box-border content-stretch flex flex-col gap-[50px] items-start ml-0 mt-[489px] relative w-[511px]" data-node-id="37:576">
                 <div className="box-border content-stretch flex flex-col gap-[18px] items-center justify-center px-0 py-[12px] relative shrink-0 w-full" data-node-id="37:577">
                   <div className="absolute font-cormorant italic leading-[0] min-w-full relative shrink-0 text-[#83667e] text-[75px] tracking-[-4.5px]" data-node-id="37:578" style={{ width: "min-content" }}>
-                    <p className="leading-[normal]">Product 2</p>
+                    {newProduct?.title && (
+                      <p className="leading-[normal]">{newProduct?.title}</p>
+                    )}
                   </div>
                   <div className="h-0 relative shrink-0 w-[511px]" data-node-id="37:579">
                     <div className="absolute bottom-0 left-0 right-0 top-[-1px]">
@@ -128,10 +171,13 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
                   </div>
                   <div className="content-stretch flex items-center justify-between leading-[0] relative shrink-0 text-[40px] text-nowrap text-right tracking-[-1.6px] w-full" data-node-id="37:580">
                     <div className="font-[var(--font-instrument-sans)] font-bold relative shrink-0 text-[#fca4c0]" data-node-id="37:581">
-                      <p className="leading-[normal] text-nowrap whitespace-pre">$10.99</p>
+                      <p className="leading-[normal] text-nowrap whitespace-pre">${newProduct?.price}</p>
+                      {newProduct?.unitPrice && (
+                        <p className="leading-[normal] text-nowrap whitespace-pre font-normal text-[16px]">${newProduct?.unitPrice} per 100mL</p>
+                      )}
                     </div>
                     <div className="font-[var(--font-instrument-sans)] font-semibold relative shrink-0 text-[#83667e]" data-node-id="37:582">
-                      <p className="[text-underline-position:from-font] decoration-solid leading-[normal] text-nowrap underline whitespace-pre cursor-pointer hover:text-[#fca4c0] transition-colors">Purchase Here</p>
+                      <a className="[text-underline-position:from-font] decoration-solid leading-[normal] text-nowrap underline whitespace-pre cursor-pointer hover:text-[#fca4c0] transition-colors" href={`https://www.amazon.ca/dp/${newProduct?.asin}`}>Purchase Here</a>
                     </div>
                   </div>
                 </div>
@@ -141,7 +187,7 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
                       <p className="leading-[normal]">Product Description</p>
                     </div>
                     <div className="font-[var(--font-instrument-sans)] font-normal relative shrink-0 text-[18px] tracking-[-0.72px] w-full" data-node-id="37:586">
-                      <p className="leading-[normal]">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      <p className="leading-[normal]">{newProduct?.description}</p>
                     </div>
                   </div>
                   <div className="content-stretch flex flex-col gap-[12px] items-start leading-[0] relative shrink-0 text-[#83667e] w-full" data-node-id="37:587">
@@ -149,7 +195,11 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
                       <p className="leading-[normal]">Key Ingredients</p>
                     </div>
                     <div className="font-[var(--font-instrument-sans)] font-normal relative shrink-0 text-[18px] tracking-[-0.72px] w-full" data-node-id="37:589">
-                      <p className="leading-[normal]">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                      {newProduct?.ingredients && newProduct.ingredients.length > 0 ? (
+                        <p className="leading-[normal]">{newProduct.ingredients.join(", ")}</p>
+                      ) : (
+                        <p className="leading-[normal]">N/A</p>
+                      )}
                     </div>
                   </div>
                 </div>
