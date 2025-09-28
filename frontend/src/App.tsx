@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import MacBookAir2 from './components/MacBookAir2';
 import MacBookAir3 from './components/MacBookAir3';
 

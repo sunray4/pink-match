@@ -1,3 +1,4 @@
+import React from "react";
 import svgPaths from "../imports/svg-cxzoh2cc71";
 import imgRectangle5 from "figma:asset/8af058e7303988c186014ffe116c9b31580ecabf.png";
 import imgEllipse1 from "figma:asset/51f47ca382db1ab45075b887c5d55967be4696b7.png";
