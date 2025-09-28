@@ -15,36 +15,36 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 
 
 # give gemini the title and description of the product and ask it to exract the volume of the product
-def extract_volume_and_fragrance(title: str, description: str) -> tuple[float | None, list[str] | None]:
-    prompt = f"Extract the volume from the following product details:\n\nTitle: {title}\nDescription: {description}. If no volume is found, return '0'. The volume could be in milliliters (ml) or liters (L) or ounces (oz) for liquids, grams (g) or kilograms (kg) for solids. Once you've found the volume value with its unit, convert to mL. For example, if the volume is 1L, convert it to 1000mL. If the volume is 8oz, convert it to approximately 237mL. If the volume is 500g, convert it to 500mL. If the volume is 1kg, convert it to 1000mL. Additionally, extract the fragrances of the product from the description if available. Example of fragrances include jasmine, lemon, vanilla, cinnamon, sandalwood, amber. There may be more than 1 fragrance in the product. Return the results in the following format: \"volume fragrance1 fragrance2 ...\", where volume is the numeric value of volume in mL without any units or additional text, and fragrance1, fragrance2, etc are the extracted names of the fragrances without any additional text. If you cannot find a fragrance, return 'None' for fragrance."
+# def extract_volume_and_fragrance(title: str, description: str) -> tuple[float | None, list[str] | None]:
+#     prompt = f"Extract the volume from the following product details:\n\nTitle: {title}\nDescription: {description}. If no volume is found, return '0'. The volume could be in milliliters (ml) or liters (L) or ounces (oz) for liquids, grams (g) or kilograms (kg) for solids. Once you've found the volume value with its unit, convert to mL. For example, if the volume is 1L, convert it to 1000mL. If the volume is 8oz, convert it to approximately 237mL. If the volume is 500g, convert it to 500mL. If the volume is 1kg, convert it to 1000mL. Additionally, extract the fragrances of the product from the description if available. Example of fragrances include jasmine, lemon, vanilla, cinnamon, sandalwood, amber. There may be more than 1 fragrance in the product. Return the results in the following format: \"volume fragrance1 fragrance2 ...\", where volume is the numeric value of volume in mL without any units or additional text, and fragrance1, fragrance2, etc are the extracted names of the fragrances without any additional text. If you cannot find a fragrance, return 'None' for fragrance."
 
-    try:
-        response = client.models.generate_content(
-            model="gemini-2.5-flash", 
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                temperature=0.0,
-                thinking_config=types.ThinkingConfig(thinking_budget=0)
-            )
-        )
-        response_text = response.text.strip()
-        volume, fragrances = response_text.split(" ", 1)
-        volume = float(volume)
-        print("Extracted volume:", volume)
-        if fragrances.lower() == 'none':
-            fragrances = None
-        else:
-            fragrances = [fragrance.strip() for fragrance in fragrances.split(" ")]
-        if volume <= 0 :
-            volume = None
-        return volume, fragrances
-    except Exception as e:
-        print(f"Error extracting volume (Gemini API issue): {e}")
-        print("Skipping volume extraction for now...")
-        return None, None
+#     try:
+#         response = client.models.generate_content(
+#             model="gemini-2.5-flash", 
+#             contents=prompt,
+#             config=types.GenerateContentConfig(
+#                 temperature=0.0,
+#                 thinking_config=types.ThinkingConfig(thinking_budget=0)
+#             )
+#         )
+#         response_text = response.text.strip()
+#         volume, fragrances = response_text.split(" ", 1)
+#         volume = float(volume)
+#         print("Extracted volume:", volume)
+#         if fragrances.lower() == 'none':
+#             fragrances = None
+#         else:
+#             fragrances = [fragrance.strip() for fragrance in fragrances.split(" ")]
+#         if volume <= 0 :
+#             volume = None
+#         return volume, fragrances
+#     except Exception as e:
+#         print(f"Error extracting volume (Gemini API issue): {e}")
+#         print("Skipping volume extraction for now...")
+#         return None, None
 
 def create_alternative_query(title: str, description: str) -> str:
-    prompt = f"Create a search query to find products similar to the following product. The query should be concise and focus on the main features of the product, avoiding specific brand names or unique identifiers.\n\nTitle: {title}\nDescription: {description}\n\nQuery should only be a simple string. Search Query:"    
+    prompt = f"Create a search query to find only men or unisex products similar to the following product. The query should be at most 10 words long and focus on the main features of the product, avoiding specific brand names or unique identifiers.\n\nTitle: {title}\nDescription: {description}\n\nQuery should only be a simple string. Search Query:"
     try:
         response = client.models.generate_content(
             model="gemini-2.5-flash", 
@@ -65,48 +65,48 @@ def create_alternative_query(title: str, description: str) -> str:
 
 # this should go into product match file
 # cleans up ingredients list - remove / and everything after it, lowercase, remove () 
-def clean_ingredients(ingredients: str) -> list[str]:
-    ingredients_list = [ingredient.strip().lower() for ingredient in ingredients.split(",")]
-    ingredients_list = [ingredient for ingredient in ingredients_list if ingredient]
-    # ingredients_list = [ingredient.split('/')[0].strip() for ingredient in ingredients_list]
-    # cleaned_ingredients_list = []
-    # for ingredient in ingredients_list:
-    #     if ("(" in ingredient) and (")" in ingredient):
-    #         index_of_open = ingredient.index('(')
-    #         index_of_close = ingredient.index(')')
-    #         new_ingredient = (ingredient[:index_of_open] + ingredient[index_of_open + 1:index_of_close - 1] + ingredient[index_of_close+1:]).strip()
-    #         if new_ingredient:
-    #             cleaned_ingredients_list.append(new_ingredient)
-    #     else:
-    #         cleaned_ingredients_list.append(ingredient)
-    prompt = f"Parse this list of ingredients into a python list. If something is very obviously not an ingredient, remove it. Change the name of each ingredient into its most common reference name. Each ingredient should be a string in the list, and should only contain lowercase letters. Do not include any of the following symbols within each ingredient string '()/<>'. Return ONLY the Python list in your response, no markdown formatting or additional text. Also do not print out any of your own thoughts or explanations.\n\nIngredients: {ingredients_list}\n\nParsed Ingredients List:"
-    response = client.models.generate_content(
-        model="gemini-2.5-flash", 
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            temperature=0.0
-        )
-    )
-    print("Parsed Ingredients List:", response.text)
-    response_text = response.text.strip()
+# def clean_ingredients(ingredients: str) -> list[str]:
+#     ingredients_list = [ingredient.strip().lower() for ingredient in ingredients.split(",")]
+#     ingredients_list = [ingredient for ingredient in ingredients_list if ingredient]
+#     # ingredients_list = [ingredient.split('/')[0].strip() for ingredient in ingredients_list]
+#     # cleaned_ingredients_list = []
+#     # for ingredient in ingredients_list:
+#     #     if ("(" in ingredient) and (")" in ingredient):
+#     #         index_of_open = ingredient.index('(')
+#     #         index_of_close = ingredient.index(')')
+#     #         new_ingredient = (ingredient[:index_of_open] + ingredient[index_of_open + 1:index_of_close - 1] + ingredient[index_of_close+1:]).strip()
+#     #         if new_ingredient:
+#     #             cleaned_ingredients_list.append(new_ingredient)
+#     #     else:
+#     #         cleaned_ingredients_list.append(ingredient)
+#     prompt = f"Parse this list of ingredients into a python list. If something is very obviously not an ingredient, remove it. Change the name of each ingredient into its most common reference name. Each ingredient should be a string in the list, and should only contain lowercase letters. Do not include any of the following symbols within each ingredient string '()/<>'. Return ONLY the Python list in your response, no markdown formatting or additional text. Also do not print out any of your own thoughts or explanations.\n\nIngredients: {ingredients_list}\n\nParsed Ingredients List:"
+#     response = client.models.generate_content(
+#         model="gemini-2.5-flash", 
+#         contents=prompt,
+#         config=types.GenerateContentConfig(
+#             temperature=0.0
+#         )
+#     )
+#     print("Parsed Ingredients List:", response.text)
+#     response_text = response.text.strip()
 
-    response_text = response.text.strip()
-    # Remove markdown code blocks if present
-    if response_text.startswith("```python"):
-        response_text = response_text[9:]  # Remove ```python
-    if response_text.startswith("```"):
-        response_text = response_text[3:]  # Remove ```
-    if response_text.endswith("```"):
-        response_text = response_text[:-3]  # Remove trailing ```
-    response_text = response_text.strip()
+#     response_text = response.text.strip()
+#     # Remove markdown code blocks if present
+#     if response_text.startswith("```python"):
+#         response_text = response_text[9:]  # Remove ```python
+#     if response_text.startswith("```"):
+#         response_text = response_text[3:]  # Remove ```
+#     if response_text.endswith("```"):
+#         response_text = response_text[:-3]  # Remove trailing ```
+#     response_text = response_text.strip()
     
-    try:
-        parsed_ingredients_list = ast.literal_eval(response_text)
-        return parsed_ingredients_list
-    except (ValueError, SyntaxError) as e:
-        print(f"Error parsing ingredients list with ast: {e}")
-        print(f"Response was: {response_text}")
-        return ingredients_list
+    # try:
+    #     parsed_ingredients_list = ast.literal_eval(response_text)
+    #     return parsed_ingredients_list
+    # except (ValueError, SyntaxError) as e:
+    #     print(f"Error parsing ingredients list with ast: {e}")
+    #     print(f"Response was: {response_text}")
+    #     return ingredients_list
 
 # Process a 2D array of ingredient lists in batch
 def batch_clean_ingredients(ingredients_2d_array: list[list[str]]) -> list[list[str]]:
@@ -266,27 +266,23 @@ Return ONLY a Python list of numbers (volumes in mL), no markdown formatting or 
             import re
             fallback_volumes = []
             for title in titles:
-                # Basic regex patterns for common volume formats
+                # Use regex patterns to find common volume formats
                 volume = None
                 title_lower = title.lower()
                 
-                # Look for ml/mL patterns
                 ml_match = re.search(r'(\d+(?:\.\d+)?)\s*ml', title_lower)
                 if ml_match:
                     volume = float(ml_match.group(1))
-                
-                # Look for L/liter patterns  
+
                 else:
                     l_match = re.search(r'(\d+(?:\.\d+)?)\s*l\b', title_lower)
                     if l_match:
                         volume = float(l_match.group(1)) * 1000
                     else:
-                        # Look for oz patterns
                         oz_match = re.search(r'(\d+(?:\.\d+)?)\s*(?:fl\s*)?oz', title_lower)
                         if oz_match:
-                            volume = float(oz_match.group(1)) * 29.5735  # Convert oz to mL
+                            volume = float(oz_match.group(1)) * 29.5735 
                         else:
-                            # Look for g patterns (assume 1g = 1mL for liquid products)
                             g_match = re.search(r'(\d+(?:\.\d+)?)\s*g\b', title_lower)
                             if g_match:
                                 volume = float(g_match.group(1))
@@ -297,8 +293,74 @@ Return ONLY a Python list of numbers (volumes in mL), no markdown formatting or 
             return fallback_volumes
         else:
             print("Non-quota error occurred, returning None volumes")
-            return [None] * len(titles)  # Return None array on other errors
+            return [None] * len(titles)
 
+def batch_extract_fragrances(product_descriptions: list[str]) -> list[list[str] | None]:
+    if not product_descriptions:
+        return []
+    
+    # Convert descriptions array to string representation for Gemini
+    descriptions_str = str(product_descriptions)
+    
+    prompt = f"""Extract fragrances from each product description in this array. For each description:
+1. Look for fragrance indicators like scent names, essential oils, or aromatic ingredients
+2. Common fragrances include: jasmine, lemon, vanilla, cinnamon, sandalwood, amber, lavender, eucalyptus, tea tree, peppermint, rose, bergamot, citrus, coconut, etc.
+3. Extract fragrance names only (not "fragrance-free" or "unscented")
+4. Return fragrances as lowercase strings
+5. If no fragrances are found in a description, use an empty list []
+6. Return a 2D array where each inner list contains fragrances for one product
+7. Maintain the same order as the input descriptions
+
+Input descriptions array: {descriptions_str}
+
+Return ONLY a Python 2D list of fragrance lists, no markdown formatting or additional text. Example: [["vanilla", "coconut"], [], ["eucalyptus", "tea tree"]]"""
+
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash", 
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                temperature=0.0,
+                thinking_config=types.ThinkingConfig(thinking_budget=0)
+            )
+        )
+        
+        response_text = response.text.strip()
+        
+        # Remove markdown code blocks if present
+        if response_text.startswith("```python"):
+            response_text = response_text[9:]
+        if response_text.startswith("```"):
+            response_text = response_text[3:]
+        if response_text.endswith("```"):
+            response_text = response_text[:-3]
+        response_text = response_text.strip()
+        
+        # Parse the response
+        fragrances_2d = ast.literal_eval(response_text)
+        
+        # Validate that we got back the same number of fragrance lists
+        if len(fragrances_2d) != len(product_descriptions):
+            print(f"Warning: Batch fragrance extraction returned {len(fragrances_2d)} lists for {len(product_descriptions)} descriptions")
+            return [None] * len(product_descriptions)  # Return None array if mismatch
+        
+        # Convert empty lists to None
+        processed_fragrances = []
+        for fragrance_list in fragrances_2d:
+            if not fragrance_list or len(fragrance_list) == 0:
+                processed_fragrances.append(None)
+            else:
+                processed_list = [str(fragrance).lower().strip() for fragrance in fragrance_list if fragrance]
+                processed_fragrances.append(processed_list if processed_list else None)
+        
+        print(f"Successfully batch-extracted fragrances for {len(product_descriptions)} products")
+        print("fragrants:", processed_fragrances)
+        return processed_fragrances
+        
+    except Exception as e:
+        print(f"Error in batch fragrance extraction (Gemini API issue): {e}")
+        return [None] * len(product_descriptions)
+    
 # # remove gendered language
 # def remove_gendered_language(text: str) -> str:
 #     prompt = f"Rewrite the following text to remove any mentions of gender and well as brand names. For example, \"Dove Women+Care Pure Fresh 2-in-1 Shampoo + Conditioner with plant-based cleansers & moisturizers Orange & Sage for strong, healthy-looking hair 517 ml\" becomes \"Care Pure Fresh 2-in-1 Shampoo + Conditioner with plant-based cleansers & moisturizers Orange & Sage for strong, healthy-looking hair 517 ml\" and \"Every Man Jack 2-in-1 Daily Shampoo + Conditioner - Pacific Cypress | Nourishing For All Hair Types, Naturally Derived, Cruelty-Free Shampoo and Conditioner Set for Men | 710 mL - 1 Bottle\" becomes \"2-in-1 Daily Shampoo + Conditioner - Pacific Cypress | Nourishing For All Hair Types, Naturally Derived, Cruelty-Free Shampoo and Conditioner Set | 710 mL - 1 Bottle\"\n\nText: {text}\n\nRewritten Text:"
