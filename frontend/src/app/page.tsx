@@ -2,16 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchInput from "./components/SearchInput";
 
-// Asset URLs from Figma
-const imgImage2 = "http://localhost:3845/assets/21f130b4d4fb9c249c7c7ec8837e2c7e8166cacc.png";
-const imgImage3 = "http://localhost:3845/assets/826efe8a4f623e873e77a1c546bafd3469c5621e.png";
+// Asset URLs - Local files from public folder
+const imgImage2 = "/pink-hero.webp";
+const imgImage3 = "/white-hero.webp";
 const imgRectangle1 = "http://localhost:3845/assets/d093bb3d66c5f3059b00f071c8c278bb83b546a5.svg";
 const imgFrameInspect = "http://localhost:3845/assets/4a9a303b888351c7a727fb93f5fd24051d1f724a.svg";
 const imgFolderMatch = "http://localhost:3845/assets/25f0647a153c831e167b6c42fa0a48174458f9ef.svg";
 const imgCompareArrows = "http://localhost:3845/assets/a17256917008d39cebd3b8a3f3a9e6e449142739.svg";
-const imgLine1 = "http://localhost:3845/assets/b9c72c45498732779e67673e69d9e921ece55f45.svg";
-const imgLine2 = "http://localhost:3845/assets/2b96ad001cbab55d4073a8a4067ee31f55b1e4c1.svg";
-const imgLine3 = "http://localhost:3845/assets/df4adf99452314a323cf28da66737126bcd26d16.svg";
+const imgLine1 = "/Line 3.png";
+const imgLine2 = "/Line 3.png";
+const imgLine3 = "/Line 3.png";
 
 export default function Home() {
   return (
@@ -64,7 +64,7 @@ export default function Home() {
       </div>
       
       {/* Main title "With PinkMatch" - aligned with other titles */}
-      <div className="[text-shadow:rgba(255,255,255,0.5)_0px_0px_0.745px,rgba(255,255,255,0.5)_0px_0px_1.49px,rgba(255,255,255,0.5)_0px_0px_5.216px,rgba(255,255,255,0.5)_0px_0px_10.433px,rgba(255,255,255,0.5)_0px_0px_17.885px,rgba(255,255,255,0.5)_0px_0px_31.298px] absolute font-cormorant leading-[0] left-[20px] sm:left-[40px] md:left-[80px] lg:left-[120px] xl:left-[150px] text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-white top-[380px] sm:top-[420px] md:top-[446px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-3.84px]" data-scroll data-scroll-speed="1" data-node-id="2:2">
+      <div className="[text-shadow:rgba(255,255,255,0.5)_0px_0px_0.745px,rgba(255,255,255,0.5)_0px_0px_1.49px,rgba(255,255,255,0.5)_0px_0px_5.216px,rgba(255,255,255,0.5)_0px_0px_10.433px,rgba(255,255,255,0.5)_0px_0px_17.885px,rgba(255,255,255,0.5)_0px_0px_31.298px] absolute font-cormorant leading-[0] left-[40px] sm:left-[60px] md:left-[100px] lg:left-[140px] xl:left-[180px] text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-white top-[380px] sm:top-[420px] md:top-[446px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-3.84px]" data-scroll data-scroll-speed="1" data-node-id="2:2">
         <p className="leading-[normal] whitespace-pre">
           <span>With </span>
           <span className="text-[#fca4c0]">PinkMatch</span>
@@ -72,22 +72,22 @@ export default function Home() {
       </div>
       
       {/* "No Pink Tax" title - aligned with other titles */}
-      <div className="[text-shadow:#ffffff_0px_0px_46.042px] absolute font-[var(--font-instrument-sans)] font-bold leading-[0] left-[20px] sm:left-[40px] md:left-[80px] lg:left-[120px] xl:left-[150px] text-[#83667e] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[100px] top-[290px] sm:top-[315px] md:top-[335px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-4px]" data-node-id="2:3">
+      <div className="[text-shadow:#ffffff_0px_0px_46.042px] absolute font-[var(--font-instrument-sans)] font-bold leading-[0] left-[20px] sm:left-[60px] md:left-[100px] lg:left-[140px] xl:left-[180px] text-[#83667e] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[100px] top-[290px] sm:top-[315px] md:top-[335px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-4px]" data-node-id="2:3">
         <p className="leading-[normal] whitespace-pre">No Pink Tax </p>
       </div>
       
       {/* Horizontal lines */}
-      <div className="absolute h-0 left-1/2 top-[85px] translate-x-[-50%] w-[1150px]" data-node-id="3:5">
+      <div className="absolute h-0 left-1/2 top-[85px] translate-x-[-50%] w-[1175px]" data-node-id="3:5">
         <div className="absolute bottom-[-0.5px] left-0 right-0 top-[-0.5px]">
-          <Image alt="" className="block max-w-none size-full" src={imgLine1} width={1150} height={1} />
+          <Image alt="" className="block max-w-none size-full" src={imgLine1} width={1175} height={1} />
         </div>
       </div>
-      <div className="absolute h-0 left-1/2 top-[927px] translate-x-[-50%] w-[1150px]" data-node-id="5:33">
+      <div className="absolute h-0 left-1/2 top-[927px] translate-x-[-50%] w-[1175px]" data-node-id="5:33">
         <div className="absolute bottom-[-0.5px] left-0 right-0 top-[-0.5px]">
           <Image alt="" className="block max-w-none size-full" src={imgLine2} width={1175} height={1} />
         </div>
       </div>
-      <div className="absolute h-0 left-1/2 top-[1759px] translate-x-[-50%] w-[1150px]" data-node-id="5:35">
+      <div className="absolute h-0 left-1/2 top-[1759px] translate-x-[-50%] w-[1175px]" data-node-id="5:35">
         <div className="absolute bottom-[-0.5px] left-0 right-0 top-[-0.5px]">
           <Image alt="" className="block max-w-none size-full" src={imgLine3} width={1175} height={1} />
         </div>

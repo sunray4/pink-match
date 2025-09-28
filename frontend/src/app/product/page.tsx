@@ -27,9 +27,10 @@ export default function ProductPage() {
   };
 
   return (
-    <div className="bg-white relative min-h-screen" data-name="Product" data-node-id="7:115">
+    <>
+    <div className="bg-white relative w-full min-h-screen" style={{ minHeight: '1800px' }} data-scroll-section data-name="Product" data-node-id="7:115">
       {/* Navigation menu */}
-      <div className="absolute content-stretch flex font-[var(--font-instrument-sans)] font-normal gap-[400px] h-[37px] items-center justify-center leading-[0] left-[453px] text-[#83667e] text-[18px] text-nowrap top-[24px] tracking-[-0.72px] w-[374px] z-10">
+      <div className="absolute content-stretch flex font-[var(--font-instrument-sans)] font-normal gap-4 sm:gap-8 md:gap-16 lg:gap-[400px] h-[37px] items-center justify-center leading-[0] left-4 right-4 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:w-auto text-[#83667e] text-sm sm:text-base md:text-[18px] text-nowrap top-[24px] tracking-[-0.5px] sm:tracking-[-0.72px] z-10" data-scroll data-scroll-sticky>
         <div className="relative shrink-0">
           <Link href="/" className="leading-[normal] text-nowrap whitespace-pre hover:text-[#fca4c0] transition-colors">Home</Link>
         </div>
@@ -40,8 +41,21 @@ export default function ProductPage() {
           <p className="leading-[normal] text-nowrap whitespace-pre">Why</p>
         </div>
       </div>
+
+      {/* Product Matches Section */}
+      <div className="absolute font-cormorant italic leading-[0] left-1/2 transform -translate-x-1/2 text-[#83667e] text-[75px] text-nowrap top-[1009px] tracking-[-2.25px]" data-scroll data-scroll-speed="0.15" data-node-id="21:261">
+        <p className="leading-[normal] whitespace-pre">Product Matches</p>
+      </div>
+
+      {/* Three Product Cards */}
+      <div className="absolute flex items-center justify-between left-1/2 transform -translate-x-1/2 top-[1150px] w-[1094px]" data-scroll data-scroll-speed="0.2" data-node-id="21:281">
+        <ProductCard onCompareClick={handleCompareClick} />
+        <ProductCard onCompareClick={handleCompareClick} />
+        <ProductCard onCompareClick={handleCompareClick} />
+      </div>
+
       {/* Background Ellipses */}
-      <div className="absolute contents left-[114px] top-[228px]" data-node-id="27:351">
+      <div className="absolute contents left-[114px] top-[228px]" data-scroll data-scroll-speed="0.2" data-node-id="27:351">
         <div className="absolute h-[530px] left-[114px] opacity-[0.78] top-[271px] w-[1050px]" data-node-id="27:352">
           <div className="absolute inset-[-18.87%_-9.52%]">
             <Image alt="" className="block max-w-none size-full" height={730} src={imgEllipse1} width={1250} />
@@ -55,8 +69,8 @@ export default function ProductPage() {
       </div>
 
       {/* Main Product Image */}
-      <div className="absolute h-[395px] left-[244px] top-[493px] w-[791px]" data-name="image 3" data-node-id="21:274">
-        <Image alt="Product showcase" className="absolute inset-0 max-w-none object-center object-cover pointer-events-none size-full" src={imgImage3} width={791} height={395} />
+      <div className="absolute h-[395px] left-[244px] top-[493px] w-[791px]" data-scroll data-scroll-speed="0.3" data-name="image 3" data-node-id="21:274">
+        <Image alt="" className="absolute inset-0 max-w-none object-center object-cover pointer-events-none size-full" src={imgImage3} width={791} height={395} />
       </div>
 
       {/* Search Bar */}
@@ -64,40 +78,25 @@ export default function ProductPage() {
         <SearchBar />
       </Suspense>
 
-      {/* Find your matches text */}
-      <div className="absolute font-[var(--font-instrument-sans)] font-normal leading-[0] left-[482px] text-[#83667e] text-[30px] text-nowrap top-[827px] tracking-[-1.2px]" data-node-id="27:371">
-        <p className="leading-[normal] whitespace-pre">Find your matches below</p>
-      </div>
-
       {/* Horizontal line */}
-      <div className="absolute h-0 left-[45px] top-[927px] w-[1175px]" data-node-id="27:368">
+      <div className="absolute h-0 left-1/2 transform -translate-x-1/2 top-[927px] w-[1175px]" data-node-id="27:368">
         <div className="absolute bottom-[-0.5px] left-0 right-0 top-[-0.5px]">
           <Image alt="" className="block max-w-none size-full" src={imgLine2} width={1175} height={1} />
         </div>
       </div>
 
-      {/* Product Matches Section */}
-      <div className="absolute contents left-[86px] top-[1009px]" data-node-id="21:269">
-        <div className="absolute font-[var(--font-cormorant-garamond)] italic leading-[0] left-[86px] text-[#83667e] text-[75px] text-nowrap top-[1009px] tracking-[-2.25px]" data-node-id="21:261">
-          <p className="leading-[normal] whitespace-pre">Product Matches</p>
-        </div>
-        
-        {/* Product Cards */}
-        <div className="absolute content-stretch flex items-center justify-between left-[86px] top-[1091px] w-[1094px]" data-node-id="21:281">
-          {/* Product Card 1 */}
-          <ProductCard onCompareClick={handleCompareClick} />
-          
-          {/* Product Card 2 */}
-          <ProductCard onCompareClick={handleCompareClick} />
-          
-          {/* Product Card 3 */}
-          <ProductCard onCompareClick={handleCompareClick} />
-        </div>
+      {/* Find your matches text */}
+      <div className="absolute font-[var(--font-instrument-sans)] font-normal leading-[0] left-1/2 transform -translate-x-1/2 text-[#83667e] text-[30px] text-nowrap top-[827px] tracking-[-1.2px]" data-scroll data-scroll-speed="0.1" data-node-id="27:371">
+        <p className="leading-[normal] whitespace-pre">Find your matches below</p>
       </div>
 
-      {/* Compare Modal */}
-      <CompareModal isOpen={isModalOpen} onClose={handleCloseModal} />
+      {/* Bottom spacing to ensure scrolling works */}
+      <div className="absolute h-[300px] top-[1600px] w-full" />
     </div>
+    
+    {/* Compare Modal - Outside scroll container */}
+    <CompareModal isOpen={isModalOpen} onClose={handleCloseModal} />
+  </>
   );
 }
 
@@ -107,10 +106,10 @@ function SearchBar() {
   const query = searchParams.get('q') || '';
 
   return (
-    <div className="absolute backdrop-blur-[2px] backdrop-filter bg-[rgba(255,255,255,0.5)] box-border content-stretch flex gap-[10px] h-[69.515px] items-center px-[29px] py-px rounded-[50px] top-[78px] translate-x-[-50%] w-[669px]" data-node-id="27:361" style={{ left: "calc(50% - 7.5px)" }}>
+    <div className="absolute backdrop-blur-[2px] backdrop-filter bg-[rgba(255,255,255,0.5)] box-border content-stretch flex gap-[10px] h-[69.515px] items-center px-[29px] py-px rounded-[50px] top-[78px] translate-x-[-50%] w-[669px]" data-scroll data-scroll-sticky data-node-id="27:361" style={{ left: "calc(50% - 7.5px)" }}>
       <div aria-hidden="true" className="absolute border-2 border-[#83667e] border-solid inset-0 pointer-events-none rounded-[50px]" />
       <div className="flex items-center justify-between w-full">
-        <span className="font-[var(--font-instrument-sans)] font-normal text-[24px] text-[#83667e] tracking-[-0.96px]">
+        <span className="font-[var(--font-instrument-sans)] font-normal leading-[0] text-[#83667e] text-[24px] text-nowrap tracking-[-0.96px]">
           {query ? `Searching for: "${query}"` : "Continue your search..."}
         </span>
         <Link 
@@ -147,7 +146,7 @@ function ProductCard({ onCompareClick }: ProductCardProps) {
           </div>
           <div className="content-stretch flex gap-[10px] items-center justify-center relative shrink-0" data-node-id="55:27">
             <div className="relative shrink-0 size-[24px]" data-name="arrow_forward" data-node-id="55:28">
-              <Image alt="Arrow forward" className="block max-w-none size-full" src={imgArrowForward} width={24} height={24} />
+              <Image alt="" className="block max-w-none size-full" src={imgArrowForward} width={24} height={24} />
             </div>
           </div>
         </button>
@@ -168,7 +167,7 @@ function ProductCard({ onCompareClick }: ProductCardProps) {
       
       {/* Product Image */}
       <div className="absolute h-[241px] left-0 pointer-events-none rounded-tl-[40px] rounded-tr-[40px] top-0 w-[342px]" data-node-id="55:33">
-        <Image alt="Bumble and bumble product" className="absolute inset-0 max-w-none object-center object-cover rounded-tl-[40px] rounded-tr-[40px] size-full" src={imgRectangle5} width={342} height={241} />
+        <Image alt="" className="absolute inset-0 max-w-none object-center object-cover rounded-tl-[40px] rounded-tr-[40px] size-full" src={imgRectangle5} width={342} height={241} />
         <div aria-hidden="true" className="absolute border border-[#83667e] border-solid inset-0 rounded-tl-[40px] rounded-tr-[40px]" />
       </div>
       

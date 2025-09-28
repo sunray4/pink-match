@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 // Asset URLs from Figma
-const imgLine5 = "http://localhost:3845/assets/dbc7ad3ab960c2e97af0a70b8810130d1e366117.svg";
+const imgLine5 = "/Line 3.svg";
 
 interface CompareModalProps {
   isOpen: boolean;
@@ -73,7 +73,7 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
               </div>
               <div className="[grid-area:1_/_1] box-border content-stretch flex flex-col gap-[50px] items-start ml-0 mt-[489px] relative w-[511px]" data-node-id="37:571">
                 <div className="box-border content-stretch flex flex-col gap-[18px] items-center justify-center px-0 py-[12px] relative shrink-0 w-full" data-node-id="37:572">
-                  <div className="font-[var(--font-cormorant-garamond)] italic leading-[0] min-w-full relative shrink-0 text-[#83667e] text-[75px] tracking-[-4.5px]" data-node-id="37:560" style={{ width: "min-content" }}>
+                  <div className="absolute font-cormorant italic leading-[0] min-w-full relative shrink-0 text-[#83667e] text-[75px] tracking-[-4.5px]" data-node-id="37:560" style={{ width: "min-content" }}>
                     <p className="leading-[normal]">Product 1</p>
                   </div>
                   <div className="h-0 relative shrink-0 w-[511px]" data-node-id="37:564">
@@ -118,7 +118,7 @@ export default function CompareModal({ isOpen, onClose }: CompareModalProps) {
               </div>
               <div className="[grid-area:1_/_1] box-border content-stretch flex flex-col gap-[50px] items-start ml-0 mt-[489px] relative w-[511px]" data-node-id="37:576">
                 <div className="box-border content-stretch flex flex-col gap-[18px] items-center justify-center px-0 py-[12px] relative shrink-0 w-full" data-node-id="37:577">
-                  <div className="font-[var(--font-cormorant-garamond)] italic leading-[0] min-w-full relative shrink-0 text-[#83667e] text-[75px] tracking-[-4.5px]" data-node-id="37:578" style={{ width: "min-content" }}>
+                  <div className="absolute font-cormorant italic leading-[0] min-w-full relative shrink-0 text-[#83667e] text-[75px] tracking-[-4.5px]" data-node-id="37:578" style={{ width: "min-content" }}>
                     <p className="leading-[normal]">Product 2</p>
                   </div>
                   <div className="h-0 relative shrink-0 w-[511px]" data-node-id="37:579">
