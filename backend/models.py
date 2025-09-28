@@ -10,3 +10,4 @@ class Product(BaseModel):
     unit_price: float | None = None  # price per 100mL
     fragrances: list[str] | None = None
     similarity_score: float | None = None
+    image_url: str | None = None

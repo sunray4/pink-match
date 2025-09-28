@@ -5,6 +5,8 @@ from scraper import scraper
 
 app = FastAPI()
 
+# amazon link is just www.amazon.ca/dp/{asin}
+
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
@@ -12,8 +14,8 @@ async def root():
 @app.get("/search")
 async def search(query: str):
     # right now, the query should be a link
-    max_results = 3
-    products = scraper(query, max_results)
+    max_results = 40
+    products = await scraper(query, max_results)
     if products is None:
         return {"error": "No products found or an error occurred."}
     ranked_products = compute_similarity(products[0], products[1:])
