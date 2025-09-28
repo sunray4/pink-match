@@ -1,0 +1,1569 @@
+Scraped alternatives list - 2025-09-28 02:10:35
+==================================================
+
+{
+    "results": [
+        {
+            "content": {
+                "url": "https://www.amazon.ca/s?k=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&page=1&language=en_CA",
+                "page": 1,
+                "query": "Men's unisex ingrown hair aftershave pre-shave oil body hydrating",
+                "results": {
+                    "paid": [
+                        {
+                            "url": "https://aax-us-east-retail-direct.amazon.com/x/c/JCNnhyX250x6Ah_Ouye7G3wAAAGZjvHJswEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDEgICACjFTT/clv1_CEuOPUxokZA0iHrVe70g4wDeSnZHcr0elMdZqh7V7Ol74X8Y7ljHDf018nHz9hvVjq0yzpNb3XTBfU1tBWcAJhJuFwOfHMzPM0YmRhEvFHn-B4xylEfB8IkGXCRvUuW6XJfef1D8rsFSE0M9llvwdksJMUNOAMtxQ1JuVOYlQRaY37qDjF4oXlv5OpjsdqwyCjQHbdXAhZRSWWhBJNwAffQdjs-hn4wsEjvWNPQG9gUahJtJn6j8Z0wG3nKH1EB2AHnpPv3v4jxS3xU9A-1lSCi7bF-ZjAz9B7yl_bPrUYAZJ0SW56eH2BSUezP9Oo6Y6usdzeQ1cOr3xrfiIvbuL51wjuosfDwLlI8C-9FHE6Fj0W5fDGy7yyiz77U4UFOZTR59qWqugkUNuzT-N52bUz1lAp3XhtVXPtM6C2xN4SpLFeZb5hVEEkw3451CQVUOJJ3JRfzDq-CNeisqVh6Pqac2Bm6ynkW_OS1qT9VB--CtPWlt9LLZ1y_pa3hxDtK4kN10-wR0BZINmR2P0UuZxQ35ahZ0VAk1ABLZajrbJb2uSDiXEA1g8yNMFFrLLG3ISeA1kd1UexaYnbx0re0EOlP-Iho5kzN00Psdg6yJw3EhnZGF-4MCQ2jG7jaRXr6LNlFhbMA6JTxy_LJ3G61aiRkp7ILIBhFNe1wCiulyiagEHxMQaQyjsG0a_BTxbuB87jt982Rb1foGye4SDUKyNH4ho4XfHKXTz4fEAhQXGiX9nxH4HcZuzBRA9-oGdISiqYIyKRjpsH_Y1gLTGnz3KnJYtSeRN1dmkO9zS6EKTi6X9UAjPNB7kDh5pbSya3yXVMWwZgxW0CvLnddYauVNnqSumnpCquS8FdmVr7Wkh2Oyx27r61c6_iLVjHu-pDnw09k8pYQiiBD_DuspTd82MM73hcK8xBh_NCEgLwXt8g_ykzBFMld_UXtKAh_Wz2CumzO9RPDlu6mbk7rH4BnifahxacCTWaP70kSSZhAmLfQLRxB1SUxaeJH3kyjQEGM5DyyV0q5lhSgKReQZ2ZX76DR_hj5tC-2jngpkwJcg7RBxdxybbNy6Ezb0YqF7J8hLREyxcbTgCw5dKL-yB8CDoszEQxKF-6pJcOYJDShrI72cF3eEBc93gnJTDYWouffkk_AJQf3MgQ84MbdwkXxeaW58XMfrOHnnIrsLu4vClL2v0xmR_VeoyZ1ZkTJFYMsmT3m3JlbC2V-tUyYz_GPBIuLEsf4FjalB_Biw7bNyIUvhKlIGR1GcyFOthTMvA6fySJohmeq-eUCcHLBvcKFKokYX17t9iJ2c_xWopHu0YeT3X8JhTPPE9P0B8DX17IUzOPo9TBC3yHPjq7wbfHoj6KS6wOUb539-fd5UDMts4ogusWGrX3S8ndSvBFyWQJBcECH8aSmkXR7AQjQmeJS7Sq2KhRLxFXZH-vRQ9sz1umwYMQRY8LQTNu4-BAj-DT6ZqQA7B3jlv52ogjbIORbiQHHu8TuGfdA5laYj5dMf6l0fukP9IVCqEV96zoQvuc2w1Vz0TXJva89tCK3tL_wiDxn2uP_2FkKxEE3cIYQ66fWv5caw5KSPaIdbUuQykvFWJ9f_PCnKybT_SOvLDFwOVSpl79bj6ZMY9byRwnnl3e2XNg3hCjGtmgcLpFZjFoSxTQ6bOV7v3bc5R3m9zBhQxvdSWhjFSF8vZZBvrOZmV8CdC98vqtbzd0Is3MuXnu6YmN5reKujtRFbgmektpM7FBq_wAdeoCy8qqESODe1mmqQh7Tg-dsHTpRS1V7nD9YCsNkS_g2CsoUlAKtSRrtk7GIKBvvF-UzZVtukEzXSraewN8Sg3OFn_vpVZtyujf5K5Dw-asN8N5w3p9rGP0vaKbGO96JTXJCQVeIOShxJgiBSlfvpNpmbh0YoJpO76vE3qoXSVgZ_tceP6A9sThfwJviBiA9T--o-ep_midURgE0IbU5T1snIUZcL8Q6oOgxInZPMRngZLPWJ9bGlVpy1G3_xr_t9Bk2_d5EUGzj_MdDdFWAgd9DmZprxwCT8gTMCGNg-ahdNXK4_hUhosaGauOfXjeRCRvquRPJpSaRbAp9c2IJBA2RWbcYVh1QnP5WtyXEmVmRaDMP-BHq_PRmvPFhyEPHGXxcKv80uBdG2oj19Lqu3_-Rou14ayXz3AqMKPfteg15dJW9yNU_hf121vn7MS8vnkjw4wQzbAJZdW7AvK-ikAMnFHOVHPnsAAy0voemhAaT6-8uBu7Jbc-d43bGR5tBM2V5sq97SBWtMxOQDYNouVgnEn6bDRfP0j8laH3ybQ7-UhkLf1Ct3DbrGMpEnFpePmitQeaakJ4pVMFC7_pgwGBFWalTN_uWCKtMcxgLr5tQE7l_QlBXaAs77VfQnhY9IiAT6OMVhIpcAck0feU9iSqsgbLo5Hq45BkqLz8GK61Gc25b48O9TL5GqP0cibig/https://www.amazon.ca/Serum-Ingrown-Treatment-Men-Razor-Body-After-Waxing-Skin/dp/B09WZYP411/ref=sxin_16_sbv_search_btf?content-id=amzn1.sym.ede6aaee-0b51-45dc-b84f-8cce05a800ba:amzn1.sym.ede6aaee-0b51-45dc-b84f-8cce05a800ba&cv_ct_cx=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&pd_rd_i=B09WZYP411&pd_rd_r=cc467cc8-a236-427f-b1c3-a159833903e5&pd_rd_w=J8rgi&pd_rd_wg=wZtQZ&pf_rd_p=ede6aaee-0b51-45dc-b84f-8cce05a800ba&pf_rd_r=0Y9A2RE5X4WNMJGAWXEW&qid=1759039834&rdc=1&sbo=RZvfv//HxDF+O5021pAnSA==&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776",
+                            "asin": "B09WZYP411",
+                            "price": 30.99,
+                            "title": "The Man Razor Bumps Serum - Ingrown Hair & Razor Bump Solution for Men - After Shave & Razor Burn Roll-On - Full Body Application (3.5fl.oz)",
+                            "rating": 4.1,
+                            "rel_pos": 1,
+                            "currency": "CAD",
+                            "is_video": true,
+                            "url_image": "https://aax-us-east-retail-direct.amazon.com/e/loi/imp?b=JCNnhyX250x6Ah_Ouye7G3wAAAGZjvHJswEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDEgICACjFTT",
+                            "best_seller": false,
+                            "price_upper": 30.99,
+                            "is_sponsored": true,
+                            "manufacturer": "",
+                            "sales_volume": "50+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 536,
+                            "is_amazons_choice": false
+                        },
+                        {
+                            "url": "https://aax-us-east-retail-direct.amazon.com/x/c/JLoxNvpQuVr-ylMjVwI_TTgAAAGZjvHJtgEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICBLgpzQ/clv1_CEuOPUxokZA0iHrVR-UAmWfUay1ETOUWiYYhxRWIpsVS4X8k7ljHDf018nHz9hvVjq0yzpNb3XTBfU1jBWcAGkpObWSVPZfMDR4uW1BXe3KjTaBblEfB8IkGXCRuUuW6XJfef1D8rsFSE0M9llvwdksJMUNOAMtxQ1JuVOYlQRaY37qDjF4oXlv5OpjsdqwyCjQHbdXAhZRSWWhBJNwAffQdjs-hn4wsEjvWNPQG9gUahJtJn6j8Z0wG3nKH1EB2AHnpPv3v4jxS3xU9A-1lSCi7bF-ZjAz9B7yl_bPrUYAZJ0SW56eH2BSUewT-AKSGxqoDxfNWfd3am7_nPv2TNuhZzMZLAwELlI8C-9FHE6Fj0W5fDGy7yyiN77UWTB2ZXTRzqUSIgkUNuzT-N52bUz1lAp3XhtVXPtM6C2xN4SpLFeZb5hVEEkw3451CQVUOJJ3ORfzDq-CNeisqVh6Pqac2Bm6ynkW_OS1qT9VB--CtPWlt9LLZ1hXpa3hxDtK4kN10-wR0BZINmR2P0UuZxQ35ahZ0VAk1ABLZajrbJb2uSDiXEA1g8yNMFFrLLG3ISeA1kd1UexaYnbx0re0EOlP-Iho5kzN00Psdg6yJw3EhnZGF-4MCQ2jG7jaRXr6LNlFhbMA6JTxy_LJ3G61aiRkp7ILIBhFNe1wCiulyiagEHxMQaQyjsG0a_BTxbuB87jt982Rb1foGye4SDUKyNH4ho4XfHKXTz4fEAhQXGiX9nxH4HcZuzBRA9-oGdISiqYIyKRjpsH_Y1gLTGnz3KnJYtSeRN1dmkO9zS6EKTi6X9UAjPNB7kDh5pbSya3yXVMWwZgxW0CvLnddYauVNnqSumnpCquS8FdmVr7Wkh2Oyx27r61c6_iLVjHu-pDnw09k8pYQiiBD_DuspTd82MM73hcK8xBh_NCEvLwX5uQ_ykzBFMld_UXtKAh_Wz2CumzO9RPDlu6ulj73F3jvmfJZpbMKTUanv13mRZnVRLs4bbQ5NEBV7epTJzCrAHGM5Dw6W0q5bgykaUeMY2ZG-6htwjC5tLfaojH1mxvNDqCx0SUOZVam1EzXFcrBVAc1NbUikcLSTEDkpMLmJB8ydrcLMSirg44F4c-oLMFxVJb3CVX2CBeF1g1tqHZSGn_LiuvQcQP2_mjkqRutHjGQUbH4hQPr0PH7vP7dVg7Kl97Gax0WT6Gn3y7QskzNAb8EME1-wHGPe3lCsaT0zmXvZGuKn9M5z7vd4yhi51qN2LlrIEwkFfW-V8TKAlSIBB6XJR-k-oeq2YnPFa7xoBaEqpFkD2KpUrtyd-hqit06KZePSU-BQdpzfzo8_rx-q748YErshTHWJ13H2leMMU0cm0J-24uV91nV7UtFeH-FovI0Uk2elOwOLjP2WUU25XIldFz3-bCn5Whn9XhMma7GxT4KFjzmvZn98-pcVy9Ph-m99PRJJ2Y1GJ8YMCw3Aai-dqQgoAGvEtZiHjTzlEBL0RwT2zgKGbY0A_rpw9PomsV4lhErEQH26AHFcxLJWscKI1HLhdBlvYcpYBJXhLvgtD2z2iPTDEhqwBXODCqIiocuryNahyoaIUrJDCtlYnuRdQOHkBkLK0KXWbqrKCVMERip57dWJ7dkjh4LO1VbYztfMTkvkMA-qoikCp1ZGZZmPUhbBEUqQwbdMR2a-qAQQxZJfWw7VTEktZLYprZYWScD3B80Wm6rwTVIG2c2-mvu3pqF3ePfE6Sli5TGq7KU0FArQ8xZ0kTyth6VYPxK5wlSAte_W--UPX710m17wMsYTnqoN_Q6O-b8lCPNsVr9B4W0GDcCv_QvYVuWmEFLojKW1CZui7pZn0ccvLNmDjetKgA58UdxocZ1qgaX3BSTBAqK39o5HUMmte-ZRTB5NqC82v_PtC5WdhCMZW4uozPA2qoWCUyxCsPif0VZqShSuNs2RziV63bUlVIfnibMdsEwwNglMvrqmY6EL8Q6oOgxIkrHgcUtmPfeIz5m5R4CxG3_xr_t9Bk2_d5EUGzj_MdDdFQ8Xcf6lUZ39vxP8jVw1HvZ9XRFkW6sVuFFrsaHfuPjDjN9oaMeYYdQrdJ5TXas7r4FHKmAObM0N2FIlO7-loU9aVQNSCPqjGDmETAL_PFhzU5bsuQczq3LDXNyDgJLbpDnAsLkTWdvUHW_1TbWOH6uWBNyDRbVZbm3QJBq1uXfMS8_8j2F2wROEQIdbG_AnKYbiE8bcA5oWKX8KXSczuKGwSaf4pNTPrqxYJ_gg3u6b445Nh0Ir7-zncAkLk9MnSqYFZSjywtzeQcXU1LNbP2mJXvyZsWL8khdaMIo2G5L3f7gnkDuVOpX5aqpVB12X28FsLiZ8TR6w84r0KN0Y_l6t1ts37kngmyb6Ksz5GfM3natK-wD6OMVhIpcAck0gemldSbsgbJw5Hpg5Bmxfi6T8qOE0-M8wjw0BiaH0glo83LrZwTMnNfE/https://www.amazon.ca/Ingrown-Hair-Oil-Aftershave-Application/dp/B0D1Y86K3T/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.14cb1c31-71fa-417e-9294-d37ef6518474:amzn1.sym.14cb1c31-71fa-417e-9294-d37ef6518474&cv_ct_cx=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&pd_rd_i=B0D1Y86K3T&pd_rd_r=863d241d-4619-4f10-b979-e3a3b06d3270&pd_rd_w=cCC7W&pd_rd_wg=MewI5&pf_rd_p=14cb1c31-71fa-417e-9294-d37ef6518474&pf_rd_r=0Y9A2RE5X4WNMJGAWXEW&qid=1759039834&sbo=9ZOMT9Jm0JH/t+Wi68iDSA==&sr=1-1-a61ee601-6e56-4862-a8a2-1d3da5a5406f",
+                            "asin": "B0D1Y86K3T",
+                            "price": 14.23,
+                            "title": "Ingrown Hair Oil - Aftershave for Women and Men Hydrating Body Oil, Full Body Application, 40 ml / 1.4 fl. oz",
+                            "rating": 4.1,
+                            "rel_pos": 2,
+                            "currency": "CAD",
+                            "is_video": true,
+                            "url_image": "https://aax-us-east-retail-direct.amazon.com/e/loi/imp?b=JLoxNvpQuVr-ylMjVwI_TTgAAAGZjvHJtgEAAAH2AQBvbm9fdHhuX2JpZDUgICBvbm9fdHhuX2ltcDEgICBLgpzQ",
+                            "best_seller": false,
+                            "price_upper": 14.23,
+                            "is_sponsored": true,
+                            "manufacturer": "",
+                            "sales_volume": "100+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 147,
+                            "is_amazons_choice": false,
+                            "price_strikethrough": 14.98
+                        }
+                    ],
+                    "organic": [
+                        {
+                            "pos": 1,
+                            "url": "/Ingrown-Hair-Oil-Aftershave-Application/dp/B0D1Y86K3T/ref=sr_1_1?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-1",
+                            "asin": "B0D1Y86K3T",
+                            "price": 14.23,
+                            "title": "Ingrown Hair Oil - Aftershave for Women and Men Hydrating Body Oil, Full Body Application, 40 ml / 1.4 fl. oz",
+                            "rating": 4.1,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61N0STks21L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 14.23,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "100+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 147,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 35.58,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "price_strikethrough": 14.98
+                        },
+                        {
+                            "pos": 2,
+                            "url": "/After-Shave-Oil-Women-Strawberry/dp/B0F8BN2RKV/ref=sr_1_2?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-2",
+                            "asin": "B0F8BN2RKV",
+                            "price": 13.99,
+                            "title": "After Shave Oil for Women - 2025's Vanilla Strawberry Revolution (Not Grandma`s Shave Oil) - Hydrating, Soothing Body Oil After Shower, Prevents Ingrown Hairs & Razor Burn \u2013 Ingrown Hair Oil 100ml",
+                            "rating": 4.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71hiTim6sbL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 13.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "200+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 53,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 13.99,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "price_strikethrough": 17.99,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 3,
+                            "url": "/Strawberry-Prevent-Smoothing-Hydrating-Post-Shave/dp/B0F3VV4QM3/ref=sr_1_3?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-3",
+                            "asin": "B0F3VV4QM3",
+                            "price": 18.99,
+                            "title": "Strawberry After Shave Oil for Women, Prevent Ingrown Hairs & Dryness, Smoothing Hydrating Formula for All Skin Types, 2025 Upgrade Scented Post-Shave Care (90ml)",
+                            "rating": 3.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61d3EpXiChL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 18.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 9,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 21.1,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 4,
+                            "url": "/After-Luxury-Lotion-Eucalyptus-Sandalwood/dp/B0DSKXLC2R/ref=sr_1_4?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-4",
+                            "asin": "B0DSKXLC2R",
+                            "price": 13.99,
+                            "title": "After Shave for Men, Luxury After Shave Lotion for Mens Skin Care with Eucalyptus & Mint / Sandalwood - Cooling, Hydrating and Razor Bump Relief, Aftershave Balm Perfection for Soothe Skin (60ml Pack of 2)",
+                            "rating": 4.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/81mtRlNcjjL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 13.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "50+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 167,
+                            "price_per_unit": {
+                                "unit": "gram",
+                                "price": 0.06,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 5,
+                            "url": "/Aftershave-Protection-Moisturizer-Soothing-Hydrating/dp/B0FLV5YGYJ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-5",
+                            "asin": "B0FLV5YGYJ",
+                            "price": 16.99,
+                            "title": "Shaving & Waxing Ingrown Hair Roll-On Serum, Mens Aftershave Serum, After Shave Protection Moisturizer Oil for Men Smooth Skin, Soothing & Hydrating, Prevent Razor Bumps & Dryness (1)",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61bBDKRmVWL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 16.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 84.95,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Oct 15 - 28"
+                        },
+                        {
+                            "pos": 6,
+                            "url": "/Soothing-Hydrating-Absorption-Sensitive-Strawberry/dp/B0FG231WPT/ref=sr_1_6?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-6",
+                            "asin": "B0FG231WPT",
+                            "price": 20.99,
+                            "title": "After Shave Oil Women for Ingrown Hair and Razor Burns, Razor Bumps Stopper Soothing & Hydrating Post Shave Oil, Fast Absorption, Sensitive Skin Safe, 100ml, Strawberry and Vanilla",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61SJifwesYL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 20.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "100 g",
+                                "price": 17.49,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 7,
+                            "url": "/Truly-Glazed-Donut-Shave-Oil/dp/B09XPDMDTB/ref=sr_1_7?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-7",
+                            "asin": "B09XPDMDTB",
+                            "price": 42,
+                            "title": "Truly Glazed Donut After Shave Oil \u2013 For Razor Bumps & Ingrown Hairs \u2013 Bikini Area & Body Care \u2013 Smooth, Hydrated Skin \u2013 3.1 oz",
+                            "rating": 4.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71m66bMTn7L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 42,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 1600,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 45.8,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2Or fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 8,
+                            "url": "/Truly-Beauty-Cloud-After-Shave/dp/B0CJKZ69PY/ref=sr_1_8?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-8",
+                            "asin": "B0CJKZ69PY",
+                            "price": 42,
+                            "title": "Truly Beauty Coco Cloud After Shave Serum - Alleviates Post Shave Dryness, Ingrowns with Argan Oil, Vanilla & Coconut - After Shave Oil for The Whole Body - 3 Fl Oz",
+                            "rating": 4.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71M2AxsrQjL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 42,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 195,
+                            "price_per_unit": {
+                                "unit": "gram",
+                                "price": 0.46,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2Or fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 9,
+                            "url": "/Beard-Grooming-Shaving-After-Shave-Sandalwood/dp/B08Y5P36DR/ref=sr_1_9?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-9",
+                            "asin": "B08Y5P36DR",
+                            "price": 22.99,
+                            "title": "Shaving Kit- Include Shaving Cream, Aftershave Balm, Pre Shave Oil - Smooth & Soft Wet Shave -Gift Set for Men Stocking Stuffers (Sandalwood)",
+                            "rating": 4.5,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71nXzbib64L._AC_UL320_.jpg",
+                            "dimensions": [
+                                "Sandalwood"
+                            ],
+                            "best_seller": false,
+                            "price_upper": 22.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 597,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 22.99,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 10,
+                            "url": "/Strawberry-Vanilla-After-Shave-Women/dp/B0FHWTMD9X/ref=sr_1_10?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-10",
+                            "asin": "B0FHWTMD9X",
+                            "price": 16.99,
+                            "title": "2pcs Strawberry Vanilla After Shave Oil for Women - Prevent Ingrown Hairs & Dryness, Smooth & Soft Skin, Long-Lasting Hydration",
+                            "rating": 3.8,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61d++g6GOFL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 16.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 7,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 1699,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "price_strikethrough": 19.99,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 11,
+                            "url": "/Truly-Hydrating-Irritation-Hyaluronic-Strawberry/dp/B0DBZ1Q4PF/ref=sr_1_11?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-11",
+                            "asin": "B0DBZ1Q4PF",
+                            "price": 42,
+                            "title": "Truly Beauty Soft Serve After Shave Oil | Hydrating Treatment for Ingrowns & Irritation | Peptides, Hyaluronic Acid & Strawberry Extract | Soothes & Smooths Skin | Strawberry Vanilla Scent (3.1 Fl Oz)",
+                            "rating": 4.5,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71lbH-He6rL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 42,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 792,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 45.81,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2Or fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 12,
+                            "url": "/Serum-Ingrown-Treatment-Men-Razor-Body-After-Waxing-Skin/dp/B09WZYP411/ref=sr_1_12?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&rdc=1&sr=8-12",
+                            "asin": "B09WZYP411",
+                            "price": 30.99,
+                            "title": "The Man Razor Bumps Serum - Ingrown Hair & Razor Bump Solution for Men - After Shave & Razor Burn Roll-On - Full Body Application (3.5fl.oz)",
+                            "rating": 4.1,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71GP2pFqArL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 30.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "50+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 536,
+                            "price_per_unit": {
+                                "unit": "count",
+                                "price": 30.99,
+                                "currency": "CAD"
+                            },
+                            "coupon_discount": 30,
+                            "is_amazons_choice": false,
+                            "coupon_discount_type": "percentage",
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 13,
+                            "url": "/PURE-REIGN-Solution-Ingrown-Shaving/dp/B0FBZX29B7/ref=sr_1_13?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-13",
+                            "asin": "B0FBZX29B7",
+                            "price": 29.99,
+                            "title": "PURE REIGN Skin Care Solution | Ingrown Hairs, Razor Bumps, Shaving/Waxing 150ml (5oz)",
+                            "rating": 4.6,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61YNRHs8sAL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 29.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "100+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 24,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.2,
+                                "currency": "CAD"
+                            },
+                            "coupon_discount": 10,
+                            "is_amazons_choice": false,
+                            "coupon_discount_type": "percentage",
+                            "shipping_information": "FREE delivery Oct 3 - 7Or fastest delivery Oct 1 - 3"
+                        },
+                        {
+                            "pos": 14,
+                            "url": "/Strawberry-After-Shave-Oil-Hydrating/dp/B0FQV5XBDK/ref=sr_1_14?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-14",
+                            "asin": "B0FQV5XBDK",
+                            "price": 25.74,
+                            "title": "Strawberry After Shave Oil - Hydrating Shaving Oil With Vitamin C & Strawberry Vanilla Scent - Prevent Ingrown Hairs & Dryness, For Women & Men",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61lc8jlgKlL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 25.74,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "count",
+                                "price": 25.74,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "$4.99 delivery Oct 22 - Nov 13"
+                        },
+                        {
+                            "pos": 15,
+                            "url": "/Luxury-After-Shave-Balm-Men-Moisturizes/dp/B07NRP446H/ref=sr_1_15?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-15",
+                            "asin": "B07NRP446H",
+                            "price": 13.99,
+                            "title": "Viking Revolution Luxury After-Shave Balm for Men - Premium After-Shave Lotion - Soothes and Moisturizes Face After Shaving - Eliminates Razor Burn for A Silky Smooth Finish - Sandalwood Scent",
+                            "rating": 4.3,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71aZPAVCCAL._AC_UL320_.jpg",
+                            "best_seller": true,
+                            "price_upper": 13.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "700+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 7900,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 23.32,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "price_strikethrough": 19.49,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 16,
+                            "url": "/Jack-Black-Soothing-Hydrating-Aftershave/dp/B00EXW0RPO/ref=sr_1_16?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-16",
+                            "asin": "B00EXW0RPO",
+                            "price": 31,
+                            "title": "Jack Black - Post Shave Cooling Gel - Soothing & Hydrating Aftershave - 97ml",
+                            "rating": 4.3,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71rMLwqhPZL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 31,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 207,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 31.96,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 17,
+                            "url": "/Crown-Shaving-Supreme-Pre-Shave-Formula/dp/B004TT71YQ/ref=sr_1_17?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-17",
+                            "asin": "B004TT71YQ",
+                            "price": 36,
+                            "title": "Pre Shave Formula For Men -Crown Shaving Co - Supreme Glide Pre Shave Formula - Soften Stubble and Hydrate Skin - 8oz",
+                            "rating": 4.2,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/516WWXU6vKL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 36,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 167,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.16,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2Or fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 18,
+                            "url": "/Pre-Shave-Post-Shave-Combats-Ingredients-Sustainably/dp/B0DXDGCR1Q/ref=sr_1_18?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-18",
+                            "asin": "B0DXDGCR1Q",
+                            "price": 29.99,
+                            "title": "GLIDE Razor Rescue | Full Body Pre-Shave & Post-Shave Oil | Made in Canada | Combats Nicks, Bumps, Ingrown Hairs and Razor Burn | 100% Natural | Premium Organic Ingredients | Sustainably Sourced | Vegan | 60 mL/2 oz |",
+                            "rating": 5,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/617VhSGNRBL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 29.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 1,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.5,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 19,
+                            "url": "/Proraso-Pre-Shave-Cream-Sensitive-Skin/dp/B003VS5O3Q/ref=sr_1_19?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-19",
+                            "asin": "B003VS5O3Q",
+                            "price": 11.99,
+                            "title": "Proraso Pre-Shave Cream",
+                            "rating": 4.5,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71FklFLFf4L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 11.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "100+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 8500,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.12,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Sun, Oct 5 on your first order"
+                        },
+                        {
+                            "pos": 20,
+                            "url": "/Aftershave-Protection-Moisturizer-Soothing-Hydrating/dp/B0FLV67S4L/ref=sr_1_20?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-20",
+                            "asin": "B0FLV67S4L",
+                            "price": 19.99,
+                            "title": "Shaving & Waxing Ingrown Hair Roll-On Serum, Mens Aftershave Serum, After Shave Protection Moisturizer Oil for Men Smooth Skin, Soothing & Hydrating, Prevent Razor Bumps & Dryness (2)",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71vSWK5XgDL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 19.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 99.95,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Oct 15 - 28"
+                        },
+                        {
+                            "pos": 21,
+                            "url": "/Strawberry-Truly-After-Shave-Women/dp/B0F3WZ9MKY/ref=sr_1_21?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-21",
+                            "asin": "B0F3WZ9MKY",
+                            "price": 22.99,
+                            "title": "2Pcs Strawberry Truly After Shave Oil Women - Vanilla After Shave Oil for Smooth Skin, Post-Shave Balm to Reduce Ingrown Hairs & Hydrate Skin",
+                            "rating": 3.6,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61ioLssLDBL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 22.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 18,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 57.48,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 22,
+                            "url": "/Strawberry-Truly-After-Shave-Women/dp/B0F3X43MBK/ref=sr_1_22?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-22",
+                            "asin": "B0F3X43MBK",
+                            "price": 27.99,
+                            "title": "2PCS Strawberry Truly After Shave Oil Women - Vanilla After Shave Oil for Smooth Skin, Post-Shave Balm to Reduce Ingrown Hairs & Hydrate Skin \u2013 Soothing Formula (Purple and Pink)",
+                            "rating": 3.8,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61XTa-8+hHL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 27.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 8,
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tue, Sep 30"
+                        },
+                        {
+                            "pos": 23,
+                            "url": "/Seven-Potions-Irritation-Lubricates-Equilibrium/dp/B01H016U7I/ref=sr_1_23?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-23",
+                            "asin": "B01H016U7I",
+                            "price": 26.99,
+                            "title": "Pre Shave Oil For Men 30 ml All Natural, Organic, Vegan. For Sensitive Skin, Prevents Irritation. A Close Shave With A Premium Shave Oil. Reduces Nicks & Cuts. Lubricates & Protects Face",
+                            "rating": 4.2,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61j6SSWic9L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 26.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 164,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.9,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 24,
+                            "url": "/Vanilla-Post-Shave-Ingrown-Hydrate-Soothing/dp/B0FB39JNPR/ref=sr_1_24?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-24",
+                            "asin": "B0FB39JNPR",
+                            "price": 15.88,
+                            "title": "100ml After Shave Oil Women Men, Vanilla After Shave Oil for Smooth Skin, Post-Shave Balm to Reduce Ingrown Hairs & Hydrate Skin, Soothing Formula Sweet Donut Scent",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61V3W9QOThL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 15.88,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 15.88,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "$3.99 delivery Oct 21 - Nov 12Or fastest delivery Oct 3 - 8"
+                        },
+                        {
+                            "pos": 25,
+                            "url": "/Bump-Patrol-Her-Hydrating-Aftershave/dp/B0CV4GPX3M/ref=sr_1_25?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-25",
+                            "asin": "B0CV4GPX3M",
+                            "price": 19.99,
+                            "title": "Bump Patrol For Her - Calm & Hydrating Aftershave for Women - Razor Bumps, Razor Burn, and Ingrown Hair Treatment for Bikini Area, Underarms, and Legs (2oz)",
+                            "rating": 4.1,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71BxKwVi4gL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 19.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 80,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.35,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 26,
+                            "url": "/Prevent-Ingrown-Post-Shave-Sensitive-3-38fl-oz/dp/B0FDB73327/ref=sr_1_26?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-26",
+                            "asin": "B0FDB73327",
+                            "price": 24.99,
+                            "title": "Smooth Donut after Shave Oil Women for Smooth Skin, Prevent Ingrown Hairs & Dryness Soothe, Hydrate & Calm Post-Shave Skin for Sensitive Skin Soft Serve After Shave Oil 100 mL/ 3.38fl.oz",
+                            "rating": 1,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61c9DH85zeL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 24.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 1,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.25,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Oct 21 - Nov 12"
+                        },
+                        {
+                            "pos": 27,
+                            "url": "/Tree-Hut-Moisturizing-Shave-Fluid/dp/B01JHFAFRG/ref=sr_1_27?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-27",
+                            "asin": "B01JHFAFRG",
+                            "price": 26.38,
+                            "title": "Tree Hut Bare Moisturizing Shave Oil, 7.7 Fluid Ounce",
+                            "rating": 4.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/5124tQ2Yt-L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 26.38,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "50+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 13700,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.12,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 28,
+                            "url": "/Strawberry-Truly-After-Shave-Women/dp/B0F1DK6FNL/ref=sr_1_28?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-28",
+                            "asin": "B0F1DK6FNL",
+                            "price": 16.99,
+                            "title": "Strawberry Truly After Shave Oil Women - Vanilla After Shave Oil for Smooth Skin, Post-Shave Balm to Reduce Ingrown Hairs & Hydrate Skin \u2013 Soothing Formula",
+                            "rating": 3.5,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61REszzRbRL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 16.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 10,
+                            "price_per_unit": {
+                                "unit": "count",
+                                "price": 16.99,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 29,
+                            "url": "/100ml-Serve-After-Underarms-Bikini/dp/B0FJXR5CD8/ref=sr_1_29?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-29",
+                            "asin": "B0FJXR5CD8",
+                            "price": 18.99,
+                            "title": "100ml Soft Serve After Shave Oil for Face Neck Legs Underarms Bikini Areas - Prevents Redness, Ingrown Hairs, Provides Deep Hydration & Soothes After Shaving, Suitable for Women & Men",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/51Pqrc9SWWL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 18.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 18.99,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 30,
+                            "url": "/G-B-S-Aftershave-Balm-Sandalwood-2OZ/dp/B0B5YJM4QD/ref=sr_1_30?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-30",
+                            "asin": "B0B5YJM4QD",
+                            "price": 14.99,
+                            "title": "G.B.S Aftershave Balm (Sandalwood) 2OZ - A Classic Barbershop Post Shave Balm for Modern Men - Rejuvenates Dry Skin Replenishes Nutrients into Face Helps Razor Irritation and Ingrown Hairs",
+                            "rating": 4.3,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/513MUdPdIqL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 14.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 28,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 1499,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 31,
+                            "url": "/King-Shaves-Kinexium-Shaving-Sensitive/dp/B000FX88XS/ref=sr_1_31?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-31",
+                            "asin": "B000FX88XS",
+                            "price": 11.99,
+                            "title": "King Of Shaves Handy Pump Advanced Sensitive Shave Oil, Shaving Oil For Men 30ml",
+                            "rating": 4.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/411i47sEaxL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 11.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 635,
+                            "price_per_unit": {
+                                "unit": "count",
+                                "price": 11.99,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 32,
+                            "url": "/Aftershave-Henri-Victoria-Moisturizing-irritation/dp/B01N63TANO/ref=sr_1_32?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-32",
+                            "asin": "B01N63TANO",
+                            "price": 29.5,
+                            "title": "Henri et Victoria Aftershave for Men | Cognac and Cuban Cigars Fragrance | Canadian Made by Skilled Artisan | After Shave Balm Prevent and Cure Razor Burns",
+                            "rating": 4.2,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61adulYfH5L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 29.5,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "50+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 576,
+                            "price_per_unit": {
+                                "unit": "100 g",
+                                "price": 29.5,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 33,
+                            "url": "/Tree-Hut-Electric-Beach-Moisturizing/dp/B0F91Y8GTM/ref=sr_1_33?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-33",
+                            "asin": "B0F91Y8GTM",
+                            "price": 27.89,
+                            "title": "Tree Hut Electric Beach Moisturizing Shave Oil - Gel-to-Oil Formula Helps Prevent Razor Bumps, Ingrown Hairs, & Skin Irritation | 7.7 fl oz",
+                            "rating": 5,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/51UZIqGFv5L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 27.89,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 2,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.12,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 34,
+                            "url": "/King-Shaves-Advanced-Sensitive-Shaving/dp/B001CL6N5W/ref=sr_1_34?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-34",
+                            "asin": "B001CL6N5W",
+                            "price": 15,
+                            "title": "King of Shaves Advanced Sensitive Shaving Face Serum For Men, Shaving Gel Oil Men, Pre Shave Face Serum, 50ml",
+                            "rating": 4.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61PwbhWcV4L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 15,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 137,
+                            "price_per_unit": {
+                                "unit": "gram",
+                                "price": 0.22,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 35,
+                            "url": "/Proraso-Green-After-Shave-Balm/dp/B008654MNM/ref=sr_1_35?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-35",
+                            "asin": "B008654MNM",
+                            "price": 18,
+                            "title": "Proraso Green Tea After Shave Balm, 3.4 fl. Oz.",
+                            "rating": 4.5,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71NxtWCvRTL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 18,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "200+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 5100,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.18,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 36,
+                            "url": "/Bump-Patrol-Razor-0-5oz-Solution/dp/B00NFUCLHM/ref=sr_1_36?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-36",
+                            "asin": "B00NFUCLHM",
+                            "price": 17.99,
+                            "title": "Bump Patrol Original Formula Aftershave for Razor Bumps, Razor Burn, and Ingrown Hair Treatment for Men and Women - Pack of 2",
+                            "rating": 3.1,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61puOrv0A4L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 17.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 59,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.64,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 37,
+                            "url": "/Strawberry-Vanilla-After-Shave-Perfume/dp/B0DXQ6ZS9N/ref=sr_1_37?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-37",
+                            "asin": "B0DXQ6ZS9N",
+                            "price": 21.76,
+                            "title": "2 Pcs Strawberry Vanilla After Shave Oil for Women, After Shave Perfume Oil - Strawberry & Vanilla Scent, Prevent Ingrown Hairs & Dryness, Treatment for Smooth Skin",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61YXbr9kRWL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 21.76,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.24,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "$3.99 delivery Oct 9 - 22"
+                        },
+                        {
+                            "pos": 38,
+                            "url": "/Electric-Shave-After-Lotion-Cream/dp/B0D92VJYM4/ref=sr_1_38?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-38",
+                            "asin": "B0D92VJYM4",
+                            "price": 32.8,
+                            "title": "Pre Electric Shave After Shaving Lotion Cream - Best For Close Shaving Balm - Smooth and Irritation-Free Shaving. Pherolink-Freelette. 125ml",
+                            "rating": 4.3,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/81nKrTD6zvL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 32.8,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 1300,
+                            "price_per_unit": {
+                                "unit": "gram",
+                                "price": 0.26,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 39,
+                            "url": "/MANSCAPEDTM-SootherTM-Grooming-Aftershave-Lotion/dp/B0CHGCJ18Q/ref=sr_1_39?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-39",
+                            "asin": "B0CHGCJ18Q",
+                            "price": 19.99,
+                            "title": "MANSCAPED\u00ae Crop Soother\u2122 Groin Grooming Aftershave Lotion - Infused with Aloe, Colloidal Oats, Shea, Cocoa Seed Butter, Safflower Oil for Soothing & Relief",
+                            "rating": 4.6,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61Jo0G-Fg5L._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 19.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "100+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 384,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 33.88,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 40,
+                            "url": "/Kiehls-Nourishing-Instantly-Exfoliates-Paraben-free/dp/B08G8XYZ2Y/ref=sr_1_40?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-40",
+                            "asin": "B08G8XYZ2Y",
+                            "price": 35,
+                            "title": "Kiehl's Ultimate Razor Burn & Bump Relief, Nourishing Men's After Shave Cream, Instantly Cools & Hydrates, Gently Exfoliates, with Aloe Vera & Vitamin E, Paraben-free, for All Skin Types",
+                            "rating": 4.6,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/612O6dsf2sL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 35,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "50+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 259,
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2Or fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 41,
+                            "url": "/Womens-After-Shave-Smooth-Sensitive/dp/B0DYK84BL7/ref=sr_1_41?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-41",
+                            "asin": "B0DYK84BL7",
+                            "price": 22.98,
+                            "title": "Women's After Shave Oil for Smooth Sensitive Skin \u2013 Natural Formula Prevents Ingrown Hairs, Dryness & Razor Burn, Strawberry Vanilla Scent (Strawberry flavor, 1 PCS)",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61a4UdlNZXL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 22.98,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 25.53,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "$9.99 delivery Oct 9 - 22"
+                        },
+                        {
+                            "pos": 42,
+                            "url": "/Strawberry-Vanilla-After-Shave-Perfume/dp/B0DY1WZTF6/ref=sr_1_42?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-42",
+                            "asin": "B0DY1WZTF6",
+                            "price": 21.01,
+                            "title": "2 Pcs Strawberry Vanilla After Shave Oil for Women, After Shave Perfume Oil - Strawberry & Vanilla Scent, Soft Serve After Shave Oil with Hyaluronic Acid & Peptides",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61pTPW-5pgL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 21.01,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "millilitre",
+                                "price": 0.23,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "$3.99 delivery Oct 9 - 22"
+                        },
+                        {
+                            "pos": 43,
+                            "url": "/Brickell-Mens-Instant-Relief-Aftershave/dp/B00O930YXC/ref=sr_1_43?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-43",
+                            "asin": "B00O930YXC",
+                            "price": 16,
+                            "title": "Brickell Men\u2019s Instant Relief Aftershave for Men \u2013 (Scented, 2 Ounce)",
+                            "rating": 4.3,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/41rn0rcfOZL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 16,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 1600,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 27.12,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 44,
+                            "url": "/Absorption-Aftershave-Moisturizing-Ingrown-Shaveoil/dp/B09X1XV14Z/ref=sr_1_44?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-44",
+                            "asin": "B09X1XV14Z",
+                            "price": 21.69,
+                            "title": "100ml After Shave Oil Fast Absorption Aftershave Deeply Moisturizing Ingrown Hairs Serve Serve Shaveoil Fast Absorption Oil Ingrown Hairs",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/51-zGxLS9yL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 21.69,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "count",
+                                "price": 21.69,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Oct 21 - Nov 10"
+                        },
+                        {
+                            "pos": 45,
+                            "url": "/Adidas-Dynamic-Pulse-Aftershave-Ounce/dp/B0010V5MKG/ref=sr_1_45?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-45",
+                            "asin": "B0010V5MKG",
+                            "price": 9.49,
+                            "title": "Adidas Dynamic Pulse Aftershave for Men, 3.4 Ounce",
+                            "rating": 4.5,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71X1ZA9c8wL._AC_UL320_.jpg",
+                            "dimensions": [
+                                "Cedar,Peppermint"
+                            ],
+                            "best_seller": false,
+                            "price_upper": 9.49,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "100+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 3500,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 9.49,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 46,
+                            "url": "/Adidas-ADIDAS-63005-adidas-Dive-Aftershave/dp/B00180GWSU/ref=sr_1_46?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-46",
+                            "asin": "B00180GWSU",
+                            "price": 8.97,
+                            "title": "adidas - Ice Dive Aftershave, 100 ml (Pack of 1)",
+                            "rating": 4.4,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/71zkIZAYfnL._AC_UL320_.jpg",
+                            "dimensions": [
+                                "Citrus"
+                            ],
+                            "best_seller": false,
+                            "price_upper": 8.97,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "400+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 1700,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 8.97,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        },
+                        {
+                            "pos": 47,
+                            "url": "/Strawberry-Vanilla-Post-Shave-Ingrown-Soothing/dp/B0FB2VBPM9/ref=sr_1_47?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-47",
+                            "asin": "B0FB2VBPM9",
+                            "price": 15.88,
+                            "title": "Strawberry After Shave Oil Women Men, Vanilla After Shave Oil for Smooth Skin, Post-Shave Balm to Reduce Ingrown Hairs & Hydrate Skin, Soothing Formula",
+                            "rating": 0,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/61Mfm6zO9hL._AC_UL320_.jpg",
+                            "best_seller": false,
+                            "price_upper": 15.88,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "pricing_count": 1,
+                            "reviews_count": 0,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 15.88,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "$3.99 delivery Oct 21 - Nov 12Or fastest delivery Oct 3 - 8"
+                        },
+                        {
+                            "pos": 48,
+                            "url": "/Proraso-After-Shave-Protective-Moisturizing/dp/B009VZNV3I/ref=sr_1_48?dib=eyJ2IjoiMSJ9.sMF88zkTExwy28nsDVs3MAr__PcSbWOh-tL9q9obOLntogeGe3Cz94elsLoS0Bw1VpUgKcCBYp9NOzxJx6udwFn7WozkkVLLNcIgmqi2uWTT1JHQdUgRotLBVz8Jd6Gqe7vxCC9035aIwiv4g2pvVv5_732-6zeT0WaQArGpyg-jc1aHik0HuLvhYsZQGTgJSdUumxV9YksRsRwGF6GxdXgiKH_r-u_4k4CWCyM5lRb1e201PkTgu8yNrf2hJpMmC7z3RxsXFBy1ZJXv2gRG6iOQ0HAbP5TDBoH3rj_HLf8.vpWI4LwWp6sy1ZV4zb2YExy3nuQy-hG7AbjG7SrHx8c&dib_tag=se&keywords=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&qid=1759039834&sr=8-48",
+                            "asin": "B009VZNV3I",
+                            "price": 19.99,
+                            "title": "Proraso After Shave Balm Protective and Moisturizing, 3.4 Fl Oz",
+                            "rating": 4.6,
+                            "currency": "CAD",
+                            "is_prime": false,
+                            "url_image": "https://m.media-amazon.com/images/I/611B+wyej7L._AC_UL320_.jpg",
+                            "dimensions": [
+                                "Amber Wood, Musk"
+                            ],
+                            "best_seller": false,
+                            "price_upper": 19.99,
+                            "is_sponsored": false,
+                            "manufacturer": "",
+                            "sales_volume": "50+ bought in past month",
+                            "pricing_count": 1,
+                            "reviews_count": 2200,
+                            "price_per_unit": {
+                                "unit": "100 ml",
+                                "price": 19.99,
+                                "currency": "CAD"
+                            },
+                            "is_amazons_choice": false,
+                            "shipping_information": "FREE delivery Thu, Oct 2 on your first orderOr fastest delivery Tomorrow, Sep 29"
+                        }
+                    ],
+                    "suggested": [],
+                    "amazons_choices": []
+                },
+                "refinements": {
+                    "brands": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_123%3A211600&dc&language=en_CA&qid=1759039834&rnid=119962390011&ref=sr_nr_p_123_1&ds=v1%3A2ay18EcsN0knnGzno3VU69gcZVHJVzrvOasZu6p5AA4",
+                            "name": "VIKING REVOLUTION",
+                            "value": "n:6205124011,p_123/211600",
+                            "refinement_display_name": "Brands"
+                        }
+                    ],
+                    "seller": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_6%3AA3DWYIK6Y9EEQB&dc&language=en_CA&qid=1759039834&rnid=12035754011&ref=sr_nr_p_6_1&ds=v1%3A1jo%2BrmeIHOTWG04n60G3LIcCy6Tq29Aez4%2F1N2Eeu5M",
+                            "name": "Amazon.ca",
+                            "value": "n:6205124011,p_6/A3DWYIK6Y9EEQB",
+                            "refinement_display_name": "Seller"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_6%3AA91A9L1QSHGUG&dc&language=en_CA&qid=1759039834&rnid=12035754011&ref=sr_nr_p_6_2&ds=v1%3AeYRLb6PvkgMx2MYkvctVt4NHm65SBSwv2Y54u0EuB%2Fw",
+                            "name": "BeeNest",
+                            "value": "n:6205124011,p_6/A91A9L1QSHGUG",
+                            "refinement_display_name": "Seller"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_6%3AA18I9K6XUI6ZZI&dc&language=en_CA&qid=1759039834&rnid=12035754011&ref=sr_nr_p_6_3&ds=v1%3AoWjs0AdPIM%2FiI21krOt0KuW7C608Wuzfe8wi0BnWTmo",
+                            "name": "fafafafacai",
+                            "value": "n:6205124011,p_6/A18I9K6XUI6ZZI",
+                            "refinement_display_name": "Seller"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_6%3AA1K53RLHWNF5E8&dc&language=en_CA&qid=1759039834&rnid=12035754011&ref=sr_nr_p_6_4&ds=v1%3AtDpaKNa7FkZO3M8dp%2FfF8zXfOjLI51hozEYvB6uxh1c",
+                            "name": "kisee5",
+                            "value": "n:6205124011,p_6/A1K53RLHWNF5E8",
+                            "refinement_display_name": "Seller"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_6%3AA1KPEXGZL1DFJV&dc&language=en_CA&qid=1759039834&rnid=12035754011&ref=sr_nr_p_6_5&ds=v1%3AEnqJp3ytD%2BPjOtCxGAyBb%2Fl%2FXwTu6Qj1XXwbpmz%2BHPk",
+                            "name": "MainMerch",
+                            "value": "n:6205124011,p_6/A1KPEXGZL1DFJV",
+                            "refinement_display_name": "Seller"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_6%3AA14FHK3VLK4TEX&dc&language=en_CA&qid=1759039834&rnid=12035754011&ref=sr_nr_p_6_6&ds=v1%3Ac6siBEtqrZSMBSa81mquBXG%2BVlWtyo%2BMoN74yjiIPhk",
+                            "name": "Poly beauty & electronics",
+                            "value": "n:6205124011,p_6/A14FHK3VLK4TEX",
+                            "refinement_display_name": "Seller"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_6%3AA13BE34A6PIRDE&dc&language=en_CA&qid=1759039834&rnid=12035754011&ref=sr_nr_p_6_7&ds=v1%3Ac4DP%2FVU0VAKFp7IVEPl18ZprAYFkh26vP%2BZbLkMJeL0",
+                            "name": "USAACTIVE",
+                            "value": "n:6205124011,p_6/A13BE34A6PIRDE",
+                            "refinement_display_name": "Seller"
+                        }
+                    ],
+                    "department": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011&dc&language=en_CA&qid=1759039834&rnid=5264023011&ref=sr_nr_n_1&ds=v1%3A%2FALwAffZ5JaoATKPM7SxvKzmJe%2F4duTtC%2B%2FsB0GTI0k",
+                            "name": "Beauty & Personal Care",
+                            "value": "n:6205124011",
+                            "refinement_display_name": "Department"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cn%3A15452043011&dc&language=en_CA&qid=1759039834&rnid=5264023011&ref=sr_nr_n_2&ds=v1%3AtfAI8X3pw5e7hhr0sgN0NFpBEIB0QKC5TT78qMH339Q",
+                            "name": "Post-Shaving Treatments",
+                            "value": "n:6205124011,n:15452043011",
+                            "refinement_display_name": "Department"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cn%3A16735357011&dc&language=en_CA&qid=1759039834&rnid=5264023011&ref=sr_nr_n_3&ds=v1%3AwewJJtZuSAayK2rqAgoAtHANmRnhUf0Fv5uilaEq5YQ",
+                            "name": "Men's Shaving & Hair Removal",
+                            "value": "n:6205124011,n:16735357011",
+                            "refinement_display_name": "Department"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cn%3A6371192011&dc&language=en_CA&qid=1759039834&rnid=5264023011&ref=sr_nr_n_4&ds=v1%3ACnJM7CVWJodtMkhzBkkHMFVbh%2FBKHcjv9unWxrxv%2FFA",
+                            "name": "Pre-Shaving Oils",
+                            "value": "n:6205124011,n:6371192011",
+                            "refinement_display_name": "Department"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cn%3A6344746011&dc&language=en_CA&qid=1759039834&rnid=5264023011&ref=sr_nr_n_5&ds=v1%3A0sJHlFQ8KNVXSQjoKGTjQtjl1W%2B53DHCZko%2FT6sPsHY",
+                            "name": "Body Oils",
+                            "value": "n:6205124011,n:6344746011",
+                            "refinement_display_name": "Department"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cn%3A6371193011&dc&language=en_CA&qid=1759039834&rnid=5264023011&ref=sr_nr_n_6&ds=v1%3AViFw6f1d9S77Yb3DhcDnS0Y6nnXR3%2BSHMDi9btbMlPA",
+                            "name": "Shaving Gels",
+                            "value": "n:6205124011,n:6371193011",
+                            "refinement_display_name": "Department"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cn%3A6371190011&dc&language=en_CA&qid=1759039834&rnid=5264023011&ref=sr_nr_n_7&ds=v1%3A59cVahVATSVoidyT24qKSXBrG%2BwHS%2BXAUDXai%2BfA6E8",
+                            "name": "Shaving Creams",
+                            "value": "n:6205124011,n:6371190011",
+                            "refinement_display_name": "Department"
+                        }
+                    ],
+                    "availability": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_n_availability%3A12035748011&dc&language=en_CA&qid=1759039834&rnid=12035746011&ref=sr_nr_p_n_availability_2&ds=v1%3AhZWn8L4mXPuqa6Q3OIHyfW5e9xysbEonwUChX5So378",
+                            "name": "Include Out of Stock",
+                            "value": "p_n_availability/12035748011",
+                            "refinement_display_name": "Availability"
+                        }
+                    ],
+                    "delivery_day": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_90%3A11828088011&dc&language=en_CA&qid=1759039834&rnid=11828086011&ref=sr_nr_p_90_1&ds=v1%3ARZ7noK2ZcQNzDr8f%2BRi9ypZicD4Bznz0sVdMszvzPsY",
+                            "name": "Get It by Tomorrow",
+                            "value": "p_90/11828088011",
+                            "refinement_display_name": "Delivery Day"
+                        }
+                    ],
+                    "price_8_56_go": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_36%3A-2000&dc&language=en_CA&qid=1759039834&rnid=12035759011&ref=sr_nr_p_36_1&ds=v1%3AUGfy633eWKcoJ8t%2F%2BNldBJYOUPCqMGsuRwdmUl%2FzyFU",
+                            "name": "Up to $20",
+                            "value": "p_36/dynamic-picker-0",
+                            "refinement_display_name": "Price\n        \n    \n\n    \n        \n            \n                \n\n\n\n\n\n\n\n\n    \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n\n        \n            \n    $8\n\n\n    \u2013\n\n\n    $56+\n\n\n        \n\n        \n            \n\n\n\n\n    \n\n\n\n\n\n\n    \n        \n        \n            \n        \n    \n\n\n    \n\n\n\n\n\n\n    \n        \n        \n            \n        \n    \n\n\n\n\n            \n\n    \n        \n            Go"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_36%3A2000-3000&dc&language=en_CA&qid=1759039834&rnid=12035759011&ref=sr_nr_p_36_2&ds=v1%3AeFutYwDHr1c1uqDfYyyiWEEe2rq9gl4Q7OBUI9uhMBA",
+                            "name": "$20 to $30",
+                            "value": "p_36/dynamic-picker-1",
+                            "refinement_display_name": "Price\n        \n    \n\n    \n        \n            \n                \n\n\n\n\n\n\n\n\n    \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n\n        \n            \n    $8\n\n\n    \u2013\n\n\n    $56+\n\n\n        \n\n        \n            \n\n\n\n\n    \n\n\n\n\n\n\n    \n        \n        \n            \n        \n    \n\n\n    \n\n\n\n\n\n\n    \n        \n        \n            \n        \n    \n\n\n\n\n            \n\n    \n        \n            Go"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_36%3A3000-4000&dc&language=en_CA&qid=1759039834&rnid=12035759011&ref=sr_nr_p_36_3&ds=v1%3AJm7LVZoE7ggNSbpklEUYx6H9CatzSdD07T86qXjXP20",
+                            "name": "$30 to $40",
+                            "value": "p_36/dynamic-picker-2",
+                            "refinement_display_name": "Price\n        \n    \n\n    \n        \n            \n                \n\n\n\n\n\n\n\n\n    \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n\n        \n            \n    $8\n\n\n    \u2013\n\n\n    $56+\n\n\n        \n\n        \n            \n\n\n\n\n    \n\n\n\n\n\n\n    \n        \n        \n            \n        \n    \n\n\n    \n\n\n\n\n\n\n    \n        \n        \n            \n        \n    \n\n\n\n\n            \n\n    \n        \n            Go"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_36%3A4000-&dc&language=en_CA&qid=1759039834&rnid=12035759011&ref=sr_nr_p_36_4&ds=v1%3AsgP9kV3Tj6z7hGsWY4cEsu%2F3l%2FQq3dQgQ%2FCTKinFfUk",
+                            "name": "$40 & Above",
+                            "value": "p_36/dynamic-picker-3",
+                            "refinement_display_name": "Price\n        \n    \n\n    \n        \n            \n                \n\n\n\n\n\n\n\n\n    \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n            \n        \n\n        \n            \n    $8\n\n\n    \u2013\n\n\n    $56+\n\n\n        \n\n        \n            \n\n\n\n\n    \n\n\n\n\n\n\n    \n        \n        \n            \n        \n    \n\n\n    \n\n\n\n\n\n\n    \n        \n        \n            \n        \n    \n\n\n\n\n            \n\n    \n        \n            Go"
+                        }
+                    ],
+                    "subscribe_save": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_n_is_sns_available%3A8526117011&dc&language=en_CA&qid=1759039834&rnid=8526116011&ref=sr_nr_p_n_is_sns_available_1&ds=v1%3AxyJgTAMMyxyueUqzMFFWC%2BOldIfsYNSbC86SsJLbuAc",
+                            "name": "Subscribe & Save",
+                            "value": "p_n_is_sns_available/8526117011",
+                            "refinement_display_name": "Subscribe & Save"
+                        }
+                    ],
+                    "deals_discounts": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_n_deal_type%3A23565508011&dc&language=en_CA&qid=1759039834&rnid=23565505011&ref=sr_nr_p_n_deal_type_1&ds=v1%3AQto0%2BFN7F6wn50T2Uf5VJIiuIgoEz4X2%2BOZN5ussbik",
+                            "name": "All Discounts",
+                            "value": "p_n_deal_type/23565508011",
+                            "refinement_display_name": "Deals & Discounts"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_n_deal_type%3A23565506011&dc&language=en_CA&qid=1759039834&rnid=23565505011&ref=sr_nr_p_n_deal_type_2&ds=v1%3AEGtQZwCk8NcVdeWyHhKGj6%2BdkJSCrB9K%2F%2Bau4HzqM7Y",
+                            "name": "Today's Deals",
+                            "value": "p_n_deal_type/23565506011",
+                            "refinement_display_name": "Deals & Discounts"
+                        }
+                    ],
+                    "customer_reviews": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_72%3A11192170011&dc&language=en_CA&qid=1759039834&rnid=11192166011&ref=sr_nr_p_72_1&ds=v1%3AGlrZfFVDqTIup8FTaax%2FcYYS41kbekaUvCaFNJb47RA",
+                            "name": "4 Stars",
+                            "value": "p_72/11192170011",
+                            "refinement_display_name": "Customer Reviews"
+                        }
+                    ],
+                    "personal_care_department": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_n_target_audience_browse-bin%3A6407310011&dc&language=en_CA&qid=1759039834&rnid=6407309011&ref=sr_nr_p_n_target_audience_browse-bin_1&ds=v1%3AMKzhkx8JsMe3ytkbfjWsB9YD9JkxcQ6SBzOMkhxSVs4",
+                            "name": "Women's",
+                            "value": "n:6205124011,p_n_target_audience_browse-bin/6407310011",
+                            "refinement_display_name": "Personal Care Department"
+                        },
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=n%3A6205124011%2Cp_n_target_audience_browse-bin%3A6407311011&dc&language=en_CA&qid=1759039834&rnid=6407309011&ref=sr_nr_p_n_target_audience_browse-bin_2&ds=v1%3A4H5BNvzmQGHky4UZPEgvaNt%2BxQopGt49fcgOfr5%2BeA4",
+                            "name": "Men's",
+                            "value": "n:6205124011,p_n_target_audience_browse-bin/6407311011",
+                            "refinement_display_name": "Personal Care Department"
+                        }
+                    ],
+                    "eligible_for_free_shipping": [
+                        {
+                            "link": "/s?k=Men%27s+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&rh=p_76%3A3276484011&dc&language=en_CA&qid=1759039834&rnid=3276483011&ref=sr_nr_p_76_1&ds=v1%3AiDdFpMRWykIZmQA7rnF8evN7h2aFzmV3TRTRkbGAdoU",
+                            "name": "FREE Shipping",
+                            "value": "p_76/3276484011",
+                            "refinement_display_name": "Eligible for Free Shipping"
+                        }
+                    ]
+                },
+                "last_visible_page": 3,
+                "parse_status_code": 12000,
+                "total_results_count": 112
+            },
+            "created_at": "2025-09-28 06:10:34",
+            "updated_at": "2025-09-28 06:10:35",
+            "page": 1,
+            "url": "https://www.amazon.ca/s?k=Men's+unisex+ingrown+hair+aftershave+pre-shave+oil+body+hydrating&page=1&language=en_CA",
+            "job_id": "7377947812513723393",
+            "is_render_forced": false,
+            "status_code": 200,
+            "type": "parsed",
+            "parser_type": "",
+            "parser_preset": null
+        }
+    ],
+    "job": {
+        "callback_url": null,
+        "client_id": 132912,
+        "context": [
+            {
+                "key": "force_headers",
+                "value": false
+            },
+            {
+                "key": "force_cookies",
+                "value": false
+            },
+            {
+                "key": "hc_policy",
+                "value": true
+            },
+            {
+                "key": "category_id",
+                "value": null
+            },
+            {
+                "key": "merchant_id",
+                "value": null
+            },
+            {
+                "key": "check_empty_geo",
+                "value": null
+            },
+            {
+                "key": "safe_search",
+                "value": true
+            },
+            {
+                "key": "currency",
+                "value": null
+            },
+            {
+                "key": "sort_by",
+                "value": null
+            },
+            {
+                "key": "refinements",
+                "value": null
+            },
+            {
+                "key": "min_price",
+                "value": null
+            },
+            {
+                "key": "max_price",
+                "value": null
+            }
+        ],
+        "created_at": "2025-09-28 06:10:34",
+        "domain": "ca",
+        "geo_location": "N2G1T9",
+        "id": "7377947812513723393",
+        "limit": 10,
+        "locale": null,
+        "pages": 1,
+        "parse": true,
+        "parser_type": null,
+        "parser_preset": null,
+        "parsing_instructions": null,
+        "browser_instructions": null,
+        "render": null,
+        "xhr": false,
+        "markdown": false,
+        "url": null,
+        "query": "Men's unisex ingrown hair aftershave pre-shave oil body hydrating",
+        "source": "amazon_search",
+        "start_page": 1,
+        "status": "done",
+        "storage_type": null,
+        "storage_url": null,
+        "subdomain": "www",
+        "content_encoding": "utf-8",
+        "updated_at": "2025-09-28 06:10:35",
+        "user_agent_type": "desktop",
+        "session_info": null,
+        "statuses": [],
+        "client_notes": null,
+        "_links": [
+            {
+                "rel": "self",
+                "href": "http://data.oxylabs.io/v1/queries/7377947812513723393",
+                "method": "GET"
+            },
+            {
+                "rel": "results",
+                "href": "http://data.oxylabs.io/v1/queries/7377947812513723393/results",
+                "method": "GET"
+            },
+            {
+                "rel": "results-content",
+                "href_list": [
+                    "http://data.oxylabs.io/v1/queries/7377947812513723393/results/1/content"
+                ],
+                "method": "GET"
+            },
+            {
+                "rel": "results-html",
+                "href": "http://data.oxylabs.io/v1/queries/7377947812513723393/results?type=raw",
+                "method": "GET"
+            },
+            {
+                "rel": "results-content-html",
+                "href_list": [
+                    "http://data.oxylabs.io/v1/queries/7377947812513723393/results/1/content?type=raw"
+                ],
+                "method": "GET"
+            },
+            {
+                "rel": "results-parsed",
+                "href": "http://data.oxylabs.io/v1/queries/7377947812513723393/results?type=parsed",
+                "method": "GET"
+            },
+            {
+                "rel": "results-content-parsed",
+                "href_list": [
+                    "http://data.oxylabs.io/v1/queries/7377947812513723393/results/1/content?type=parsed"
+                ],
+                "method": "GET"
+            }
+        ]
+    }
+}------------------------------
+

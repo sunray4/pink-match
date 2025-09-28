@@ -52,9 +52,9 @@ def compute_similarity(original_product: Product, database: list[Product]):
     database_sorted = sorted(database_dicts, key=lambda x: x["similarity_score"], reverse=True)
 
     # Convert back to Product objects
-    product_list = [Product(**product_dict) for product_dict in database_sorted]
+    # product_list = [Product(**product_dict) for product_dict in database_sorted]
 
-    return [product_dict["similarity_score"] for product_dict in database_dicts]
+    return np.array([product_dict["similarity_score"] for product_dict in database_dicts])
 
 # def compute_fragrance_similarity(new_product, database):
 #     scores= []
@@ -65,7 +65,7 @@ def compute_similarity(original_product: Product, database: list[Product]):
 #         )
 #         scores.append(score)
 #     return np.array(scores)
-def compute_fragrance_similarity(new_product, database):
+async def compute_fragrance_similarity(new_product, database):
     scores = []
     
     def get_field(obj, field, default=None):
@@ -77,31 +77,40 @@ def compute_fragrance_similarity(new_product, database):
         user_fragrance = get_field(new_product, "fragrances", [])
         product_fragrance = get_field(p, "fragrances", [])
         
+        # If compare_fragrance_lists is async, await it; otherwise it runs synchronously
         score = compare_fragrance_lists(user_fragrance, product_fragrance)
         scores.append(score)
     
     return np.array(scores)
 
 
-def compute_final_similarity(new_product, database):
+async def compute_final_similarity(new_product: Product, database: list[Product]) -> list[Product]:
     text_sim = compute_similarity(new_product, database)
-    fragrance_sim= compute_fragrance_similarity(new_product, database)
-    text_sim = np.array(text_sim)
-    fragrance_sim = np.array(fragrance_sim)
+    fragrance_sim = await compute_fragrance_similarity(new_product, database)
+    # text_sim = np.array(text_sim)
+    # fragrance_sim = np.array(fragrance_sim)
     final_sim = 0.5 * text_sim + 0.5 * fragrance_sim
     
-    return final_sim
+    # Create Product objects with final similarity scores
+    products_with_scores = []
+    for i, product in enumerate(database):
+        # Create a copy of the product with the final similarity score
+        product.similarity_score = float(final_sim[i])
+        products_with_scores.append(product)
+        # product_dict["similarity_score"] = float(final_sim[i])
+        # products_with_scores.append(Product(**product_dict))
+    
+    # Sort by final similarity score (handle None values)
+    products_with_scores.sort(key=lambda x: x.similarity_score or 0.0, reverse=True)
+    
+    return products_with_scores
 
 
-# Run similarity check
-final_sim = compute_final_similarity(new_product, database)
-# Rank results
-ranked_indices = np.argsort(final_sim)[::-1]
-print("Top matches for:", new_product.title)
-for idx in ranked_indices:
-    p = database[idx]
-    # If p is a Product object:
-    print(f"- {p.title} | Price: ${p.price:.2f} | Fragrance: {p.fragrances} | Score: {final_sim[idx]:.3f}")
+# Example usage - commented out for now
+# final_sim = compute_final_similarity(new_product, database)
+# print("Top matches for:", new_product.title)
+# for product in final_sim:
+#     print(f"- {product.title} | Price: ${product.price:.2f} | Fragrance: {product.fragrances} | Score: {product.similarity_score:.3f}")
 # if __name__ == "__main__":
 #     ranked_database = compute_similarity(new_product, database)
 #     print("Top matches for:", new_product.title)
