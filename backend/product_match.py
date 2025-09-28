@@ -1,9 +1,12 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+# from database import database, new_product
+from fragrance_match import compare_fragrance_lists
 
 from models import Product
 from database_new import database, new_product
+
 
 # -----------------------------
 # TF-IDF + Cosine Similarity
@@ -51,9 +54,54 @@ def compute_similarity(original_product: Product, database: list[Product]):
     # Convert back to Product objects
     product_list = [Product(**product_dict) for product_dict in database_sorted]
 
-    return product_list
+    return [product_dict["similarity_score"] for product_dict in database_dicts]
+
+# def compute_fragrance_similarity(new_product, database):
+#     scores= []
+#     for p in database: 
+#         score = compare_fragrance_lists(
+#             new_product.get("fragrance", []),
+#             p.get("fragrance", [])
+#         )
+#         scores.append(score)
+#     return np.array(scores)
+def compute_fragrance_similarity(new_product, database):
+    scores = []
+    
+    def get_field(obj, field, default=None):
+        if isinstance(obj, dict):
+            return obj.get(field, default)
+        return getattr(obj, field, default)
+    
+    for p in database:
+        user_fragrance = get_field(new_product, "fragrances", [])
+        product_fragrance = get_field(p, "fragrances", [])
+        
+        score = compare_fragrance_lists(user_fragrance, product_fragrance)
+        scores.append(score)
+    
+    return np.array(scores)
+
+
+def compute_final_similarity(new_product, database):
+    text_sim = compute_similarity(new_product, database)
+    fragrance_sim= compute_fragrance_similarity(new_product, database)
+    text_sim = np.array(text_sim)
+    fragrance_sim = np.array(fragrance_sim)
+    final_sim = 0.5 * text_sim + 0.5 * fragrance_sim
+    
+    return final_sim
+
 
 # Run similarity check
+final_sim = compute_final_similarity(new_product, database)
+# Rank results
+ranked_indices = np.argsort(final_sim)[::-1]
+print("Top matches for:", new_product.title)
+for idx in ranked_indices:
+    p = database[idx]
+    # If p is a Product object:
+    print(f"- {p.title} | Price: ${p.price:.2f} | Fragrance: {p.fragrances} | Score: {final_sim[idx]:.3f}")
 # if __name__ == "__main__":
 #     ranked_database = compute_similarity(new_product, database)
 #     print("Top matches for:", new_product.title)
