@@ -26,6 +26,7 @@ venv/
 # Logs
 *.log
 logs/
+*.txt
 
 # Test/Cache files
 .pytest_cache/
