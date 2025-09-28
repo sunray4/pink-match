@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Instrument_Sans } from "next/font/google";
 import "./globals.css";
+import SmoothScrollProvider from "./components/SmoothScrollProvider";
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-cormorant-garamond",
   subsets: ["latin"],
   style: ["normal", "italic"],
   weight: ["400", "700"],
+  display: "swap",
 });
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +33,9 @@ export default function RootLayout({
       <body
         className={`${cormorantGaramond.variable} ${instrumentSans.variable} antialiased`}
       >
-        {children}
+        <SmoothScrollProvider>
+          {children}
+        </SmoothScrollProvider>
       </body>
     </html>
   );
