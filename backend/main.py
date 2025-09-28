@@ -1,9 +1,19 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from product_match import compute_final_similarity
 from scraper import scraper
 
 app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://localhost:3001"],  # Next.js dev server ports
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # amazon link is just www.amazon.ca/dp/{asin}
 # B0CP6CX9RB
@@ -39,5 +49,5 @@ async def search(query: str):
             f.write("-" * 50 + "\n")
 
     # results should contain the list of similar items
-    return {"query": query, "results": ranked_products}
+    return {"query": query, "original_product": products[0], "results": ranked_products}
 

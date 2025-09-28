@@ -16,18 +16,20 @@ const imgLine3 = "/Line 3.png";
 export default function Home() {
   return (
     <div className="bg-white relative w-full" style={{ minHeight: '2610px' }} data-scroll-section data-name="Home" data-node-id="1:2">
-      {/* Background Image 2 - positioned with proper spacing from header */}
+      {/* pink hero image */}
       <div className="absolute blur-[2px] filter h-[400px] sm:h-[500px] md:h-[600px] lg:h-[756px] left-1/2 transform translate-x-[-50%] w-[600px] sm:w-[800px] md:w-[1000px] lg:w-[1155px] top-[100px] sm:top-[110px] md:top-[120px] lg:top-[130px]" data-name="image 2" data-node-id="21:257">
-        <Image alt="" className="absolute inset-0 max-w-none object-center object-cover opacity-[0.59] pointer-events-none size-full" src={imgImage2} width={1155} height={756} />
+        <Image alt="" className="absolute inset-0 max-w-none object-center object-cover opacity-[0.59] pointer-events-none size-full" src="/pink-hero.webp" width={1155} height={756} />
+      </div>
+
+      {/* Pink background section below hero */}
+      <div id="how-it-works" className="absolute bg-[#ffe8f0] h-[500px] sm:h-[600px] md:h-[650px] lg:h-[700px] xl:h-[724px] left-[-2px] right-[-2px] top-[800px] sm:top-[850px] md:top-[920px] lg:top-[960px] xl:top-[981px] w-[calc(100%+4px)] overflow-hidden" data-node-id="37:592" />
+      
+      {/* white hero with "why we care" */}
+      <div id="why" className="absolute blur-[2px] filter h-[500px] sm:h-[650px] md:h-[780px] lg:h-[920px] left-0 right-0 w-full min-w-[1276px] translate-y-[-50%]" data-name="image 3" data-node-id="55:7" style={{ top: "calc(50% + 860px)" }}>
+        <Image alt="" className="absolute inset-0 w-full h-full max-w-none object-center object-cover opacity-[0.59] pointer-events-none" src="/white-hero.webp" width={1276} height={920} />
       </div>
       
-      {/* Background Image 3 - fitted to screen width and positioned to match Figma */}
-      <div className="absolute blur-[2px] filter h-[500px] sm:h-[650px] md:h-[780px] lg:h-[920px] left-0 right-0 w-full min-w-[1276px] translate-y-[-50%]" data-name="image 3" data-node-id="55:7" style={{ top: "calc(50% + 860px)" }}>
-        <Image alt="" className="absolute inset-0 w-full h-full max-w-none object-center object-cover opacity-[0.59] pointer-events-none" src={imgImage3} width={1276} height={920} />
-      </div>
       
-      {/* Pink background section - positioned to match Figma */}
-      <div className="absolute bg-[#ffe8f0] h-[500px] sm:h-[600px] md:h-[650px] lg:h-[700px] xl:h-[724px] left-[-2px] right-[-2px] top-[800px] sm:top-[850px] md:top-[920px] lg:top-[960px] xl:top-[981px] w-[calc(100%+4px)] overflow-hidden" data-node-id="37:592" />
       
       {/* Search input */}
       <SearchInput />
@@ -63,7 +65,7 @@ export default function Home() {
         </div>
       </div>
       
-      {/* Main title "With PinkMatch" - aligned with other titles */}
+      {/* Main title "With PinkMatch" */}
       <div className="[text-shadow:rgba(255,255,255,0.5)_0px_0px_0.745px,rgba(255,255,255,0.5)_0px_0px_1.49px,rgba(255,255,255,0.5)_0px_0px_5.216px,rgba(255,255,255,0.5)_0px_0px_10.433px,rgba(255,255,255,0.5)_0px_0px_17.885px,rgba(255,255,255,0.5)_0px_0px_31.298px] absolute font-cormorant leading-[0] left-[40px] sm:left-[60px] md:left-[100px] lg:left-[140px] xl:left-[180px] text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-white top-[380px] sm:top-[420px] md:top-[446px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-3.84px]" data-scroll data-scroll-speed="1" data-node-id="2:2">
         <p className="leading-[normal] whitespace-pre">
           <span>With </span>
@@ -71,7 +73,7 @@ export default function Home() {
         </p>
       </div>
       
-      {/* "No Pink Tax" title - aligned with other titles */}
+      {/* "No Pink Tax" title */}
       <div className="[text-shadow:#ffffff_0px_0px_46.042px] absolute font-[var(--font-instrument-sans)] font-bold leading-[0] left-[20px] sm:left-[60px] md:left-[100px] lg:left-[140px] xl:left-[180px] text-[#83667e] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[100px] top-[290px] sm:top-[315px] md:top-[335px] tracking-[-2px] sm:tracking-[-3px] md:tracking-[-4px]" data-node-id="2:3">
         <p className="leading-[normal] whitespace-pre">No Pink Tax </p>
       </div>
@@ -99,16 +101,16 @@ export default function Home() {
           <Link href="/" className="leading-[normal] text-nowrap whitespace-pre hover:text-[#fca4c0] transition-colors">Home</Link>
         </div>
         <div className="relative shrink-0" data-node-id="3:14">
-          <p className="leading-[normal] text-nowrap whitespace-pre">How It Works</p>
+          <Link href="#how-it-works" className="leading-[normal] text-nowrap whitespace-pre hover:text-[#fca4c0] transition-colors">How It Works</Link>
         </div>
         <div className="relative shrink-0" data-node-id="3:15">
-          <p className="leading-[normal] text-nowrap whitespace-pre">Why</p>
+          <Link href="#why" className="leading-[normal] text-nowrap whitespace-pre hover:text-[#fca4c0] transition-colors">Why</Link>
         </div>
       </div>
       
 
       
-      {/* "Search. Match. Compare." title - aligned with other titles */}
+      {/* "Search. Match. Compare." title */}
       <div className="absolute font-cormorant leading-[0] left-[20px] sm:left-[40px] md:left-[80px] lg:left-[120px] xl:left-[150px] text-[#83667e] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[75px] top-[950px] sm:top-[1000px] md:top-[1046px] tracking-[-1px] sm:tracking-[-2px] md:tracking-[-3.75px]" data-node-id="7:54">
         <p className="leading-[normal] whitespace-pre">Search. Match. Compare.</p>
       </div>
@@ -120,8 +122,8 @@ export default function Home() {
       
       {/* Help text - with proper horizontal spacing from background image */}
       <div className="absolute font-[var(--font-instrument-sans)] font-normal leading-[0] right-[20px] sm:right-[60px] md:right-[80px] lg:right-[150px] text-[#83667e] text-sm sm:text-base md:text-[18px] text-right top-[750px] sm:top-[780px] md:top-[815px] tracking-[-0.5px] sm:tracking-[-0.72px] w-[300px] sm:w-[400px] md:w-[561px]" data-node-id="7:56">
-        <p className="leading-[normal] whitespace-pre-wrap">Let us  help you find an alternative.</p>
-      </div>no
+        <p className="leading-[normal] whitespace-pre-wrap">Let us help you find an alternative.</p>
+      </div>
       
       {/* Main description text */}
       <div className="absolute font-[var(--font-instrument-sans)] font-normal leading-[0] text-[#83667e] text-lg sm:text-xl md:text-[24px] top-[1900px] sm:top-[2000px] md:top-[2087px] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-0.96px] left-4 right-4 sm:left-8 sm:right-8 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[815px]" data-node-id="45:671">

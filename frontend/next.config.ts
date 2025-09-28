@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
         pathname: '/assets/**',
       },
     ],
+    domains: ['m.media-amazon.com'],
   },
 };
 
