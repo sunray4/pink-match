@@ -5,7 +5,8 @@
 
 import os
 from pydantic import BaseModel
-import requests
+import httpx
+import asyncio
 from dotenv import load_dotenv
 
 import json
@@ -13,37 +14,85 @@ from datetime import datetime
 
 load_dotenv()
 
-from llm_model import create_alternative_query, extract_volume_and_fragrance, clean_ingredients
+from llm_model import create_alternative_query, batch_clean_ingredients, batch_extract_volumes
 from models import Product
 
 OXYLABS_USERNAME = os.getenv("OXYLABS_USERNAME")
 OXYLABS_PASSWORD = os.getenv("OXYLABS_PASSWORD")
 
-def scraper(query: str, max_results: int) -> list[Product] | None:
+async def scraper(query: str, max_results: int) -> list[Product] | None:
     products: list[Product] = []
+    working_products = []
 
-    # Write products to txt file
-    filename = f"products.txt"
-    
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write(f"Scraping products - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write("=" * 50 + "\n\n")
-
-    original_product = scrape_original(query)
+    original_product = await scrape_original(query)
     if original_product is None:
         return None
 
     products.append(original_product)
 
-    alternative_products = scrape_alternative_list(original_product, max_results)
+    alternative_products = await scrape_alternative_list(original_product, max_results)
     if alternative_products:
         products.extend(alternative_products)
     print(f"Found {len(products)-1} alternative products")
     
+    # Batch process all ingredients with Gemini for efficiency
+    print("Batch processing ingredients with Gemini...")
+    raw_ingredients_2d = [product.ingredients for product in products]
+    cleaned_ingredients_2d = batch_clean_ingredients(raw_ingredients_2d)
+    
+    # Assign cleaned ingredients back to products
+    for i, product in enumerate(products):
+        if i < len(cleaned_ingredients_2d):
+            product.ingredients = cleaned_ingredients_2d[i]
+            print(f"Updated ingredients for {product.asin}: {product.ingredients}")
+
+    # Batch process all volumes with Gemini for efficiency
+    print("Batch processing volumes with Gemini...")
+    product_titles = [product.title for product in products]
+    extracted_volumes = batch_extract_volumes(product_titles)
+    
+    # Assign volumes and calculate unit prices
+    for i, product in enumerate(products):
+        if i < len(extracted_volumes):
+            product.volume_ml = extracted_volumes[i]
+            # Calculate unit price if volume is available
+            if product.volume_ml and product.volume_ml > 0:
+                product.unit_price = product.price / product.volume_ml * 100
+            print(f"Updated volume for {product.asin}: {product.volume_ml} mL")
+        if (i > 0):
+            if product.volume_ml and product.volume_ml > 0:
+                product.unit_price = product.price / product.volume_ml * 100
+                if product.unit_price < working_products[0].unit_price:
+                    working_products.append(product)
+        else:
+            working_products.append(product)
+
+
+    filename = f"products.txt"
+        
+    with open(filename, 'w', encoding='utf-8') as f:
+        for product in working_products:
+        # Write products to txt file
+        
+            f.write(f"Scraped Products - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write("=" * 50 + "\n\n")
+            f.write(f"Product {product.asin}:\n")
+            f.write(f"ASIN: {product.asin}\n")
+            f.write(f"Title: {product.title}\n")
+            f.write(f"Price: ${product.price:.2f}\n")
+            f.write(f"Rating: {product.rating}\n")
+            f.write(f"Volume: {product.volume_ml} mL\n" if product.volume_ml else "Volume: Not specified\n")
+            f.write(f"Unit Price: ${product.unit_price:.2f}/100mL\n" if product.unit_price else "Unit Price: Not calculated\n")
+            f.write(f"Ingredients: {product.ingredients}\n")
+            f.write(f"Description: {product.description}\n")
+            f.write(f"Fragrance: {product.fragrances}\n" if product.fragrances else "Fragrance: Not specified\n")
+            f.write("-" * 30 + "\n\n")
+    
+            print(f"Products saved to {filename}")
     
     return products
 
-def scrape_product(asin: str) -> Product | None:
+async def scrape_product(asin: str, client: httpx.AsyncClient) -> Product | None:
     # Structure payload.
     payload = {
         'source': 'amazon_product',
@@ -57,16 +106,19 @@ def scrape_product(asin: str) -> Product | None:
     if OXYLABS_USERNAME is None or OXYLABS_PASSWORD is None:
         raise ValueError("Oxylabs credentials are not set in environment variables.")
     
-    # Get response from Oxylabs.
-    response = requests.request(
-        'POST',
-        'https://realtime.oxylabs.io/v1/queries',
-        auth=(OXYLABS_USERNAME, OXYLABS_PASSWORD),
-        json=payload,
-    )
+    try:
+        # Get response from Oxylabs.
+        response = await client.post(
+            'https://realtime.oxylabs.io/v1/queries',
+            auth=(OXYLABS_USERNAME, OXYLABS_PASSWORD),
+            json=payload,
+        )
 
-    if response.status_code != 200:
-        print("Error:", response.status_code, response.text)
+        if response.status_code != 200:
+            print("Error:", response.status_code, response.text)
+            return None
+    except Exception as e:
+        print(f"Request failed for ASIN {asin}: {e}")
         return None
 
     response_json = response.json()
@@ -92,42 +144,21 @@ def scrape_product(asin: str) -> Product | None:
         print("No ingredients found")
         return None
 
-    # clean up ingredients list
-    ingredients_list = clean_ingredients(ingredients)
+    # Store raw ingredients string - will be processed in batch later
+    raw_ingredients_list = [ingredient.strip().lower() for ingredient in ingredients.split(",")]
+    raw_ingredients_list = [ingredient for ingredient in raw_ingredients_list if ingredient]
 
-    print("Ingredients list:", ingredients_list)
+    print("Raw ingredients list:", raw_ingredients_list)
 
     # get title and description
     title = response_json["results"][0]["content"]["title"]
     description = response_json["results"][0]["content"]["bullet_points"]
     rating: float = response_json["results"][0]["content"]["rating"]
     price: float = response_json["results"][0]["content"]["price"]
-    volume, fragrance = extract_volume_and_fragrance(title, description)
-    unit_price: float | None = price / volume * 100 if volume else None
+    image_url = response_json["results"][0]["content"]["images"][0]
 
     print("Title:", title)
     print("Description:", description)
-
-    # Write products to txt file
-    filename = f"products.txt"
-    
-    with open(filename, 'a', encoding='utf-8') as f:
-        f.write(f"Scraped Products - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write("=" * 50 + "\n\n")
-        
-        f.write(f"Product {asin}:\n")
-        f.write(f"ASIN: {asin}\n")
-        f.write(f"Title: {title}\n")
-        f.write(f"Price: ${price:.2f}\n")
-        f.write(f"Rating: {rating}\n")
-        f.write(f"Volume: {volume} mL\n" if volume else "Volume: Not specified\n")
-        f.write(f"Unit Price: ${unit_price:.2f}/100mL\n" if unit_price else "Unit Price: Not calculated\n")
-        f.write(f"Ingredients: {', '.join(ingredients_list)}\n")
-        f.write(f"Description: {description}\n")
-        f.write(f"Fragrance: {fragrance}\n" if fragrance else "Fragrance: Not specified\n")
-        f.write("-" * 30 + "\n\n")
-    
-    print(f"Products saved to {filename}")
 
     return Product(
         asin=asin,
@@ -135,21 +166,62 @@ def scrape_product(asin: str) -> Product | None:
         description=description,
         rating=rating,
         price=price,
-        ingredients=ingredients_list,
-        volume_ml=volume,
-        unit_price=unit_price,
-        fragrances=fragrance,
+        ingredients=raw_ingredients_list,
+        image_url=image_url
     )
 
-def scrape_original(query: str) -> Product | None:
+async def scrape_original(query: str) -> Product | None:
     # get ASIN from the URL
     asin = query.split("/dp/")[1].split("/")[0]
     # run scraping for ingredients
-    product = scrape_product(asin)
+    async with httpx.AsyncClient(timeout=60.0) as client:
+        product = await scrape_product(asin, client)
     return product
 
+async def scrape_alternatives_with_rate_limit(asins: list[str], client: httpx.AsyncClient) -> list[Product]:
+    """
+    Scrape products with rate limiting to stay within 10 requests per second.
+    Uses semaphore to limit concurrent requests and adds delays between batches.
+    """
+    # Limit to 6 concurrent requests (well below the 10/sec limit)
+    semaphore = asyncio.Semaphore(6)
+
+    async def rate_limited_scrape(asin: str, delay: float = 0) -> Product | Exception | None:
+        # Add staggered delay to spread requests over time
+        if delay > 0:
+            await asyncio.sleep(delay)
+            
+        async with semaphore:
+            try:
+                result = await scrape_product(asin, client)
+                return result  # Can be Product or None
+            except Exception as e:
+                return e
+    
+    # Create tasks with staggered delays (0.1 second apart)
+    tasks = []
+    for i, asin in enumerate(asins):
+        delay = i * 0.1  # 100ms delay between each request start
+        task = rate_limited_scrape(asin, delay)
+        tasks.append(task)
+    
+    # Execute all tasks
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    
+    # Filter out exceptions and None values, return valid products
+    products = []
+    for result in results:
+        if isinstance(result, Product):
+            products.append(result)
+        elif isinstance(result, Exception):
+            print(f"Error scraping product: {result}")
+        elif result is None:
+            print("Product scraping returned None (possibly no data found)")
+    
+    return products
+
 ## scrape list of alternatives
-def scrape_alternative_list(original_product: Product, max_results: int) -> list[Product]:
+async def scrape_alternative_list(original_product: Product, max_results: int) -> list[Product]:
     alternative_products: list[Product] = []
 
     # Create prompt with gemini
@@ -168,41 +240,64 @@ def scrape_alternative_list(original_product: Product, max_results: int) -> list
     if OXYLABS_USERNAME is None or OXYLABS_PASSWORD is None:
         raise ValueError("Oxylabs credentials are not set in environment variables.")
 
-    # Get response.
-    response = requests.request(
-        'POST',
-        'https://realtime.oxylabs.io/v1/queries',
-        auth=(OXYLABS_USERNAME, OXYLABS_PASSWORD),
-        json=payload,
-    )
+    async with httpx.AsyncClient(timeout=60.0) as client:
+        try:
+            # Get response.
+            response = await client.post(
+                'https://realtime.oxylabs.io/v1/queries',
+                auth=(OXYLABS_USERNAME, OXYLABS_PASSWORD),
+                json=payload,
+            )
 
-    response_json = response.json()
+            if response.status_code != 200:
+                print("Error:", response.status_code, response.text)
+                return alternative_products
 
-    filename = f"alternatives_list.txt"
-    
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write(f"Scraped alternatives list - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write("=" * 50 + "\n\n")
-        f.write(json.dumps(response_json, indent=4))
-        
-        f.write("-" * 30 + "\n\n")
+            response_json = response.json()
 
-    results_count = 0
-    for item in response_json["results"][0]["content"]["results"]["organic"]:
-        if results_count >= max_results:
-            break
-        asin = item["asin"]
-        alternative_product = scrape_product(asin)
-        if (
-            alternative_product
-            and alternative_product.asin != original_product.asin
-            and alternative_product.unit_price is not None
-            and original_product.unit_price is not None
-            and alternative_product.unit_price < original_product.unit_price
-        ):
-            alternative_products.append(alternative_product)
-            results_count += 1
+            filename = f"alternatives_list.txt"
+            
+            with open(filename, 'w', encoding='utf-8') as f:
+                f.write(f"Scraped alternatives list - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                f.write("=" * 50 + "\n\n")
+                f.write(json.dumps(response_json, indent=4))
+                
+                f.write("-" * 30 + "\n\n")
+
+            # Collect ASINs for concurrent scraping
+            asins_to_scrape = []
+            for item in response_json["results"][0]["content"]["results"]["organic"]:
+                if len(asins_to_scrape) >= max_results:
+                    break
+                asins_to_scrape.append(item["asin"])
+            print(f"ASINs to scrape: {asins_to_scrape}")
+
+            # Scrape all products with rate limiting (max 10 requests per second)
+            scraped_products = await scrape_alternatives_with_rate_limit(asins_to_scrape, client)
+
+            # Filter successful results that meet criteria
+            for alternative_product in scraped_products:
+                if (
+                    isinstance(alternative_product, Product)  # Not an exception
+                    and alternative_product.asin != original_product.asin
+                ):
+                    alternative_products.append(alternative_product)
+                    if len(alternative_products) >= max_results:
+                        break
+
+        except Exception as e:
+            print(f"Error scraping alternatives: {e}")
 
     return alternative_products
 
-# scraper("https://www.amazon.ca/Herbal-Essences-Nourishes-Certified-Especially/dp/B0CP6CX9RB/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24:amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2NB5RKHDY6IE9&cv_ct_cx=women's+shampoo&keywords=women's+shampoo&pd_rd_i=B0CP6CX9RB&pd_rd_r=5cbc5adb-adf6-4145-b1a1-62558f7aa2a5&pd_rd_w=zdkBG&pd_rd_wg=3fDtA&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=230VZ98RTWGGHZYY7D6Z&qid=1759001440&sbo=RZvfv//HxDF+O5021pAnSA%3D%3D&sprefix=women's+shampo,aps,147&sr=1-2-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1")
+if __name__ == "__main__":
+    async def main():
+        products = await scraper("https://www.amazon.ca/Herbal-Essences-Nourishes-Certified-Especially/dp/B0CP6CX9RB/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24:amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2NB5RKHDY6IE9&cv_ct_cx=women's+shampoo&keywords=women's+shampoo&pd_rd_i=B0CP6CX9RB&pd_rd_r=5cbc5adb-adf6-4145-b1a1-62558f7aa2a5&pd_rd_w=zdkBG&pd_rd_wg=3fDtA&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=230VZ98RTWGGHZYY7D6Z&qid=1759001440&sbo=RZvfv//HxDF+O5021pAnSA%3D%3D&sprefix=women's+shampo,aps,147&sr=1-2-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1", 40)
+        if products:
+            print(f"Successfully scraped {len(products)} products")
+            for product in products:
+                print(f"- {product.title} (${product.price})")
+        else:
+            print("No products found")
+    
+    asyncio.run(main())
