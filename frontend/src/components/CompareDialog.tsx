@@ -19,7 +19,7 @@ function CompareDialog( {originalProduct, newProduct} : CompareModalProps) {
             </VisuallyHidden.Root>
             <Dialog.Close asChild>
                 <button
-                    className="absolute right-4 top-4 z-20 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
+                    className="fixed right-4 top-4 z-20 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
                     aria-label="Close modal"
                 >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@ function CompareDialog( {originalProduct, newProduct} : CompareModalProps) {
                 </svg>
                 </button>
             </Dialog.Close>
-            <div className="m-14 grid grid-cols-2 gap-x-10">
+            <div className="my-14 flex justify-evenly items-start">
                 <DialogProduct product={originalProduct} />
                 <DialogProduct product={newProduct} />
             </div>

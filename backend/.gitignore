@@ -28,6 +28,7 @@ venv/
 logs/
 ranked_products.txt
 products.txt
+alternatives_list.txt
 
 # Test/Cache files
 .pytest_cache/

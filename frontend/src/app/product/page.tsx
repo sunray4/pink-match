@@ -1,48 +1,40 @@
 "use client";
 
 import Image from "next/image";
-import { Suspense, useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
-import Link from "next/link";
+import { useState, useEffect } from "react";
 import SearchInput from "@/components/SearchInput";
 import ProductCard from "@/components/ProductCard";
 import * as Dialog from "@radix-ui/react-dialog";
 import CompareDialog from "@/components/CompareDialog";
 import { Product } from "@/utils/models";
 
-interface ProductCardProps {
-	originalProduct: Product | null;
-	product?: Product;
-	onCompareClick: () => void;
-}
+// const sampleProduct: Product = {
+// 	"asin": "B000123456",
+// 	"title": "Sample Deodorant",
+// 	"description": "This is a sample deodorant description.",
+// 	"rating": 4.5,
+// 	"price": "$9.99",
+// 	"image_url": "/ocean-frame.webp",
+// 	"ingredients": ["Ingredient1", "Ingredient2"],
+// 	"fragrances": ["Floral", "Citrus"],
+// 	"volume_ml": 150,
+// 	"unit_price": 0.0666,
+// 	"similarity_score": 0.95
+// };
 
-const sampleProduct: Product = {
-	"asin": "B000123456",
-	"title": "Sample Deodorant",
-	"description": "This is a sample deodorant description.",
-	"rating": 4.5,
-	"price": "$9.99",
-	"image_url": "/ocean-frame.webp",
-	"ingredients": ["Ingredient1", "Ingredient2"],
-	"fragrances": ["Floral", "Citrus"],
-	"volume_ml": 150,
-	"unit_price": 0.0666,
-	"similarity_score": 0.95
-};
-
-const sampleOriginalProduct: Product = {
-	"asin": "B000654321",
-	"title": "Original Deodorant",
-	"description": "This is the original deodorant description.",
-	"rating": 4.0,
-	"price": "$8.99",
-	"image_url": "/ocean-frame.webp",
-	"ingredients": ["IngredientA", "IngredientB"],
-	"fragrances": ["Floral", "Citrus"],
-	"volume_ml": 150,
-	"unit_price": 0.0599,
-	"similarity_score": 0.90
-};
+// const sampleOriginalProduct: Product = {
+// 	"asin": "B000654321",
+// 	"title": "Original Deodorant",
+// 	"description": "This is the original deodorant description.",
+// 	"rating": 4.0,
+// 	"price": "$8.99",
+// 	"image_url": "/ocean-frame.webp",
+// 	"ingredients": ["IngredientA", "IngredientB"],
+// 	"fragrances": ["Floral", "Citrus"],
+// 	"volume_ml": 150,
+// 	"unit_price": 0.0599,
+// 	"similarity_score": 0.90
+// };
 
 function ProductPage() {
 	const [newProductInModal, setNewProductInModal] = useState<Product | null>(null);
@@ -51,8 +43,8 @@ function ProductPage() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		setNewProductInModal(sampleProduct);
-		setOriginalProduct(sampleOriginalProduct);
+		// setNewProductInModal(sampleProduct);
+		// setOriginalProduct(sampleOriginalProduct);
 		// Load search results from localStorage
 		const results = localStorage.getItem('searchResults');
 		const originalProduct = localStorage.getItem('originalProduct');
@@ -98,7 +90,15 @@ function ProductPage() {
 			<div className="bg-[#ffe8f0] p-14">
 				<p className="text-[#83667e] font-bold font-cormorant text-4xl lg:text-5xl xl:text-[4.6875rem] tracking-[-0.45em] md:tracking-[-0.054em]">Product Matches</p>
 				<div className="flex box-border content-stretch flex-col lg:flex-row items-center justify-between mt-7">
-					<ProductCard originalProduct={originalProduct} product={sampleProduct} onCompareClick={() => handleCompareClick(sampleProduct)} />
+					{searchResults.length !== 0 ? (
+						searchResults.map((product) => (
+							<ProductCard key={product.asin} originalProduct={originalProduct} product={product} onCompareClick={() => handleCompareClick(product)} />
+						))
+					) : isLoading ? (
+						<p className="text-[#83667e] mt-14 text-2xl tracking-tight sm:tracking-[-0.04em]">Loading...</p>
+					) : (
+						<p className="text-[#83667e] mt-14 text-2xl tracking-tight sm:tracking-[-0.04em]">No matches found. Try searching for a different product.</p>
+					)}
 				</div>
 			</div>
 			{/* Compare Dialog */}

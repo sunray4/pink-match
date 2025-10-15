@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function DialogProduct({ product }: { product: Product }) {
   return (
-    <div className="flex flex-col items-center justify-center w-90 mx-1">
+    <div className="flex flex-col items-center justify-center w-1/3">
       {/* product image */}
       <div className="bg-[#ffe8f0] border-2 border-[#b398ae] border-solid p-3 rounded-4xl flex justify-center items-center w-full aspect-square">
         {product.image_url ? (
