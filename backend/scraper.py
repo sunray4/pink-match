@@ -38,6 +38,8 @@ async def scraper(query: str, max_results: int) -> list[Product] | None:
     if original_product.volume_ml and original_product.volume_ml > 0:
         original_product.unit_price = original_product.price / original_product.volume_ml * 100
     print(f"Updated volume for original product {original_product.asin}: {original_product.volume_ml} mL")
+
+    working_products.append(original_product)
     
     for i, product in enumerate(products):
         if i and extracted_volumes and i < len(extracted_volumes) - 1:
