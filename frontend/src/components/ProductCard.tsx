@@ -25,6 +25,11 @@ const discount = originalProduct?.unit_price != null && product?.unit_price != n
           <button className="text-[#83667e] m-5 mb-4 font-medium tracking-tight bg-white box-border content-stretch flex flex-col gap-[10px] h-[40px] items-end justify-center border-2 border-[#83667e] border-solid rounded-4xl p-5 hover:bg-[#83667e] hover:text-white hover:cursor-pointer" onClick={onCompareClick}>Compare Products</button>
         </Dialog.Trigger>
         </div>
+        {discount && (
+          <div className="absolute -top-4 -right-4 flex items-center justify-center bg-[#fca4c0] text-white text-xl font-bold p-3 border-1 border-[#83667E] aspect-square rounded-full -rotate-22">
+            {discount}%
+          </div>
+        )}
     </div>
   )
 }
