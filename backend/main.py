@@ -16,7 +16,6 @@ app.add_middleware(
 )
 
 # amazon link is just www.amazon.ca/dp/{asin}
-# B0CP6CX9RB
 
 @app.get("/")
 async def root():
@@ -27,7 +26,10 @@ async def search(query: str):
     # right now, the query should be a link
     max_results = 40
     products = await scraper(query, max_results)
-    if products is None:
+    print("Products fetched:", products)
+    print("Number of products fetched:", len(products) if products else -1)
+    if not products or len(products) == 0 or products[0] is None:
+        print("No products found or an error occurred.")
         return {"error": "No products found or an error occurred."}
     ranked_products = await compute_final_similarity(products[0], products[1:])
 

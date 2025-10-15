@@ -62,6 +62,7 @@ export default function SearchInput() {
           await router.push(`/product?q=${encodeURIComponent(searchQuery.trim())}`);
           
           console.log('Redirect completed');
+          window.dispatchEvent(new Event('localStorageChange'));
         } else {
           console.error('Search request failed:', response.status, response.statusText);
           // Still redirect even if API fails, but with empty results

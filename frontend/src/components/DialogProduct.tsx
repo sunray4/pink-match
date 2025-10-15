@@ -4,15 +4,15 @@ import Image from "next/image";
 
 function DialogProduct({ product }: { product: Product }) {
   return (
-    <div className="flex flex-col items-center justify-center w-1/3">
+    <div className="flex flex-col items-center justify-center w-2/5">
       {/* product image */}
-      <div className="bg-[#ffe8f0] border-2 border-[#b398ae] border-solid p-3 rounded-4xl flex justify-center items-center w-full aspect-square">
+      <div className="relative p-3 bg-[#ffe8f0] border-2 border-[#b398ae] border-solid rounded-4xl flex justify-center items-center w-full aspect-square">
         {product.image_url ? (
           <Image
             src={product.image_url}
             alt="product image"
-            width={400}
-            height={400}
+            fill
+            className="object-contain"
           />
         ) : (
           <div>No image available</div>

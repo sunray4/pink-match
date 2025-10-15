@@ -85,7 +85,7 @@ async def scraper(query: str, max_results: int) -> list[Product] | None:
             working_products[i].fragrances = None
 
 
-    print(f"Found {len(working_products)-1} alternative products")
+    print(f"Found {len(working_products)} alternative products")
 
     filename = f"products.txt"
         

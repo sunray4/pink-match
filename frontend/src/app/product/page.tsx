@@ -8,34 +8,6 @@ import * as Dialog from "@radix-ui/react-dialog";
 import CompareDialog from "@/components/CompareDialog";
 import { Product } from "@/utils/models";
 
-// const sampleProduct: Product = {
-// 	"asin": "B000123456",
-// 	"title": "Sample Deodorant",
-// 	"description": "This is a sample deodorant description.",
-// 	"rating": 4.5,
-// 	"price": "$9.99",
-// 	"image_url": "/ocean-frame.webp",
-// 	"ingredients": ["Ingredient1", "Ingredient2"],
-// 	"fragrances": ["Floral", "Citrus"],
-// 	"volume_ml": 150,
-// 	"unit_price": 0.0666,
-// 	"similarity_score": 0.95
-// };
-
-// const sampleOriginalProduct: Product = {
-// 	"asin": "B000654321",
-// 	"title": "Original Deodorant",
-// 	"description": "This is the original deodorant description.",
-// 	"rating": 4.0,
-// 	"price": "$8.99",
-// 	"image_url": "/ocean-frame.webp",
-// 	"ingredients": ["IngredientA", "IngredientB"],
-// 	"fragrances": ["Floral", "Citrus"],
-// 	"volume_ml": 150,
-// 	"unit_price": 0.0599,
-// 	"similarity_score": 0.90
-// };
-
 function ProductPage() {
 	const [newProductInModal, setNewProductInModal] = useState<Product | null>(null);
 	const [searchResults, setSearchResults] = useState<Product[]>([]);
@@ -43,30 +15,38 @@ function ProductPage() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		// setNewProductInModal(sampleProduct);
-		// setOriginalProduct(sampleOriginalProduct);
-		// Load search results from localStorage
-		const results = localStorage.getItem('searchResults');
-		const originalProduct = localStorage.getItem('originalProduct');
-		if (results && originalProduct) {
-		try {
-			console.log('Found search results in localStorage');
-			const parsedResults = JSON.parse(results);
-			const parsedOriginalProduct = JSON.parse(originalProduct);
-			console.log('Loaded search results:', parsedResults);
-			setSearchResults(parsedResults);
-			setOriginalProduct(parsedOriginalProduct);
-			// Clear the localStorage after loading
-			localStorage.removeItem('searchResults');
-			localStorage.removeItem('originalProduct');
-		} catch (error) {
-			console.error('Error parsing search results:', error);
-		}
-		} else {
-		console.log('No search results found in localStorage');
-		}
-		setIsLoading(false);
+		const handleStorageChange = () => {
+			console.log('storage/localStorageChange handler triggered');
+			const results = localStorage.getItem('searchResults');
+			const originalProduct = localStorage.getItem('originalProduct');
+
+			if (results && originalProduct) {
+				try {
+					setSearchResults(JSON.parse(results));
+					setOriginalProduct(JSON.parse(originalProduct));
+					localStorage.removeItem('searchResults');
+					localStorage.removeItem('originalProduct');
+					console.log('Loaded searchResults and originalProduct from localStorage');
+				} catch (error) {
+					console.error('Failed to parse stored search results:', error);
+				}
+			}
+			setIsLoading(false);
+		};
+
+		// Run once on mount to load any pre-existing values
+		handleStorageChange();
+
+		// Listen for the custom in-app event (dispatched by SearchInput) and the native storage event (cross-tab)
+		window.addEventListener('localStorageChange', handleStorageChange);
+		window.addEventListener('storage', handleStorageChange);
+
+		return () => {
+			window.removeEventListener('localStorageChange', handleStorageChange);
+			window.removeEventListener('storage', handleStorageChange);
+		};
 	}, []);
+
 
 	const handleCompareClick = (product: Product) => {
 		setNewProductInModal(product);
@@ -76,12 +56,12 @@ function ProductPage() {
 		<Dialog.Root>
 			<div className="flex flex-col items-center min-h-[90vh]">
 				<SearchInput />
-				<div className="mt-10 h-[40vh]">
+				<div className="relative z-10 mt-10 h-[40vh] min-w-[20vw] max-w-[50vw]">
 					{originalProduct?.image_url && (
-						<Image alt="Product showcase" className="" src={originalProduct?.image_url} width={593} height={280}  />
+						<Image alt="Product showcase" className="object-contain" src={originalProduct?.image_url} fill  />
 					)}
 				</div>
-				<div className="mt-5">
+				<div className="mt-2">
 					<Image alt="podium" className="" src="/podium.png" width={791} height={395} />
 				</div>
 				<p className="text-[#83667e] mt-14 text-2xl tracking-tight sm:tracking-[-0.04em]">Find your matches below</p>
@@ -89,17 +69,26 @@ function ProductPage() {
 			</div>
 			<div className="bg-[#ffe8f0] p-14">
 				<p className="text-[#83667e] font-bold font-cormorant text-4xl lg:text-5xl xl:text-[4.6875rem] tracking-[-0.45em] md:tracking-[-0.054em]">Product Matches</p>
-				<div className="flex box-border content-stretch flex-col lg:flex-row items-center justify-between mt-7">
+				<div className="mt-7 grid justify-center gap-8 sm:gap-10"
+					style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(23rem, 1fr))' }}>
 					{searchResults.length !== 0 ? (
 						searchResults.map((product) => (
-							<ProductCard key={product.asin} originalProduct={originalProduct} product={product} onCompareClick={() => handleCompareClick(product)} />
+						<ProductCard
+							key={product.asin}
+							originalProduct={originalProduct}
+							product={product}
+							onCompareClick={() => handleCompareClick(product)}
+						/>
 						))
 					) : isLoading ? (
-						<p className="text-[#83667e] mt-14 text-2xl tracking-tight sm:tracking-[-0.04em]">Loading...</p>
+						<p className="text-[#83667e] text-2xl tracking-tight sm:tracking-[-0.04em]">Loading...</p>
 					) : (
-						<p className="text-[#83667e] mt-14 text-2xl tracking-tight sm:tracking-[-0.04em]">No matches found. Try searching for a different product.</p>
+						<p className="text-[#83667e] text-2xl tracking-tight sm:tracking-[-0.04em]">
+						No cheaper alternatives found. Try searching for a different product.
+						</p>
 					)}
 				</div>
+
 			</div>
 			{/* Compare Dialog */}
 			{ newProductInModal && originalProduct && (

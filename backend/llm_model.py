@@ -341,7 +341,7 @@ Return ONLY a Python 2D list of fragrance lists, no markdown formatting or addit
         
         # Validate that we got back the same number of fragrance lists
         if len(fragrances_2d) != len(product_descriptions):
-            print(f"Warning: Batch fragrance extraction returned {len(fragrances_2d)} lists for {len(product_descriptions)} descriptions")
+            print(f"Warning: Batch fragrance extraction returned {len(fragrances_2d)} lists for {len(product_descriptions)} descriptions. Please check if Gemini API quota was exceeded.")
             return [None] * len(product_descriptions)  # Return None array if mismatch
         
         # Convert empty lists to None
