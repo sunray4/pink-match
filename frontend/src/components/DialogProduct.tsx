@@ -60,13 +60,20 @@ function DialogProduct({ product }: { product: Product }) {
         </div>
         {/* product ingredients */}
         <div className="text-[#83667e] w-full mt-7">
-          <p className="font-bold text-2xl">Product Ingredients</p>
+          <p className="font-bold text-2xl">Ingredients</p>
           {product?.ingredients && product.ingredients.length > 0 ? (
             <p className="tracking-tight">{product.ingredients.join(", ")}</p>
           ) : (
             <p className="tracking-tight">No ingredients available</p>
           )}
         </div>
+        {/* product fragrances */}
+        {product?.fragrances && product.fragrances.length > 0 && (
+            <div className="text-[#83667e] w-full mt-7">
+              <p className="font-bold text-2xl">Fragrances</p>
+              <p className="tracking-tight">{product.fragrances.join(", ")}</p>
+            </div>
+          )}
     </div>
   );
 }
