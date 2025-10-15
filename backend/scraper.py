@@ -193,6 +193,7 @@ async def scrape_product(asin: str, client: httpx.AsyncClient) -> Product | None
 async def scrape_original(query: str) -> Product | None:
     # get ASIN from the URL
     asin = query.split("/dp/")[1].split("/")[0]
+    print(f"Scraping original product ASIN: {asin}")
     # run scraping for ingredients
     async with httpx.AsyncClient(timeout=60.0) as client:
         product = await scrape_product(asin, client)
@@ -310,14 +311,14 @@ async def scrape_alternative_list(original_product: Product, max_results: int) -
 
     return alternative_products
 
-if __name__ == "__main__":
-    async def main():
-        products = await scraper("https://www.amazon.ca/Herbal-Essences-Nourishes-Certified-Especially/dp/B0CP6CX9RB/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24:amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2NB5RKHDY6IE9&cv_ct_cx=women's+shampoo&keywords=women's+shampoo&pd_rd_i=B0CP6CX9RB&pd_rd_r=5cbc5adb-adf6-4145-b1a1-62558f7aa2a5&pd_rd_w=zdkBG&pd_rd_wg=3fDtA&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=230VZ98RTWGGHZYY7D6Z&qid=1759001440&sbo=RZvfv//HxDF+O5021pAnSA%3D%3D&sprefix=women's+shampo,aps,147&sr=1-2-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1", 40)
-        if products:
-            print(f"Successfully scraped {len(products)} products")
-            for product in products:
-                print(f"- {product.title} (${product.price})")
-        else:
-            print("No products found")
+# if __name__ == "__main__":
+#     async def main():
+#         products = await scraper("https://www.amazon.ca/Herbal-Essences-Nourishes-Certified-Especially/dp/B0CP6CX9RB/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24:amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2NB5RKHDY6IE9&cv_ct_cx=women's+shampoo&keywords=women's+shampoo&pd_rd_i=B0CP6CX9RB&pd_rd_r=5cbc5adb-adf6-4145-b1a1-62558f7aa2a5&pd_rd_w=zdkBG&pd_rd_wg=3fDtA&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=230VZ98RTWGGHZYY7D6Z&qid=1759001440&sbo=RZvfv//HxDF+O5021pAnSA%3D%3D&sprefix=women's+shampo,aps,147&sr=1-2-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1", 40)
+#         if products:
+#             print(f"Successfully scraped {len(products)} products")
+#             for product in products:
+#                 print(f"- {product.title} (${product.price})")
+#         else:
+#             print("No products found")
     
-    asyncio.run(main())
+#     asyncio.run(main())
