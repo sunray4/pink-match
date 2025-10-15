@@ -27,16 +27,18 @@ function ProductCard({
       : null;
   return (
     <div className="bg-white box-border content-stretch flex flex-col h-[56vh] items-center border-2 border-[#b398ae] border-solid relative rounded-4xl shrink-0 cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-[0px_12px_20px_0px_rgba(0,0,0,0.15)]">
-      <div className="relative shrink-0 w-[13.7rem] h-[13.7rem] p-3">
-        <Image
-          alt="product image"
-          className="block object-contain"
-          src={product?.image_url ?? ""}
-          fill
-        />
+      <div className="relative shrink-0 w-[13.7rem] h-[17.7rem] flex items-center justify-center p-3">
+        <div className="relative w-full h-full">
+          <Image
+            alt="product image"
+            src={product?.image_url ?? ""}
+            fill
+            className="object-contain"
+          />
+        </div>
       </div>
       <div className="border-t-2 border-[#b398ae] border-solid w-full"></div>
-      <div className="m-4 font-medium text-[#83667e] text-lg tracking-tight w-5/6 max-h-29 overflow-hidden">
+      <div className="m-4 mb-2 font-medium text-[#83667e] text-lg tracking-tight w-5/6 max-h-29 overflow-hidden">
         <p>{product?.title ?? ""}</p>
       </div>
       {product?.similarity_score != null && (
@@ -46,10 +48,10 @@ function ProductCard({
           </p>
         </div>
       )}
-      <div className="grid justify-items-end w-full">
+      <div className="absolute bottom-4 right-4">
         <Dialog.Trigger asChild>
           <button
-            className="text-[#83667e] m-5 mb-4 font-medium tracking-tight bg-white box-border content-stretch flex flex-col gap-[10px] h-[40px] items-end justify-center border-2 border-[#83667e] border-solid rounded-4xl p-5 hover:bg-[#83667e] hover:text-white hover:cursor-pointer"
+            className="text-[#83667e] m-5 mb-4 font-medium tracking-tight bg-white box-border flex flex-col gap-[10px] h-[40px] items-end justify-center border-2 border-[#83667e] border-solid rounded-4xl p-5 hover:bg-[#83667e] hover:text-white hover:cursor-pointer"
             onClick={onCompareClick}
           >
             Compare Products

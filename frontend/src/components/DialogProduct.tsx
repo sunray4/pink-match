@@ -7,16 +7,18 @@ function DialogProduct({ product }: { product: Product }) {
     <div className="flex flex-col items-center justify-center w-2/5">
       {/* product image */}
       <div className="relative p-3 bg-[#ffe8f0] border-2 border-[#b398ae] border-solid rounded-4xl flex justify-center items-center w-full aspect-square">
-        {product.image_url ? (
-          <Image
-            src={product.image_url}
-            alt="product image"
-            fill
-            className="object-contain"
-          />
-        ) : (
-          <div>No image available</div>
-        )}
+        <div className="relative w-full h-full">
+          {product.image_url ? (
+            <Image
+              src={product.image_url}
+              alt="product image"
+              fill
+              className="object-contain"
+            />
+          ) : (
+            <div>No image available</div>
+          )}
+        </div>
       </div>
       {/* product details */}
       {/* product title */}
