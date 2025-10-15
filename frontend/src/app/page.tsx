@@ -7,7 +7,6 @@ export default function Home() {
     <div className="">
       {/* top hero */}
       <section className="mx-14">
-        {/* <div className="mx-14"> */}
           <div className="relative w-full h-[80vh] overflow-hidden">
             <Image
               src="/pink-hero.webp"
@@ -25,18 +24,17 @@ export default function Home() {
               <SearchInput />
             </div>
             <div className="absolute right-14 bottom-14 z-20">
-              <p className="text-[#83667e] text-xl tracking-tight sm:tracking-[ -0.04em ]">Let us help you find an alternative.</p>
+              <p className="text-[#83667e] text-xl tracking-tight sm:tracking-[-0.017em]">Let us help you find an alternative.</p>
             </div>
           </div>
-        {/* </div> */}
       </section>
 
-      <div className="relative my-7 mb-8 mx-14 h-2">
+      {/* how-it-works section */}
+      <div className="relative my-7 mb-8 mx-14 h-2" id="how-it-works">
         <Image alt="line" src="/line.svg" fill />
       </div>
-
-      {/* how-it-works section */}
-      <section className="mx-14 bg-[#ffe8f0] p-14" id="how-it-works">
+      
+      <section className="mx-14 bg-[#ffe8f0] p-14">
         <p className="text-[#83667e] font-bold font-cormorant text-4xl lg:text-5xl xl:text-[75px] tracking-[-2px] md:tracking-[-3.75px]">Search. Match. Compare.</p>
         {/* Three feature cards */}
         <div className="flex box-border content-stretch flex-col lg:flex-row items-center justify-between mt-10">
@@ -46,12 +44,12 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="relative my-7 mb-8 mx-14 h-2">
+      {/* why section */}
+      <div className="relative my-7 mb-8 mx-14 h-2" id="why">
         <Image alt="line" src="/line.svg" fill />
       </div>
 
-      {/* why section */}
-      <section className="mx-14" id="why">
+      <section className="mx-14">
         <div className="relative w-full h-[80vh] overflow-hidden">
           <Image
             src="/white-hero.webp"

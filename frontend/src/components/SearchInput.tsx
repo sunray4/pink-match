@@ -87,7 +87,7 @@ export default function SearchInput() {
   };
 
   return (
-    <div className="mt-4 md:right-auto md:w-[500px] h-[50px] sm:h-[55px] md:h-[60px]" data-node-id="1:3">
+    <div className="mt-4 w-3/5 h-[3.4375rem] md:h-[3.75rem]">
         <form onSubmit={handleSearch} className="relative w-full h-full">
           <input
             type="text"
@@ -96,12 +96,12 @@ export default function SearchInput() {
             onKeyPress={handleKeyPress}
             placeholder="Search Products"
             disabled={isLoading}
-            className={`absolute inset-0 w-full h-full bg-white border-2 border-[#b67999] rounded-[30px] px-4 pr-25 sm:pr-30 md:pr-25 font-[var(--font-instrument-sans)] text-[#b67999] text-lg sm:text-xl md:text-[24px] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-0.96px] placeholder:text-[#b67999] outline-none focus:border-[#fca4c0] transition-colors ${isLoading ? 'opacity-50' : ''}`}
+            className={`absolute inset-0 w-full h-full bg-white border-2 border-[#b67999] rounded-4xl px-5 pr-30 md:pr-25 text-[#b67999] text-xl md:text-2xl tracking-[-0.04em] md:tracking-[-0.048em] placeholder:text-[#b67999] outline-none focus:border-[#fca4c0] transition-colors ${isLoading ? 'opacity-50' : ''}`}
           />
           <button
             type="submit"
             disabled={isLoading}
-            className={`absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#fca4c0] hover:bg-[#f794b4] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-[20px] font-[var(--font-instrument-sans)] font-medium transition-colors text-sm sm:text-base ${isLoading ? 'cursor-not-allowed' : ''} flex items-center justify-center min-w-[80px] hover:cursor-pointer`}
+            className={`absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#fca4c0] hover:bg-[#f794b4] text-white px-4 py-2 rounded-4xl transition-colors text-sm sm:text-base ${isLoading ? 'cursor-not-allowed' : ''} flex items-center justify-center min-w-[80px] hover:cursor-pointer`}
           >
             {isLoading ? (
               <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
