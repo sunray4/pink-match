@@ -18,11 +18,11 @@ OXYLABS_PASSWORD = os.getenv("OXYLABS_PASSWORD")
 async def scraper(query: str, max_results: int) -> list[Product] | None:
     products: list[Product] = []
     working_products = []
-
+    print(f"Starting scrape for original product")
     original_product = await scrape_original(query)
     if original_product is None:
         return None
-
+    print(f"Original product scraped: {original_product.title} (ASIN: {original_product.asin})")
     alternative_products = await scrape_alternative_list(original_product, max_results)
     if alternative_products:
         products.extend(alternative_products)
@@ -39,6 +39,7 @@ async def scraper(query: str, max_results: int) -> list[Product] | None:
         original_product.unit_price = original_product.price / original_product.volume_ml * 100
     print(f"Updated volume for original product {original_product.asin}: {original_product.volume_ml} mL")
 
+    # add original product to working list. original product is always the first item
     working_products.append(original_product)
 
     for i, product in enumerate(products):
@@ -55,21 +56,18 @@ async def scraper(query: str, max_results: int) -> list[Product] | None:
 
     # Batch process all ingredients with Gemini
     print("Batch processing ingredients with Gemini...")
-    raw_ingredients_2d = [original_product.ingredients] + [product.ingredients for product in working_products]
+    raw_ingredients_2d = [product.ingredients for product in working_products]
     cleaned_ingredients_2d = batch_clean_ingredients(raw_ingredients_2d)
     
     # Assign cleaned ingredients back to products
-    original_product.ingredients = cleaned_ingredients_2d[0] if cleaned_ingredients_2d else original_product.ingredients
-    print(f"Updated ingredients for original product {original_product.asin}: {original_product.ingredients}")
-
     for i, product in enumerate(working_products):
-        if i and cleaned_ingredients_2d and i < len(cleaned_ingredients_2d) - 1:
-            working_products[i].ingredients = cleaned_ingredients_2d[i + 1]
+        if i and cleaned_ingredients_2d and i < len(cleaned_ingredients_2d):
+            working_products[i].ingredients = cleaned_ingredients_2d[i]
             print(f"Updated ingredients for {product.asin}: {product.ingredients}")
 
     # Batch process all fragrances with Gemini for efficiency
     print("Batch processing fragrances with Gemini...")
-    product_descriptions = [f"{original_product.title} {original_product.description}" ] + [f"{product.title} {product.description}" for product in working_products]
+    product_descriptions = [f"{product.title} {product.description}" for product in working_products]
     extracted_fragrances = batch_extract_fragrances(product_descriptions)
     
     if not isinstance(extracted_fragrances, list):
@@ -77,11 +75,9 @@ async def scraper(query: str, max_results: int) -> list[Product] | None:
         extracted_fragrances = [None] * len(product_descriptions)
     
     # Assign fragrances back to products
-    original_product.fragrances = extracted_fragrances[0] if extracted_fragrances and len(extracted_fragrances) > 0 else None
-    
     for i, product in enumerate(working_products):
-        if i and extracted_fragrances and i < len(extracted_fragrances) - 1:
-            working_products[i].fragrances = extracted_fragrances[i + 1]
+        if i and extracted_fragrances and i < len(extracted_fragrances):
+            working_products[i].fragrances = extracted_fragrances[i]
             print(f"Updated fragrances for {product.asin}: {product.fragrances}")
         else:
             working_products[i].fragrances = None
