@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       {/* how-it-works section */}
-      <div className="relative my-7 mb-8 mx-14 h-2" id="how-it-works">
+      <div className="relative my-7 mx-14 h-1" id="how-it-works">
         <Image alt="line" src="/line.svg" fill />
       </div>
       
@@ -45,11 +45,11 @@ export default function Home() {
       </section>
 
       {/* why section */}
-      <div className="relative my-7 mb-8 mx-14 h-2" id="why">
+      <div className="relative mt-7 mx-14 h-1" id="why">
         <Image alt="line" src="/line.svg" fill />
       </div>
 
-      <section className="mx-14">
+      <section className="">
         <div className="relative w-full h-[80vh] overflow-hidden">
           <Image
             src="/white-hero.webp"

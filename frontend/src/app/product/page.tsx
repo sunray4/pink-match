@@ -6,6 +6,8 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import SearchInput from "@/components/SearchInput";
 import ProductCard from "@/components/ProductCard";
+import * as Dialog from "@radix-ui/react-dialog";
+import CompareDialog from "@/components/CompareDialog";
 // import CompareModal from "../components/CompareModal";
 
 interface Product {
@@ -93,7 +95,7 @@ function ProductPage() {
 	};
 
 	return (
-		<div>
+		<Dialog.Root>
 			<div className="flex flex-col items-center min-h-[90vh]">
 				<SearchInput />
 				<div className="mt-10 h-[40vh]">
@@ -109,12 +111,13 @@ function ProductPage() {
 			</div>
 			<div className="bg-[#ffe8f0] p-14">
 				<p className="text-[#83667e] font-bold font-cormorant text-4xl lg:text-5xl xl:text-[75px] tracking-[-2px] md:tracking-[-3.75px]">Product Matches</p>
-				<div>
+				<div className="flex box-border content-stretch flex-col lg:flex-row items-center justify-between mt-7">
 					<ProductCard originalProduct={originalProduct} product={sampleProduct} onCompareClick={() => handleCompareClick(sampleProduct)} />
 				</div>
 			</div>
-		</div>
+			<CompareDialog />
+		</Dialog.Root>
 	)
 }
-
+	
 export default ProductPage;
