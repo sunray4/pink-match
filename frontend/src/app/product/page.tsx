@@ -8,22 +8,7 @@ import SearchInput from "@/components/SearchInput";
 import ProductCard from "@/components/ProductCard";
 import * as Dialog from "@radix-ui/react-dialog";
 import CompareDialog from "@/components/CompareDialog";
-// import CompareModal from "../components/CompareModal";
-
-interface Product {
-	asin?: string;
-	title?: string;
-	description?: string;
-	rating?: number;
-	price?: string;
-	image_url?: string;
-	ingredients?: string[];
-	fragrances?: string[];
-	volume_ml?: number;
-	volume?: number;
-	unit_price?: number;
-	similarity_score?: number;
-}
+import { Product } from "@/utils/models";
 
 interface ProductCardProps {
 	originalProduct: Product | null;
@@ -45,7 +30,7 @@ const sampleProduct: Product = {
 	"similarity_score": 0.95
 };
 
-const originalProduct: Product = {
+const sampleOriginalProduct: Product = {
 	"asin": "B000654321",
 	"title": "Original Deodorant",
 	"description": "This is the original deodorant description.",
@@ -60,12 +45,14 @@ const originalProduct: Product = {
 };
 
 function ProductPage() {
-	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [newProductInModal, setNewProductInModal] = useState<Product | null>(null);
 	const [searchResults, setSearchResults] = useState<Product[]>([]);
 	const [originalProduct, setOriginalProduct] = useState<Product | null>(null);
 	const [isLoading, setIsLoading] = useState(true);
+
 	useEffect(() => {
+		setNewProductInModal(sampleProduct);
+		setOriginalProduct(sampleOriginalProduct);
 		// Load search results from localStorage
 		const results = localStorage.getItem('searchResults');
 		const originalProduct = localStorage.getItem('originalProduct');
@@ -91,7 +78,6 @@ function ProductPage() {
 
 	const handleCompareClick = (product: Product) => {
 		setNewProductInModal(product);
-		setIsModalOpen(true);
 	};
 
 	return (
@@ -103,19 +89,22 @@ function ProductPage() {
 						<Image alt="Product showcase" className="" src={originalProduct?.image_url} width={593} height={280}  />
 					)}
 				</div>
-				<div className="">
-					<Image alt="" className="" src="/podium.png" width={791} height={395} />
+				<div className="mt-5">
+					<Image alt="podium" className="" src="/podium.png" width={791} height={395} />
 				</div>
 				<p className="text-[#83667e] mt-14 text-2xl tracking-tight sm:tracking-[-0.04em]">Find your matches below</p>
 				<Image alt="Down arrow" className="mt-3" src="/down-arrow.svg" width={40} height={24} />
 			</div>
 			<div className="bg-[#ffe8f0] p-14">
-				<p className="text-[#83667e] font-bold font-cormorant text-4xl lg:text-5xl xl:text-[75px] tracking-[-2px] md:tracking-[-3.75px]">Product Matches</p>
+				<p className="text-[#83667e] font-bold font-cormorant text-4xl lg:text-5xl xl:text-[4.6875rem] tracking-[-0.45em] md:tracking-[-0.054em]">Product Matches</p>
 				<div className="flex box-border content-stretch flex-col lg:flex-row items-center justify-between mt-7">
 					<ProductCard originalProduct={originalProduct} product={sampleProduct} onCompareClick={() => handleCompareClick(sampleProduct)} />
 				</div>
 			</div>
-			<CompareDialog />
+			{/* Compare Dialog */}
+			{ newProductInModal && originalProduct && (
+				<CompareDialog originalProduct={originalProduct} newProduct={newProductInModal} />
+			)}
 		</Dialog.Root>
 	)
 }

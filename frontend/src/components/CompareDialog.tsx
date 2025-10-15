@@ -1,12 +1,19 @@
 import React from 'react'
 import * as Dialog from "@radix-ui/react-dialog";
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
+import { Product } from '@/utils/models';
+import DialogProduct from './DialogProduct';
 
-function CompareDialog() {
+interface CompareModalProps {
+  originalProduct: Product;
+  newProduct: Product;
+}
+
+function CompareDialog( {originalProduct, newProduct} : CompareModalProps) {
   return (
     <Dialog.Portal>
         <Dialog.Overlay />
-        <Dialog.Content className='bg-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-3xl max-h-[85vh] p-6 rounded-2xl shadow-lg focus:outline-none overflow-auto'>
+        <Dialog.Content className='bg-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[95vw] max-h-[95vh] p-6 rounded-2xl shadow-lg focus:outline-none overflow-auto'>
             <VisuallyHidden.Root>
                 <Dialog.Title>Compare Products</Dialog.Title>
             </VisuallyHidden.Root>
@@ -20,9 +27,9 @@ function CompareDialog() {
                 </svg>
                 </button>
             </Dialog.Close>
-            <div className="m-14">
-                {/* original product */}
-                
+            <div className="m-14 grid grid-cols-2">
+                <DialogProduct product={originalProduct} />
+                <DialogProduct product={newProduct} />
             </div>
         </Dialog.Content>
     </Dialog.Portal>

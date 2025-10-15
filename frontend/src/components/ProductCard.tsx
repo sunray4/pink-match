@@ -1,21 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import * as Dialog from "@radix-ui/react-dialog";
+import { Product } from '@/utils/models';
 
-interface Product {
-  asin?: string;
-  title?: string;
-  description?: string;
-  rating?: number;
-  price?: string;
-  image_url?: string;
-  ingredients?: string[];
-  fragrances?: string[];
-  volume_ml?: number;
-  volume?: number;
-  unit_price?: number;
-  similarity_score?: number;
-}
 interface ProductCardProps {
   originalProduct: Product | null;
   product?: Product;
@@ -27,11 +14,11 @@ const discount = originalProduct?.unit_price != null && product?.unit_price != n
   return (
     <div className="bg-white box-border content-stretch flex flex-col h-[49vh] items-center border-2 border-[#b398ae] border-solid relative rounded-4xl shrink-0 w-full max-w-[22rem] lg:w-[23rem] cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-[0px_12px_20px_0px_rgba(0,0,0,0.15)]">
         <div className="relative shrink-0 m-3 size-[13.7rem]">
-            <Image alt="Search inspection icon" className="block max-w-none size-full" src={product?.image_url ?? ''} width={219} height={219} />
+            <Image alt="Search inspection icon" className="block size-full" src={product?.image_url ?? ''} width={219} height={219} />
         </div>
         <div className='border-t-2 border-[#b398ae] border-solid w-full'></div>
         <div className="m-4 font-medium text-[#83667e] text-lg tracking-tight w-72 h-30 overflow-hidden">
-            <p>{product?.description ?? ''}</p>
+            <p>{product?.title ?? ''}</p>
         </div>
         <div className='grid justify-items-end w-full'>
         <Dialog.Trigger asChild>
