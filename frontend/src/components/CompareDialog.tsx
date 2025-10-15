@@ -39,10 +39,8 @@ function CompareDialog({ originalProduct, newProduct }: CompareModalProps) {
             </svg>
           </button>
         </Dialog.Close>
-        {/* flex justify-evenly items-start gap-6 w-full */}
-        <div className="overflow-auto p-14 ">
+        <div className="flex justify-evenly items-start w-full overflow-auto p-17">
           <DialogProduct originalProduct={originalProduct} product={newProduct} />
-          {/* <DialogProduct product={newProduct} /> */}
         </div>
       </Dialog.Content>
     </Dialog.Portal>
