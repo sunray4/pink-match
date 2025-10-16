@@ -190,7 +190,7 @@ async def scrape_product(asin: str, client: httpx.AsyncClient) -> Product | None
 
 async def scrape_original(query: str) -> Product | None:
     # get ASIN from the URL
-    asin = query.split("/dp/")[1].split("/")[0]
+    asin = query.split("/dp/")[1][:10]
     print(f"Scraping original product ASIN: {asin}")
     # run scraping for ingredients
     async with httpx.AsyncClient(timeout=60.0) as client:
