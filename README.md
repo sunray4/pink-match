@@ -6,6 +6,9 @@
 ![python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![fastapi](https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white)
 ![hugging face](https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black)
+
+https://github.com/user-attachments/assets/6e1c6a31-1ed2-47e4-a0c9-988ee4329cc2
+
 ![google gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
 
 #### [Live Website!!](https://pinkmatch.sunray4.hackclub.app/)
@@ -41,3 +44,4 @@ source .venv/bin/activate
 pip install -r requirements.txt
 fastapi run main.py
 ```
+
