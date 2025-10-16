@@ -6,10 +6,15 @@ import { useRouter } from "next/navigation";
 export default function SearchInput() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [validQuery, setValidQuery] = useState(true);
   const router = useRouter();
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!searchQuery.trim() || !searchQuery.includes("www.amazon") || !searchQuery.includes("dp")) {
+      setValidQuery(false);
+      return;
+    }
     if (searchQuery.trim() && !isLoading) {
       setIsLoading(true);
       
@@ -28,21 +33,6 @@ export default function SearchInput() {
         
         console.log('Response status:', response.status);
         console.log('Response ok:', response.ok);
-        // const response = { ok: true, status: 200, statusText: "OK", json: async () => ([
-        //   {
-        //     "asin": "B000123456",
-        //     "title": "Sample Deodorant",
-        //     "description": "This is a sample deodorant description.",
-        //     "rating": 4.5,
-        //     "price": "$9.99",
-        //     "image_url": "http://example.com/image.jpg",
-        //     "ingredients": ["Ingredient1", "Ingredient2"],
-        //     "fragrances": ["Floral", "Citrus"],
-        //     "volume_ml": 150,
-        //     "unitPrice": 0.0666,
-        //     "similarity_score": 0.95
-        //   }
-        // ]) };
         if (response.ok) {
           console.log('***Search request succeeded');
           const data = await response.json()
@@ -88,6 +78,7 @@ export default function SearchInput() {
   };
 
   return (
+    <>
     <div className="mt-4 w-3/5 h-[3.4375rem] md:h-[3.75rem]">
         <form onSubmit={handleSearch} className="relative w-full h-full">
           <input
@@ -113,5 +104,9 @@ export default function SearchInput() {
         </form>
       
     </div>
+    {!validQuery && (
+      <p className="mt-2 text-red-600 text-sm">Please enter a valid Amazon product URL.</p>
+    )}
+    </>
   );
 }
