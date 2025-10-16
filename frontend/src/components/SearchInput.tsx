@@ -20,7 +20,11 @@ export default function SearchInput() {
       
       try {
         // Send fetch request to backend search endpoint
-        const requestUrl = `https://pinkmatch-backend.sunray4.hackclub.app/search?query=${encodeURIComponent(searchQuery.trim())}`;
+        const requestUrl = `http://localhost:8000/search?query=${encodeURIComponent(searchQuery.trim())}`;
+
+        // For deployment
+        // const requestUrl = `https://pinkmatch-backend.sunray4.hackclub.app/search?query=${encodeURIComponent(searchQuery.trim())}`;
+        
         console.log('Making request to:', requestUrl);
         
         const response = await fetch(requestUrl, {

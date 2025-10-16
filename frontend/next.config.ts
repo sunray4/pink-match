@@ -8,14 +8,15 @@ const nextConfig: NextConfig = {
     ],
     domains: ['m.media-amazon.com'],
   },
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: 'https://pinkmatch-backend.sunray4.hackclub.app/:path*',
-      },
-    ];
-  },
+  // For deployment
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/api/:path*',
+  //       destination: 'https://pinkmatch-backend.sunray4.hackclub.app/:path*',
+  //     },
+  //   ];
+  // },
 };
 
 export default nextConfig;

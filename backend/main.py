@@ -9,7 +9,7 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001"],  # Next.js dev server ports
+    allow_origins=["http://localhost:3000", "http://localhost:3001", "http://pinkmatch.sunray4.hackclub.app", "https://pinkmatch.sunray4.hackclub.app"],  # Next.js dev server ports
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
