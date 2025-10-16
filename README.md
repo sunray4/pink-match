@@ -6,14 +6,16 @@
 ![python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![fastapi](https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white)
 ![hugging face](https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black)
-
-https://github.com/user-attachments/assets/6e1c6a31-1ed2-47e4-a0c9-988ee4329cc2
-
 ![google gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
 
-#### [Live Website!!](https://pinkmatch.sunray4.hackclub.app/)
+https://github.com/user-attachments/assets/b374a5bd-2bd0-4eeb-8e0e-a8f57e950f9a
 
-#### [figma design](https://www.figma.com/design/znHjr90pu3uQtFkug199cu/PinkMatch--TechNova-2025?node-id=7-115&t=7BseKiNO2oPQBejD-0)
+## Links
+
+#### [Live Website!!](https://pinkmatch.sunray4.hackclub.app/)  .✮。• *₊°。  ☆°。 [Devpost](https://devpost.com/software/pinkmatch)  .✮。• *₊°。  ☆°。 [figma design](https://www.figma.com/design/znHjr90pu3uQtFkug199cu/PinkMatch--TechNova-2025?node-id=7-115&t=7BseKiNO2oPQBejD-0)
+#### 
+#### 
+
 ## Inspiration
 Did you know that women often pay more for products that are nearly identical to those marketed to men? This is called the Pink Tax, and it unfairly impacts millions of women worldwide, from razors to shampoos, personal care products and more.
 
@@ -44,4 +46,5 @@ source .venv/bin/activate
 pip install -r requirements.txt
 fastapi run main.py
 ```
+
 
