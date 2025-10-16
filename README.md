@@ -26,9 +26,12 @@ PinkMatch is a web app that exposes the hidden cost of the pink tax by showing u
 
 ## How we built it
 Frontend: Designed in Figma and built with Next.js
+
+Backend: Built with Python FastAPI, integrating NLP pipelines to process queries and return matches; used asyncio to improve processing speed
+
 Data: We scraped product listings from Amazon using Oxylabs and cleaned/structured them with the Gemini API
+
 NLP: TF-IDF with Cosine Similarity to detect overlap in product descriptions. Sentence Transformers (Hugging Face’s all-MiniLM-L6-v2) was used to generate semantic embeddings of descriptions and fragrances, enabling more meaningful similarity matching
-Backend: Built in Python, integrating NLP pipelines to process queries and return matches
 
 ## How to run the project
 
@@ -46,5 +49,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 fastapi run main.py
 ```
+
 
 
