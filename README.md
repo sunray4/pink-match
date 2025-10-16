@@ -8,7 +8,9 @@
 ![hugging face](https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black)
 ![google gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
 
-[figma design](https://www.figma.com/design/znHjr90pu3uQtFkug199cu/PinkMatch--TechNova-2025?node-id=7-115&t=7BseKiNO2oPQBejD-0)
+#### [Live Website!!](https://pinkmatch.sunray4.hackclub.app/)
+
+#### [figma design](https://www.figma.com/design/znHjr90pu3uQtFkug199cu/PinkMatch--TechNova-2025?node-id=7-115&t=7BseKiNO2oPQBejD-0)
 ## Inspiration
 Did you know that women often pay more for products that are nearly identical to those marketed to men? This is called the Pink Tax, and it unfairly impacts millions of women worldwide, from razors to shampoos, personal care products and more.
 
