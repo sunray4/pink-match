@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/b374a5bd-2bd0-4eeb-8e0e-a8f57e950f9a
 
 ## Links
 
-#### [Live Website!!](https://pinkmatch.sunray4.hackclub.app/)  .✮。• *₊°。  ☆°。 [Devpost](https://devpost.com/software/pinkmatch)  .✮。• *₊°。  ☆°。 [figma design](https://www.figma.com/design/znHjr90pu3uQtFkug199cu/PinkMatch--TechNova-2025?node-id=7-115&t=7BseKiNO2oPQBejD-0)
+[Devpost](https://devpost.com/software/pinkmatch)  .✮。• *₊°。  ☆°。 [figma design](https://www.figma.com/design/znHjr90pu3uQtFkug199cu/PinkMatch--TechNova-2025?node-id=7-115&t=7BseKiNO2oPQBejD-0)
 #### 
 #### 
 
@@ -49,6 +49,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 fastapi run main.py
 ```
+
 
 
 
